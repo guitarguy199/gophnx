@@ -1,0 +1,64 @@
+//
+// Global Structure
+//
+
+/* Grid: 1170px total - 97px columns - 30px gutters - 12 columns */
+
+body { 
+	color: #494949;
+	background: #fff;
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	
+	/* properly break long text */
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.wrap {
+	width: 1170px;
+	margin: 0 auto;
+	text-align: left;
+	
+	// Add some padding when going full width
+	@include breakpoint(large) {
+		padding: 0 35px;
+	}
+	
+	// Mobile layout shouldnt go too wide
+	@include breakpoint(medium) {
+		max-width: 740px;
+	}
+	
+	@include breakpoint(x-small) {
+		padding: 0 22px;
+	}
+	
+	@include breakpoint(tiny) {
+		padding: 0 15px;
+	}
+}
+
+.wrap, 
+.main-wrap {
+	box-sizing: border-box;
+	
+	// Go 100% below large
+	@include breakpoint(large) {
+		width: 100%;
+	}
+}
+
+.main { 
+	margin: 0 auto;
+	margin-top: 65px;
+	margin-bottom: 100px;
+
+	@include breakpoint(small) {
+		margin-bottom: 80px;
+	}
+}
+
+.no-sidebar .main .main-content {
+	width: 100%;
+}
+

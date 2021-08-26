@@ -1,0 +1,197 @@
+/*
+Theme Name: ContentBerg
+Theme URI: https://contentberg.theme-sphere.com
+Version: 2.0.0
+Description: A readable blog theme with content focus. Designed by ThemeSphere.
+Author: ThemeSphere
+Author URI: http://theme-sphere.com
+License: ThemeForest Split License
+License URI: http://themeforest.net/licenses/standard
+Copyright: (c) 2021 ThemeSphere.
+Text Domain: contentberg
+*/
+
+// TOC is for CSS output only
+
+/*
+
+1. =Resets & Core Elements
+ 1.1. =Core Typography
+ 1.2. =Core Elements
+ 1.3. =Main Helpers
+ 1.4. =Grid
+
+2. =Global Structure
+3. =Header
+4. =Navigation
+5. =Posts and Single
+6. =Singular & Other Pages
+7. =Main Sidebar
+8. =Footer
+9. =Category Listing/Archives
+10. =Components & Common Classes
+11. =Widgets
+12. =Miscellaneous
+
+*/
+
+//
+// About File Organization
+// -----------------------------------------
+//
+// Measures have been taken to organize layout as follows:
+//
+// abstracts/  -  SASS functions, mixins, and variables
+// base/       -  Base helpers and elements styles such as helper classes, reset.
+//
+// partials/   -  Major global layout elements such as header, footer, nav and specifics like
+//                single, pages, and larger non-reusable components.
+//
+// components/ -  Minor re-usable parts that make up several areas of different pages such as  
+//                widgets, grid post, post meta and so on.
+//
+
+@import 'abstracts/variables';
+@import 'abstracts/utils';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/elements';
+@import 'base/helpers';
+
+//
+// Layout partials
+//
+
+/**
+ * 1.4 =Grid
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/grid';
+
+
+/**
+ * 2. =Global Structure
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/global';
+
+
+/**
+ * 3. =Header
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/header';
+
+
+/**
+ * 4. =Navigation
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/navigation';
+
+
+/**
+ * 5. =Posts & Single
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/single',
+		'partials/single/post-share',
+		'partials/single/author-box',
+		'partials/single/comments',
+		'partials/single/related-posts',
+		'partials/single/post-navigation';
+
+/**
+ * 6. =Singular & Other Pages
+ * ----------------------------------------------------------------------------
+ */	
+@import 'partials/single-page';
+@import 'partials/home';
+
+
+/**
+ * 7. =Main Sidebar
+ * ----------------------------------------------------------------------------
+ */		
+@import 'partials/sidebar';
+
+
+/**
+ * 8. =Footer
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/footer';
+
+
+/**
+ * 9. =Category Listings/Archives
+ * ----------------------------------------------------------------------------
+ */
+@import 'partials/archive';
+@import 'partials/listings';
+
+
+//
+// Common components
+//
+
+/**
+ * 10. =Components & Common Classes
+ * ----------------------------------------------------------------------------
+ */
+
+@import 'components/misc';
+
+@import 'components/social-share';
+@import 'components/post-meta';
+@import 'components/post-grid';
+@import 'components/post-list';
+@import 'components/post-overlay';
+@import 'components/post-large';
+@import 'components/highlights-block';
+@import 'components/news-block';
+@import 'components/subscribe-box';
+@import 'components/slider';
+@import 'components/pagination';
+@import 'components/post-content';
+@import 'components/search-modal';
+
+
+//
+// Custom and default widgets
+//
+
+/**
+ * 11. =Widgets
+ * ----------------------------------------------------------------------------
+ */
+@import 'components/widget-about';
+@import 'components/widget-posts';
+@import 'components/widget-cta';
+@import 'components/widget-social';
+@import 'components/widget-social-follow';
+@import 'components/widget-instagram';
+@import 'components/widget-subscribe';
+@import 'components/widget-twitter';
+@import 'components/widget-slider';
+@import 'components/widgets';
+
+// WordPress default classes
+@import 'components/wp-defaults';
+@import 'components/galleries';
+
+
+//
+// Misc - added to end for CSS output
+//
+
+/**
+ * 12. =Miscellaneous
+ * ----------------------------------------------------------------------------
+ */
+@import 'base/slick';
+@import 'components/mobile-menu';
+@import 'partials/visual-composer';
+@import 'partials/quirks';
+@import 'partials/plugins';

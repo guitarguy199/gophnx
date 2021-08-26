@@ -1,0 +1,270 @@
+/**
+ * Widgets: WordPress Defaults
+ */
+ 
+.textwidget {
+	font-size: 16px;
+	@include text;
+
+	// Note: Uses common-post-content in _post-content.scss
+	// @extend is no longer used due to inconsistent ordering (esp. for editor).
+}
+
+/* Shared Default Widgets */
+.widget_links, 
+.widget_meta, 
+.widget_recent_comments, 
+.widget_recent_entries, 
+.widget_rss, 
+.widget_pages, 
+.widget_nav_menu {
+	color: #535353;
+	
+	ul {
+		margin-top: -12px;
+	}
+	
+	li {
+		padding: 12px 0;
+		margin-bottom: 12px;
+		padding-top: 0;
+		border-bottom: 1px solid #ebebeb;
+		font-size: 14px;
+		-webkit-font-smoothing: antialiased;
+		line-height: 1.8;
+		
+		&:only-child {
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
+		
+		a {
+			// -webkit-font-smoothing: initial;
+			&:hover {
+				opacity: .85;
+			}
+		}
+	}
+	
+	
+	// When widget has hierarchy 
+	li > ul {
+		margin-top: 12px;
+		padding-top: 12px;
+		margin-bottom: -24px;
+		border-top: 1px solid #ebebeb;
+		
+		li {
+			margin-left: 14px;
+			
+		}
+		
+		li:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+
+// Special case for nav menu
+.widget_nav_menu li > ul ul {
+	margin-bottom: -10px;
+}
+
+.widget_rss {
+	.rssSummary {
+		margin-top: 12px;
+	}
+	
+	a {
+		font-weight: 600;
+
+		&:hover {
+			opacity: .85;
+		}
+	}
+	
+	ul .rsswidget {
+		font-size: 15px;
+	}
+	
+	.rss-date {
+		display: block;
+	}
+}
+
+// Recent comments widget fixes
+.recentcomments {
+	.comment-author-link,
+	.comment-author-link a {
+		font-style: italic;
+		color: inherit;
+	}
+}
+
+/* Widget: Tag Cloud */
+.tagcloud {
+	
+	a {
+		display: inline-block;
+		margin-bottom: 8px;
+		margin-right: 4px;
+		padding: 8px 18px;
+		
+		background: #f0f0f0;
+		font-size: 14px !important;
+		text-transform: capitalize;
+		line-height: 1;
+		color: #333;
+		-webkit-font-smoothing: antialiased;
+		
+		&:hover {
+			background: #f9f9f9;
+		}
+	}
+}
+
+/* Widget: Categories / Archives - shared with WooCommerce too */
+.widget_categories,
+.widget_product_categories,
+.widget_archive {
+	color: #c3c3c3;
+	font-family: $title-font;
+	
+	select {
+		width: 100%;
+	}
+	
+	ul {
+		margin-top: -12px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	li {
+		display: flex;
+		flex-wrap: wrap;	
+		padding: 12px 0;
+		border-bottom: 1px solid #ebebeb;
+		font-size: 14px;
+		line-height: 1.8;
+		
+		&:only-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+	a {
+		// Push counters to right
+		margin-right: auto;
+		font-family: $text-font;
+		font-size: 14px;
+		line-height: 1.7;
+		-webkit-font-smoothing: antialiased;
+
+		&:hover {
+			opacity: .85;
+		}
+	
+		// Ellipse before link	
+		&:before {
+			content: "";
+			float: left;
+			margin-top: 9px;
+			margin-right: 12px;
+			width: 6px;
+			height: 6px;
+			border: 1px solid $main-color;
+			border-radius: 50%;
+			box-sizing: border-box;
+		}
+
+	}
+	
+	// When widget has hierarchy 
+	.children {
+		margin-top: 12px;
+		border-top: 1px solid #ebebeb;
+		
+		li {
+			margin-left: 14px;
+			
+		}
+		
+		li:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+
+/* Widget: Calendar */
+
+.widget_calendar thead {
+	border: 1px solid #ebebeb;
+}
+
+.widget_calendar th {
+	text-align: center;
+	padding: 10px 0;
+	border: 0;
+	font-size: 11px;
+	color: #666;
+}
+
+.widget_calendar caption {
+	padding-bottom: 14px;
+	font-size: 13px;
+}
+
+.widget_calendar tr td {
+	padding: 7px 0;
+	background: transparent;
+	border: 1px solid #efefef;
+	
+	color: #777;
+	font-size: 12px;
+	text-align: center; 
+}
+
+.widget_calendar td a {	
+	font-weight: 700;
+}
+
+.widget_calendar #today {
+	font-weight: 700;
+}
+
+.widget_calendar tfoot a {
+	font-weight: 600;	
+	text-transform: uppercase;
+}
+
+/* Widget: Search */
+.widget_search { 
+	.search-field {
+		width: 100%;
+		padding-right: 55px;
+	}
+	
+	button {
+		position: relative;
+		float: right;
+		color: #666;
+		margin-top: -45px;
+		background: transparent;
+		font-size: 14px;
+	}
+}
+
+// Ad widget
+.widget-a-wrap .the-wrap {
+	text-align: center;
+	
+	> div,
+	> iframe,
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

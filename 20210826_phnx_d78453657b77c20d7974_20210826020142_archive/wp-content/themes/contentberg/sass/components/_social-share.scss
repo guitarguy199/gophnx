@@ -1,0 +1,67 @@
+/* Generic Social Sharing and Icons */
+
+.social-share {
+	font-size: 0;
+
+	li { 
+		display: inline-block;
+		font-size: 14px;
+		margin-right: 14px;
+	}
+
+	a {
+		color: #454545;
+	}
+
+	li:last-child { 
+		margin-right: 0; 
+	}
+
+	a:hover {
+		color: $main-color;
+	}
+}
+
+.likes-count {
+	
+	&.fa {
+		-webkit-font-smoothing: subpixel-antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	.number {
+		margin-left: 5px;
+		font-family: $title-font;
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	&:after {
+		content: "";
+		display: inline-block;
+		height: 11px;
+		width: 1px;
+		margin: 0 22px;
+		margin-right: 7px;
+		background: #ebebeb;
+		transform: translateY(1px);
+	}
+	
+	&.voted {
+		cursor: default;
+	}
+	
+	&.voted:before {
+		content: "\f004";
+	}
+	
+	&.animate {
+		animation: 0.4s pulse ease-in;
+	}
+}
+
+// Generic social icons
+.social-icons {
+	@extend .social-share;
+}
+

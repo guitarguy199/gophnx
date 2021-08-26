@@ -1,0 +1,172 @@
+/**
+ * Post Listings Containers
+ */
+ 
+// Uses several components for each of the containers below:
+// post-list, post-grid, post-large, post-overlay
+
+/* One Plus Two Posts */
+.posts-dynamic {
+	margin-bottom: -60px;
+
+	&.grid {
+		margin-bottom: -50px;
+	}
+	
+	.large-post,
+	.overlay-post {
+		margin-bottom: 60px;
+	}
+	
+	.post-thumb {
+		position: relative;
+	}
+	
+	> .col-12 {
+		float: none;
+	}
+	
+	.grid-post {
+		margin-bottom: 50px;
+	}
+	
+	.posts-wrap {
+		display: flex;
+		flex-flow: row wrap;
+		
+		.col-6,
+		.col-4 {
+			float: none;
+		}
+		
+		// Retain half-width columns on medium devices only
+		@include breakpoint(medium, small) {
+			> .col-6,
+			> .col-4 {
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+
+}
+
+/* Large and Overlay Posts */
+.posts-large,
+.posts-overlay {
+
+	.posts-wrap > :last-child {
+		margin-bottom: 0;
+	}
+	
+	&:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+.posts-large {
+	.load-more {
+		padding: 0 20px;
+	}
+
+	.load-button {
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+
+/* List Posts */
+.posts-list, 
+.posts-dynamic.list .posts-wrap:last-child {
+
+	> :last-child .list-post {
+		margin-bottom: 60px;
+	}	
+}
+
+// First post less margins for when list post style b is used with a first large.
+// Make it 50px instead of 60
+.posts-dynamic.list > .large + .posts-wrap {
+	margin-top: -10px;
+}
+
+// Cat Label Overlay
+.cat-label {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	a {
+		float: left;
+		margin-right: 5px;
+		padding: 0 8px;
+		color: inherit;
+		
+		background: #000;
+		color: #fff;
+		
+		font-family: $title-font;
+		font-size: 11px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		line-height: 24px;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	a:hover {
+		background: $main-color;
+	}
+}
+
+.cat-label.color {
+	a {
+		background: $main-color;
+	}
+	
+	a:hover {
+		background: #000;
+	}
+}
+
+.post-thumb:hover .cat-label a {
+	background: $main-color;
+}
+
+/* Post Formats */
+.format-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	
+	width: 58px;
+	height: 58px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+	
+	background: rgba(#000, 0.4);
+	color: #fff;
+	font-size: 22px;
+	line-height: 55px;
+	text-align: center;
+
+	// Fix for VC and others overriding it
+	> .icon {
+		width: auto;
+		height: auto;
+		line-height: 1;
+		vertical-align: baseline;
+		vertical-align: initial;
+	}
+}
+
+.format-video {
+	> .fa {
+		margin-top: -1px;
+		margin-left: 4px;
+	}
+}

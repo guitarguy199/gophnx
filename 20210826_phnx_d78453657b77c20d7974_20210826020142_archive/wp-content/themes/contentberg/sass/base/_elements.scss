@@ -1,0 +1,389 @@
+/**
+ * 1.1. =Typography
+ * ----------------------------------------------------------------------------
+ */
+
+$guten-editor: false !default;
+
+@if not $guten-editor {
+
+	:root {
+		--main-color: #{$main-color};
+	}
+
+	/* Baseline 14px -- 1.866x base line-height */
+	html {
+		font-size: $root-font-size;
+	}
+
+	body {
+		font-family: $body-font;
+		line-height: 1.8666; 
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+	}
+
+	::selection { 
+		background: rgba($main-color, 0.95);
+		color: #fff;
+		text-shadow: none;
+	}
+	
+	img::selection 	{ 
+		background: transparent; 
+	}
+	
+}
+
+/* Base headings */
+
+h1 { font-size: 29px; }
+h2 { font-size: 26px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+h6 { font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title-font;
+	font-weight: 700;
+	color: #111;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+p {	
+	margin-bottom: 26px;
+}
+
+/* Link and text helpers */
+
+a {
+	opacity: initial;
+	color: #161616;
+	text-decoration: none;
+	
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+a:hover { 
+	text-decoration: none;
+}
+
+
+/**
+ * 1.2. =Other Elements
+ * ----------------------------------------------------------------------------
+ */
+
+address {
+	margin-bottom: 1.857em;
+}
+
+hr {
+	background-color: rgba(51, 51, 51, 0.1);
+	border: 0;
+	height: 1px;
+	margin: 3em 0;
+	
+	@include breakpoint(x-small) {
+		margin: 35px 0;
+	}
+}
+
+code, 
+pre {
+	font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: calc(11px + 0.2em);
+	background: #f8f8f8;
+}
+
+code {
+	padding: 4px 10px;
+	word-break: break-word;
+}
+
+pre {
+	padding: 1.857em;
+	margin-bottom: 2em;
+	display: block;
+	overflow: auto;
+
+	// Undo body's setting
+	word-wrap: normal;
+	overflow-wrap: normal;
+
+	code { 
+		word-break: normal;
+	}
+}
+
+abbr, 
+acronym {
+	border-bottom: 1px dotted #222;
+	text-decoration: none;
+}
+
+q {
+	font-style: italic;
+	margin: 0;
+	font-size: 1.1em;
+	margin-right: 8px;
+}
+
+sup {
+	font-size: 0.8em;
+	vertical-align: top;
+}
+
+sub {
+	font-size: 0.8em;
+	vertical-align: bottom;	
+}
+
+dl {
+	margin: 0 0 21px 0;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	margin-bottom: 21px;
+}
+
+
+/* Default table styling */
+
+table {
+	max-width: 100%;
+	width: 100%;
+	background-color: transparent;
+}
+
+th, 
+td {
+	background: #fff;
+	padding: 10px 15px;
+	border: 1px solid #e4e4e4; 
+	border-right: 0;
+	border-left: 0;
+}
+
+th {
+	background: transparent;
+	font-weight: 600;
+}
+
+tr:nth-child(odd) td {
+	background: #fafafa;
+}
+
+table caption { 
+	padding: 0 0 7px 0;
+	width: auto;
+	font-weight: 600;
+}
+
+
+@if not $guten-editor {
+
+	/* Default Form styling */
+	input, 
+	textarea, 
+	select {
+		background: #fff;
+		border: 1px solid #e5e5e5;
+		box-sizing: border-box;
+		padding: 0 16px;
+		max-width: 100%;
+		outline: 0;
+		
+		font-size: 14px;
+		font-family: $text-font;
+		color: #989898;
+	}
+
+	input {
+		height: (44 / 14) * 1em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"]{
+		height: auto;
+	}
+
+	select {
+		line-height: 1;
+		padding: 0 14px;
+		height: 36px;
+	}
+
+	textarea { 
+		width: 100%;
+		padding: 20px 14px;
+		line-height: 1.5;
+		
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+		
+	input:focus, 
+	textarea:focus,
+	select:focus { 
+		border-color: #d9d9d9;
+		color: #888;
+	}
+
+	input[type="submit"], 
+	button, 
+	input[type="button"],
+	.button {
+		@include button;
+		//-webkit-font-smoothing: antialiased;
+	}
+
+	.button {
+		@include button-hover;
+	}
+
+	input[type="submit"]:active, 
+	button:active, 
+	input[type="button"]:active {
+		opacity: 0.9;
+	}
+
+	legend {
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+}
+
+
+/* Blockquotes with citation */
+
+blockquote {
+	padding-left: 45px;
+	color: #989898;
+	font-family: $quote-font;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: (28 / 16);  // desired/font-size
+	
+	-webkit-font-smoothing: antialiased;
+
+	@include breakpoint(x-small) {
+		font-size: 19px;
+	}
+
+	&:before {
+		content: "\201c";
+		float: left;
+		margin-top: 18px;
+		margin-left: -45px;
+		font-family: Georgia, Arial, sans-serif;
+		font-style: normal;
+		font-size: 52px;
+		line-height: 0.41;
+		color: $main-color;
+	}
+
+	p:last-child,
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	cite,
+	[class*=__citation] {
+		font-family: $body-font;
+		color: #9c9c9c;
+		font-size: 12px;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	p + cite,
+	[class*=__citation] {
+		display: block;
+		margin-top: 18px;
+		font-size: 15px;
+	}
+
+	cite:before {
+		content: "-";
+		margin-right: 8px;
+	}
+
+	// Inline cite
+	p > cite {
+		margin-left: 16px;
+		margin-right: 14px;
+	}
+}
+
+.modern-quote {
+	margin: 0;
+}
+
+.modern-quote,
+.wp-block-quote.is-style-large {
+	position: relative;
+	padding: 0 42px;
+	padding-top: 22px;
+	color: #252525;
+	font-size: 27px;
+	line-height: 1.44;
+	font-weight: 500;
+	text-align: center;
+
+	@include breakpoint(small) {
+		font-size: 24px;
+	}
+
+	@include breakpoint(x-small) {
+		font-size: 22px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	&:before {
+		position: absolute;
+		z-index: 0;
+		margin: 0;
+		left: 50%;
+		transform: translateX(-50%) translateY(9px) rotate(1deg);
+		color: $main-color;
+		opacity: .13;
+		font-size: 132px;
+	}
+
+	p {
+		font-size: inherit;
+		line-height: inherit;
+		font-style: inherit;
+	}
+	
+	cite,
+	[class*=__citation] {
+		color: #a0a0a0;
+		font-family: $title-font;
+		font-size: 14px;
+		font-style: normal;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 0.04em;
+
+		&:before {
+			display: none;
+		}
+	}
+	
+	p cite:only-child {
+		display: block;
+		
+		&:before {
+			display: none;
+		}
+	}
+}

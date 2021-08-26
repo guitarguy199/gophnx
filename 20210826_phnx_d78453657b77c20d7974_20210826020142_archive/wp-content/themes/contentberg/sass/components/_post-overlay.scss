@@ -1,0 +1,73 @@
+/**
+ * Overlay Posts
+ */
+.overlay-post {
+	position: relative;
+	
+	.post-meta {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		width: 60%;
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		color: #fff;
+			
+		time {
+			color: inherit;
+		}
+	}
+	
+	img {
+		display: block;
+	}
+	
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background: rgba(#000, 0.2);
+		pointer-events: none;
+	}
+	
+	.post-cat a {
+		display: inline-block;
+		padding: 0 6px;
+		background: #000;
+		color: #fff;
+		line-height: 18px;
+		letter-spacing: 0.11em;
+	}
+	
+	.post-title {
+		margin-top: 18px;
+		margin-bottom: 18px;
+		font-size: 33px;
+		
+		@include breakpoint(x-small) {
+			font-size: 24px;
+		}
+
+		a {
+			// Shouldn't be overridden by theme color options
+			color: #fff !important;
+			
+			&:hover {
+				opacity: 1;
+				box-shadow: none;
+				text-shadow: none;
+			}
+		}
+	}
+	
+	time {
+		color: #fff;
+		
+		@include breakpoint(tiny) {
+			display: none;
+		}
+	}
+}

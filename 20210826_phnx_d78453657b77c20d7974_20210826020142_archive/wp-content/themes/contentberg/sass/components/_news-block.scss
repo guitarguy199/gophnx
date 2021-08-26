@@ -1,0 +1,73 @@
+/**
+ * Block: News Grid
+ */
+ 
+.news-block {
+	
+	.grid-post {
+		margin-bottom: 0;
+		
+		img {
+			@include breakpoint(medium) {
+				width: 100%;
+			}
+		}
+	}
+	
+	.posts-list {
+		margin-bottom: -38px;
+		
+		@include breakpoint(medium) {
+			margin-top: 30px;
+		}
+	}
+ 
+	.small-post {
+		margin-bottom: 42px;
+		
+		@include breakpoint(medium) {
+			float: left;
+			width: 50%;
+		}
+
+		.content {
+			padding-left: 18px;
+			padding-right: 18px;
+
+			@include breakpoint(x-small) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	
+		img {
+			display: block;
+			width: 100%;
+			float: none;
+			margin: 0;
+			margin-bottom: 25px;
+			
+			@include breakpoint(large, medium) {
+				max-width: 100%;
+			}
+		}
+
+		.post-title {
+			font-size: 19px;
+			font-weight: 500;
+			line-height: 1.42;
+
+			@include breakpoint(x-small) {
+				font-size: 15px;
+			}
+		}
+
+		.post-meta {
+			display: none;
+		}
+	}
+	
+	.small-post:nth-child(2n+1) {
+		clear: both;
+	}
+}

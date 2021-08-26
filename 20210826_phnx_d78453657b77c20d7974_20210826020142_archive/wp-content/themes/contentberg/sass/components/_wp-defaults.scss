@@ -1,0 +1,483 @@
+/**
+ * Classes: WordPress Defaults
+ */
+
+.alignnone,
+.wp-block-image,
+.wp-block-embed,
+.wp-block-cover,
+.wp-block-cover-image,
+.wp-block-group,
+.wp-block-table { 
+	margin: 40px auto; 
+}
+
+.alignright, 
+a img.alignright,
+.wp-block-image .alignright {
+	float: right;
+	margin: 4px 0 20px 30px;
+}
+
+.alignleft, 
+a img.alignleft,
+.wp-block-image .alignleft {
+	float: left;
+	margin: 4px 30px 20px 0;
+}
+
+// Floated elements should go full in super tiny screens
+.alignleft,
+.alignright,
+.wp-block-image .alignleft,
+.wp-block-image .alignright {
+
+	@include breakpoint(large) {
+		max-width: 50%;
+	}
+
+	@include breakpoint(x-small) {
+		width: 100%;
+
+		// We consider this a container (as img rules are below), so we use 100% width which 
+		// will offset any inline widths set on the figure etc.
+		max-width: 100%; 
+		float: none;
+		padding: 0;
+		margin: 30px auto !important;
+	}
+}
+
+// Allow images inside alignright elements to go full width
+@include breakpoint(x-small) {
+	figure.alignleft img,
+	figure.alignright img,
+	a img.alignleft,
+	a img.alignright {
+		float: none;
+		width: 100%;
+		max-width: initial;
+	}
+}
+
+.aligncenter, 
+div.aligncenter {
+    display: block; // Not needed in post-gutenberg as figure is used and in fact may affect some flex blocks
+	margin: 40px auto;
+	
+	> img {
+		margin: 0 auto;
+	}
+}
+
+p img.alignnone,
+img.alignnone {
+	display: block;
+	margin: 40px 0;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption-text,
+figcaption {
+	font-family: $body-font;
+	font-size: 0.923em;
+}
+
+.wp-caption-text,
+.wp-block-image figcaption,
+.blocks-gallery-caption {
+	margin-top: 5px;
+	font-style: italic;
+	text-align: center;
+	color: #b4b4b4;
+}
+
+/**
+ * Gutenberg blocks
+ */
+.wp-block-image {
+	figcaption {
+		margin-bottom: 0;
+	}
+}
+
+.wp-block-pullquote {
+	margin: 2em auto;
+	padding: 0;
+	padding-left: 3.896%;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: left;
+	line-height: 1.45;
+	color: #252525;
+
+	blockquote {
+		margin: 0;
+		padding: 0;
+		color: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+
+		&:before {
+			position: absolute;
+			margin-left: -1.75%;
+			margin-top: 20px;
+			z-index: 0;
+			color: $main-color;
+			opacity: .13;
+			font-size: 96px;
+		}
+	}
+
+	&.alignleft, 
+	&.alignright {
+		padding-top: 10px;
+		padding-bottom: 1em;
+		max-width: 40%;
+
+		@include breakpoint(small) {
+			width: 100%;
+			max-width: initial;
+			margin: 0 !important;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		p {
+			font-size: inherit;
+			line-height: inherit;
+		}
+	}
+
+	&.alignleft {
+		margin-right: 7%;
+	}
+
+	&.alignright {
+		margin-left: 3.9%;
+	}
+
+	cite,
+	.wp-block-pullquote__citation,
+	p + cite {
+		margin-top: 24px;
+		font-style: normal;
+	}
+
+	//
+	// Colored Variation
+	//
+	&.is-style-solid-color {
+		padding: 25px;
+		font-size: calc(1em + 5px);
+		
+		blockquote {
+			max-width: initial;
+			text-align: center;
+
+			&:before {
+				display: none;
+			}
+
+			p {
+				font-size: inherit;
+			}
+		}
+	}
+
+	.has-text-color {
+		cite {
+			color: inherit;
+		}
+	}
+}
+
+//
+// Separator Blocks
+//
+.wp-block-separator {
+	background: #e1e1e1;
+
+	&:not(.is-style-wide) {
+		margin: 2.8em auto;
+		height: 2px;
+		max-width: 180px;
+	}
+
+	// Dots style
+	&.is-style-dots {
+		background: none;
+		border: none;
+		text-align: center;
+		max-width: none;
+		line-height: 1;
+		height: auto;
+
+		&:before {
+			content: "\00b7 \00b7 \00b7";
+			padding-left: 21px;
+			color: inherit;
+			font-size: 21px;
+			font-weight: bold;
+			letter-spacing: 21px;
+			font-family: georgia, serif;
+		}
+	}
+}
+
+// Lower specificity to allow color classes.
+hr.is-style-dots {
+	color: #666;
+}
+
+//
+// Audio Block
+//
+.wp-block-audio {
+	&.aligncenter,
+	&.alignwide,
+	&.alignfull {
+		> audio {
+			width: 100%;
+		}
+	}
+}
+
+//
+// Columns Block
+//
+// .wp-block-columns {
+// 	margin: 0 -15px;
+// 	flex-wrap: wrap;
+// }
+
+// .wp-block-column {
+// 	padding: 0 15px;
+
+// 	@include breakpoint(small) {
+// 		.wp-block-columns:not(.has-2-columns) & {
+// 			width: 100%;
+// 			flex-basis: 100%;
+// 			margin-bottom: 1em;
+// 		}
+// 	}
+
+// 	@include breakpoint(x-small) {
+// 		width: 100%;
+// 		flex-basis: 100%;
+// 		margin-bottom: 1em;
+// 	}
+// }
+
+.wp-block-column {
+	> p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+//
+// Dropcap
+//
+p.has-drop-cap:not(:focus):first-letter {
+	float: left;
+	font-size: calc(75px + 2.2em);
+	line-height: 0.78;
+	margin: .04em 15px 0em 0;
+	text-transform: uppercase;
+	font-family: georgia, serif;
+	font-style: normal;
+	font-weight: 400;
+	color: rgba(#000, 0.8);
+	-webkit-font-smoothing: antialiased;
+
+	@include breakpoint(x-small) {
+		font-size: calc(60px + 1.8em);
+	}
+}
+
+@if not $is-amp {
+	// Edge hack
+	@supports (-ms-ime-align:auto) {
+		p.has-drop-cap:not(:focus):first-letter {
+			font-size: 6.1em;
+		}
+	}
+}
+
+//
+// Button
+//
+.wp-block-button {
+	
+	a:not(.has-text-color) {
+		color: #fff;
+	}
+	
+	&__link {
+		@include button;
+		border-radius: 0;
+		font-size: 13px;
+
+		@include button-hover;
+		
+		&:hover {
+			opacity: 1;
+			background: #000 !important;
+			color: #fff;
+		}
+	}
+}
+
+// Backgrounds
+p.has-background {
+	padding: 25px 30px;
+}
+
+.has-very-light-gray-background-color {
+	background: #f3f3f3;
+}
+
+
+//
+// Cover block
+//
+.wp-block-cover {
+	width: auto;
+	color: #fff;
+
+	&__inner-container {
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Legacy for older than v5.3.
+.wp-block-cover-image {
+	color: #fff;
+}
+
+//
+// Media & text Block
+//
+.wp-block-media-text {
+	figure > img {
+		display: block;
+		margin-bottom: 0;
+	}
+}
+
+//
+// Group block
+// 
+.wp-block-group {
+	&.has-background {
+		padding: 40px;
+	}
+
+	&__inner-container {
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	@if not $guten-editor {
+		&:not(.alignwide):not(.alignfull) * {
+			max-width: initial;
+		}
+	}
+
+	// content-spacious-full can mess it.
+	.alignfull {
+		margin-top: 40px;
+	}
+}
+
+//
+// Latest Posts + Social Icons
+//
+.wp-block-latest-posts__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.wp-block-latest-posts,
+.wp-block-social-links {
+	li {
+		padding: 0;
+		margin-bottom: 0;
+	}
+}
+
+.wp-block-social-links {
+	a {
+		color: #fff;
+	}
+}
+
+//
+// Table block margins collapse fix.
+//
+.wp-block-table:not(table) {
+	overflow: unset;
+}
+
+.alignfull,
+.alignwide {
+	> .wp-block-group__inner-container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		max-width: 1170px;
+		max-width: var(--post-content-width, 1170px);
+	}
+}
+
+// Nested alignfull shouldn't add margins. For example, content-spacious will add double 
+// negative marings.
+.alignfull .alignfull,
+.alignwide .alignwide {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+// Full-width modifications
+.no-sidebar {
+	
+	// Force wrappers - div,p, and so on to auto width in full width mode
+	// !important required to override inline style added by WP
+	//
+	// Note: Images don't use inline styles in WP  
+	.alignnone:not(img) {
+		width: auto !important;
+	}
+	
+	.alignnone img,
+	img.alignnone {
+		width: auto;
+	}
+
+	// Gutenberg alignfull
+	.alignfull {
+		width: 100vw;
+		max-width: 100vw;
+		margin-left: calc(50% - 50vw) !important;
+		margin-right: 0 !important;
+		
+		// Enhance it with CSS vars
+		@supports (--var: 1) {
+			margin-left: calc(50% - 50vw - (var(--content-share-ml, 0px) / 2)) !important;
+		}	
+
+		&.wp-block-image img {
+			max-width: 100vw;
+			width: 100vw;
+		}
+	}
+}

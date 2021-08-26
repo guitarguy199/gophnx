@@ -1,0 +1,28 @@
+// Compatibility, hacks, and quirks
+
+
+// For Autoptimize plugin
+body {
+	visibility: visible;
+	overflow: initial;
+}
+
+// 100vw browser scrollbar fix
+.single .main-wrap {
+	overflow-x: hidden;
+}
+
+.wf-loading {
+	//visibility: hidden;
+	//opacity: 0;
+	
+	.ts_ld {
+		z-index: 99999;
+		position: fixed;
+		background: #fff;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}

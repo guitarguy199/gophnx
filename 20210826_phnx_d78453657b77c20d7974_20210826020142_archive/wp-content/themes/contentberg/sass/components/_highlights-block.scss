@@ -1,0 +1,38 @@
+/**
+ * Block: Highlights
+ */
+.highlights-block {
+	.grid-post {
+		margin-bottom: 32px;
+	}
+	
+	.large {
+		@include breakpoint(medium, small) {
+			width: 50%;
+			float: left;
+		}
+	}
+	
+	.posts-list {
+		@include breakpoint(medium, small) {
+			width: 50%;
+			float: left;
+			box-sizing: border-box;
+			padding-left: 30px;
+		}
+	}
+
+	.small-post {
+		img {
+			width: 115px;
+		}
+
+		.post-title {
+			margin-top: -0.25em;
+		}
+
+		.post-meta {
+			font-size: 11px;
+		}
+	}
+}

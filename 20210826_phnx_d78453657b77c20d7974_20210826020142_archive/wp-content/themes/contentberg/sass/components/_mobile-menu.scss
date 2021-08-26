@@ -1,0 +1,261 @@
+.mobile-nav {
+	display: none;
+	float: left;
+	font-size: 16px;
+	color: #161616;
+			
+	@include breakpoint(medium) {
+		display: block;
+		margin-right: 18px;
+	}
+}
+
+.dark .mobile-nav {
+	color: #fff;
+}
+
+/**
+ * Mobile Navigation 
+ */
+ 
+.mobile-menu {
+	font-size: 17px;
+	font-family: $title-font;
+	font-weight: 500;
+	letter-spacing: 0;
+	color: #161616;
+	-webkit-font-smoothing: antialiased;
+	
+	&.active { 
+		display: block;
+	}
+
+	ul {
+		max-height: 0;
+		opacity: 0;
+		background: transparent;
+		overflow: hidden;
+		border: 0;
+		border-bottom: 1px solid rgba(#000, 0.07);
+		transition: opacity .6s ease, max-height .8s ease;
+		
+		li {
+			float: none;
+			clear: both;
+			display: block;
+			max-width: 100%;
+			padding-left: 25px;
+		}
+		
+		// drops links
+		li a {
+			font-size: 15px;
+			color: #555;
+		}
+	}
+	
+	// Shouldn't be here - not supported
+	.nav-icons {
+		display: none;
+	}
+	
+	.mega-menu {
+		display: none;
+	}
+	
+	// item activation animation
+	.item-active > ul {
+		opacity: 1;
+		max-height: 3000px;
+
+		// larger transition needed to account for max-height
+		transition: opacity .4s ease-in, max-height 1s ease-in;
+	}
+
+	li {
+		position: relative;
+	}
+
+	// nth level links
+	li a {
+		float: none;
+		display: block;
+		padding: 15px 0;
+		padding-right: 50px;
+		
+		border-bottom: 1px solid rgba(#000, 0.07);
+		
+		line-height: 1.4;
+		letter-spacing: 0.02em;
+		color: inherit;
+	}
+	
+	// Chevron for menu	
+	.chevron {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 15px 25px;
+		margin-right: -15px;
+		border: 0;
+		color: #aaa;
+		text-align: center;
+		font-size: 12px;
+		-webkit-text-stroke: 1.2px #fff;
+		line-height: 1.8;
+		cursor: pointer;
+	}
+
+	.item-active > .chevron {
+		transform: rotate(180deg);
+	}
+
+	// 1st+ level links
+	> li li { 
+		padding-left: 20px;
+	}
+	
+	// Remove last border for drops			
+	ul li:last-child {
+	
+		> a {
+			border-bottom-color: transparent;
+		}
+		
+		// nested menus last item uls don't need border bottom
+		ul {
+			border-bottom-color: transparent;
+		}
+	}
+	
+	// Add back border for active items 
+	ul li.item-active > a {
+		border-bottom: 1px solid rgba(#000, 0.07);
+	}
+
+	// Active and hover
+	li:hover > a, 
+	> .current-menu-item.menu-item > a, 
+	> .current-menu-parent.menu-item > a,
+	> .current-menu-ancestor.menu-item > a, 
+	li li.current-menu-item a {
+		background: rgba(0, 0, 0, 0.01);
+	}
+}
+	
+/**
+ * Off-canvas side menu
+ */
+ 
+// A few fixes to prevent horizontal scroll by mistake
+.hide-scroll, 
+.nav-off-canvas { 
+	overflow-x: hidden; 
+}
+
+.nav-off-canvas .main-wrap {
+	position: relative;
+	transition: transform 0.4s ease-in-out;
+	transform: none;
+}
+
+.off-canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	display: none;
+	height: 100%;
+	width: 45vw;
+	min-width: 200px;
+	padding: 25px;
+	padding-top: 60px;
+	box-sizing: border-box;
+	
+	overflow-y: auto;
+   	overflow-x: hidden;
+   	background: #fff;
+   	z-index: 1000;
+
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.4s ease-in-out;
+	
+	@include breakpoint(medium) {
+		display: block;
+	}
+	
+	@include breakpoint(x-small) {
+		width: 75vw;
+	}
+	
+	@include breakpoint(tiny) {
+		width: 85vw;
+	}
+	
+	
+	// Show mobile logo
+	.mobile-logo {
+		display: inline-block;
+		max-width: 85%;
+	}
+	
+	.logo {
+		margin-bottom: 45px;
+		text-align: center;
+	}
+	
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 9px;
+		background: #161616;
+		color: #fff;
+		line-height: 26px;
+		font-size: 14px;
+	}
+	
+	.mobile-menu {
+		transition: opacity 0.5s ease-in;
+		opacity: 0.2;
+	}
+}
+
+.admin-bar .off-canvas {
+	top: 46px;
+}
+
+// Activated off-canvas menu
+.off-canvas-active {
+
+	.off-canvas {
+		transform: translate3d(0, 0, 0);
+		box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2); 
+	}
+
+	.mobile-menu { 
+		opacity: 1; 
+	}
+	
+	.main-wrap {
+		transform: translate3d(45vw, 0, 0);
+		
+		@include breakpoint(x-small) {
+			transform: translate3d(75vw, 0, 0);
+		}
+		
+		@include breakpoint(tiny) {
+			transform: translate3d(85vw, 0, 0);
+		}
+		
+	}
+
+	.main-wrap:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+	}
+}

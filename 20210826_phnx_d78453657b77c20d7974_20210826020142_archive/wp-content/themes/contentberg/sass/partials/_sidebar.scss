@@ -1,0 +1,45 @@
+/**
+ * Sidebar
+ */
+ 
+.main .sidebar {
+	padding-left: 45px;
+	
+	@include breakpoint(medium) {
+		float: none;
+		margin: 0 auto;
+		margin-top: 65px;
+		padding-left: 15px;
+		//max-width: 550px;
+	}
+}
+ 
+.sidebar {
+	.widget {
+		margin-bottom: 50px;
+	}
+	
+	.widget-title {
+		margin-bottom: 35px;
+		padding-bottom: 9px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #e1e1e1;
+		font-size: 20px;
+		font-weight: 700;
+		color: #000;
+		line-height: 1.5;
+
+		@include breakpoint(x-small) {
+			font-size: 18px;
+		}
+	}
+
+	&.large-title .widget-title {
+		font-size: 21px;
+		padding-bottom: 7px;
+
+		@include breakpoint(x-small) {
+			font-size: 18px;
+		}
+	}
+}

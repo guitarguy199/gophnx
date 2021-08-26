@@ -1,0 +1,134 @@
+//
+// Utility functions and mixins
+//
+
+@function my-rem($size, $root-font-size: $root-font-size) {
+	@return ($size / $root-font-size) * 1rem;
+}
+
+
+// Mixins
+@mixin clearfix() {
+	&:after, 
+	&:before {
+		content: "";
+		display: table;
+	}
+	
+	&:after {
+		clear: both;
+	}
+}
+ 
+// Based on sass-mq
+// Usage:
+//
+// Target small to medium:
+//    breakpoint(medium, small);
+// 
+// Target from 0 to large:
+//    breakpoint(large)
+//
+// Target manual numbers:
+//   breakpoint(767px, 480px);
+//
+  
+@mixin breakpoint($until: false, $from: false, $and: false, $breakpoints: $mq-breakpoints) {
+
+	$min-width: 0;
+	$max-width: 0;
+	$media-query: '';
+	
+	// From: this breakpoint
+	@if $from {
+		@if type-of($from) == number {
+			$min-width: $from;
+		} @else {
+			$min-width: mq-get-breakpoint-width($from, $breakpoints);
+		}
+	}
+
+	// Until: that breakpoint
+	@if $until {
+		@if type-of($until) == number {
+			$max-width: $until;
+		} @else {
+			$max-width: mq-get-breakpoint-width($until, $breakpoints);
+		}
+	}
+
+	@if $min-width != 0 { $media-query: '#{$media-query} and (min-width: #{$min-width})'; }
+	@if $max-width != 0 { $media-query: '#{$media-query} and (max-width: #{$max-width})'; }
+	@if $and            { $media-query: '#{$media-query} and #{$and}'; }
+	
+	// Remove first and
+	@if ($media-query != '') {
+		$media-query: str-slice(unquote($media-query), 6);
+	}
+
+	@media #{$media-query} {
+		@content;
+	}
+}
+
+// Helper map function for breakpoint
+@function mq-get-breakpoint-width($name, $breakpoints: $mq-breakpoints) {
+	@if map-has-key($breakpoints, $name) {
+		@return map-get($breakpoints, $name);
+	} @else {
+		@warn "Breakpoint #{$name} wasn't found in $breakpoints.";
+	}
+}
+
+///
+/// Fluid font size calculation between two points at specific widths.
+/// 
+/// Based on polyfluid by Jake Wilson.
+/// 
+/// Note: Results are similar to the other formula by Mike Riethmuller but 
+///       it produces a simplified version.
+///
+/// @param $map - A SASS map of viewport widths and size value pairs
+/// @returns A linear equation as a calc() function
+/// 
+/// @example
+///   font-size: fluid-size((small: 18px, 1500px: 26px));
+/// 
+@function fluid-size($map) {
+	$keys: map-keys($map);
+
+	@if (length($keys) != 2) {
+		@error "linear-interpolation() $map must be exactly 2 values";
+	}
+
+
+	$width1: nth($keys, 1);
+
+	// Use px value or global mq
+	@if type-of($width1) != number {
+		$width1: mq-get-breakpoint-width(nth($keys, 1));
+	}
+
+	$width2: nth($keys, 2);
+
+	// Use px value or global mq
+	@if type-of($width2) != number {
+		$width2: mq-get-breakpoint-width(nth($keys, 2));
+	}
+
+	// The slope
+	$m: (map-get($map, nth($keys, 2)) - map-get($map, nth($keys, 1))) / ($width2 - $width1);
+
+	// The y-intercept
+	$b: map-get($map, nth($keys, 1)) - $m * $width1;
+
+	// Determine if the sign should be positive or negative
+	$sign: "+";
+
+	@if ($b < 0) {
+		$sign: "-";
+		$b: abs($b);
+	}
+
+	@return calc(#{$m * 100}vw #{$sign} #{$b});
+}

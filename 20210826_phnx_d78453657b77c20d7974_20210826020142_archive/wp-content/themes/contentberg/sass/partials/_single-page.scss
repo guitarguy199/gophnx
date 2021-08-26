@@ -1,0 +1,41 @@
+/**
+ * Single Page 
+ */
+ 
+// Inherits from Single Post and modifies it
+
+.the-page {
+
+	.the-page-title {
+		margin-bottom: 28px;
+	}
+	
+	// Remove margin for full-width modern post
+	.featured img {
+		margin-top: 0;
+	}
+	
+} 
+
+// 404 Page
+.page-404 {
+	.post-title-alt {
+		text-align: center;
+		margin-bottom: 55px;
+	}
+	
+	.text-404 {
+		font-size: 105px;
+		line-height: 1;
+		margin-top: -20px;
+		text-align: center;	
+
+		@include breakpoint(medium) {
+			margin-bottom: 35px;
+		}
+	}
+	
+	.search-field {
+		width: 300px;
+	}
+}

@@ -1,0 +1,408 @@
+/**
+ * Single Post Sharing 
+ */
+.post-share-icons {
+	
+	a {
+		float: left;
+		margin-left: 4px;
+		border: 1px solid #ebebeb;
+		border-radius: 50%;
+		box-sizing: border-box;
+		width: 32px;
+		height: 32px;
+		
+		color: #111;
+		font-size: 14px;
+		line-height: 32px;
+		text-align: center;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	
+	i {
+		line-height: inherit;
+	}
+	
+	// Google+ icon will not center horizontally
+	.fa-google-plus {
+		padding-left: 2px;
+	}
+	
+	a:hover {
+		color: $main-color;
+	}
+	
+	.likes-count {
+		padding: 0 16px;
+		width: auto;
+		border-radius: 15px;
+		text-align: center;
+		line-height: 30px;
+		color: $main-color;
+	}
+	
+	.fa-heart-o:before {
+		content: "\f004";
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 1px;
+	}
+	
+	.voted {
+		color: #535353;
+	}
+	
+	.likes-count:after {
+		display: none;
+	}
+	
+	.likes-count .number {
+		font-weight: 600;
+		font-size: 12px;
+	}
+}
+
+
+// Alternate Post Share
+.post-share-b {
+	margin-bottom: 30px;
+	
+	.service {
+		float: left;
+		width: 240px;
+		margin-right: 6px;
+		margin-bottom: 6px;
+		border-radius: 2px;
+		color: #fff;
+		font-family: $title-font;
+		line-height: 40px;
+		text-align: center;
+		will-change: opacity;
+	
+		@include breakpoint(medium) {
+			width: 180px;
+		}
+		
+		@include breakpoint(x-small) {
+			width: 45px;
+		}
+	
+		&:hover {
+			filter: brightness(110%);
+		}	
+		
+		i {
+			margin-right: 11px;
+			font-size: 18px;
+			line-height: inherit;
+			vertical-align: middle;
+			
+			@include breakpoint(x-small) {
+				margin: 0;
+			}
+		}
+	}
+	
+	.label {
+		font-size: 14px;
+		max-width: 66%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+		@include breakpoint(x-small) {
+			display: none;
+		}
+	}
+	
+	.service:nth-child(n+3) {
+		display: none;
+		width: 50px;
+		
+		@include breakpoint(medium) {
+			width: 45px;
+		}
+		
+		i {
+			margin: 0;
+		}
+		
+		.label {
+			display: none;
+		}
+	}
+	
+	
+	&.all {
+		.service {
+			display: block;
+		}
+	
+		.show-more {
+			display: none;
+		}
+	}
+	
+	.show-more {
+		float: left;
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 2px;
+		background: #aaa;
+		color: #fff;
+		font-size: 16px;
+	}
+	
+	// Services
+	.facebook {
+		background: #3059b0;
+	}
+	
+	.twitter {
+		 background: #55acef; 
+	}
+	
+	.gplus {
+		background: #e6422e;
+	}
+	
+	.pinterest {
+		background: #ca2128; 
+	}
+	
+	.linkedin {
+		background: #02669a;
+	}
+	
+	.tumblr {
+		background: #44546b;
+	}
+	
+	.email {
+		background: #19232d;
+	}
+
+	.vk {
+		color: #45668e;
+	}
+}
+
+// Floating Social Share
+.post-share-float {
+	position: absolute;
+	margin-left: -120px;
+	margin-top: 5px;
+	height: 100%;
+	opacity: 1;
+	transition: opacity .2s ease-in;
+	
+	@include breakpoint(false, small) {
+		&.is-hidden {
+			opacity: 0;
+		}
+	}
+
+	//
+	// Large spacious post has special rules for 940-1500px and 1500px+
+	//
+	.the-post-modern & {
+		@include breakpoint(null, 1500px) {
+			margin-left: -180px;
+		}
+
+		@include breakpoint(1500px, medium) {
+			margin-left: -90px;
+
+			// Fluid between -75px to -90px 
+			margin-left: fluid-size((medium: -75px, large: -90px));
+		}
+	}
+
+	@include breakpoint(1500px) {
+		margin-left: -90px;
+		
+		// Goes from -70-100px between 1350-1500px
+		margin-left: calc(-100px + ((1500px - 100vw) * 0.2));
+	}
+
+	// No margins needed for 940-1350px, instead add margin on post-content
+	@include breakpoint(1350px, medium) {
+		margin-left: 0;
+	}
+
+	@include breakpoint(medium) {
+		margin-left: -35px;
+	}
+	
+	@include breakpoint(small) {
+		position: static !important;
+		display: flex;
+		margin-left: 0;
+		margin-top: -10px;
+		margin-bottom: 30px;
+		padding-left: 1px;
+		height: auto !important;
+		
+		.theiaStickySidebar {
+			display: flex;
+			width: 100%;
+		}
+	}
+	
+	.services {
+		background: #fff;
+		//transition: transform 0.25s ease-in;
+		
+		@include breakpoint(small) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+	
+	.service {
+		margin-top: -1px;
+		margin-bottom: 12px;
+		display: block;
+		width: 42px;
+		height: 42px;
+		
+		// Safari bug for redundant var
+		--shadow-color: rgba(var(--service-color-rgb, 0,0,0), 0.18);
+		//box-shadow: -3px -3px 8px -6px rgba(0,0,0,0.1), 1px 3px 15px -7px;
+		//box-shadow: -2px -3px 9px -6px rgba(0, 0, 0, 0.2), 1px 3px 5px -1px var(--shadow-color);
+		box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.05), 1px 3px 5px -1px var(--shadow-color);
+		border-radius: 50%;
+		color: #111;
+		font-size: 17px;
+		line-height: 44px;
+		text-align: center;
+		
+		@include breakpoint(small) {
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+		
+		&:hover {
+			background: #fff;
+			transform: translateY(-2px);
+		}
+	}
+
+	.share-text {
+		display: block;
+		margin-bottom: 27px;
+		color: #111;
+		font-family: $title-font;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		text-align: center;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+
+		// Safari bug
+		word-wrap: normal;
+		overflow-wrap: normal;
+
+		@include breakpoint(small) {
+			display: none;
+		}
+	}
+	
+	.fa {
+		-webkit-font-smoothing: initial;
+	}
+	
+	.label {
+		display: none;
+	}
+	
+	// Services
+	.facebook {
+		color: #135cb6;
+		--service-color-rgb: 19, 92, 182;
+	}
+	
+	.twitter {
+		color: #089fc5; 
+		--service-color-rgb: 8, 159, 197;
+	}
+	
+	.gplus {
+		color: #e6422e;
+		--service-color-rgb: 230, 66, 46;
+	}
+	
+	.pinterest {
+		color: #ca2128;
+		--service-color-rgb: 202, 33, 40;
+	}
+	
+	.linkedin {
+		color: #02669a;
+		--service-color-rgb: 2, 102, 154;
+	}
+	
+	.tumblr {
+		color: #44546b;
+		--service-color-rgb: 68, 84, 107;
+	}
+
+	.vk {
+		color: #45668e;
+		--service-color-rgb: 69, 102, 142;
+	}
+	
+	.sticky-top {
+		.services {
+			transform: translate3d(0, 50px, 0);
+		}
+	}
+}
+
+.has-share-float {	
+
+	&.content-normal {
+
+		// Normal non-spacious post requires some margin at 1350-1500px, share-float is -90px
+		@include breakpoint(1500px) {
+			--content-share-ml: 30px;
+			margin-left: 30px;
+		}
+
+		@include breakpoint(1350px) {
+			--content-share-ml: 90px;
+			margin-left: 90px;
+		}
+	}
+
+	// Applies to: content-normal and content-spacious-full
+	&:not(.content-spacious) {
+		@include breakpoint(medium) {
+			--content-share-ml: 55px;
+			margin-left: 55px;
+		}
+	}
+
+	&.content-spacious {
+		@include breakpoint(1350px) {
+			--content-share-ml: 95px - 3.896%;
+			margin-left: calc(95px - 3.896%);
+		}
+
+		@include breakpoint(medium) {
+			--content-share-ml: 30px;
+			margin-left: 30px;
+		}
+	}
+
+	@include breakpoint(small) {
+		--content-share-ml: 0px !important;
+		margin-left: 0 !important;
+	}
+}

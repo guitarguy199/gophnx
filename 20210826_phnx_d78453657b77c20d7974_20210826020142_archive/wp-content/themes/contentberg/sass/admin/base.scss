@@ -1,0 +1,214 @@
+/**
+ * Meta boxes and other styling for admin
+ */
+@import '../abstracts/_variables'; 
+@import '../abstracts/_utils';
+
+/* Core bug for themes page */
+.themes-php .notice {
+	display: block;	
+}
+
+/**
+ * Customizer Controls
+ */
+.customize-control-typography .sub-label {
+	width: 20%;
+	display: inline-block;
+}
+
+.customize-control-typography + .customize-control-typography {
+	margin-top: 5px;
+	border-top: 1px solid #d9d9d9;
+	padding-top: 15px;
+}
+
+.button.reset-customizer {
+	margin-top: 10px;	
+}
+
+#customize-control-home_carousel {
+	margin-top: 10px;
+	border-top: 1px solid #d9d9d9;
+	padding-top: 15px;	
+}
+
+
+/* Customizer 4.5 preview for tablets matching iPad */
+.wp-customizer .preview-tablet .wp-full-overlay-main {
+	margin-left: -384px;
+	width: 768px;
+	height: 1024px;
+}
+
+/* Matching iPhone 6 */
+.wp-customizer .preview-mobile .wp-full-overlay-main {
+	margin-left: -207px;
+	width: 414px;
+	height: 736px;
+}
+
+/* Show Desc */
+#sub-accordion-panel-sphere-social-followers .customize-info .description {
+	display: block;
+}
+
+
+/**
+ * Dashboard
+ */
+.ts-dash {
+	position: relative;
+	margin: 25px 40px 0 20px;
+	max-width: 1050px; /* readability */
+	font-size: 15px;
+
+	.nav-tab-wrapper {
+		margin-top: 0;
+	}
+
+	h1 {
+		margin: 34px 200px 25px 0;
+		margin-bottom: 25px;
+		padding: 0;
+		color: #32373c;
+		line-height: 1.2em;
+		font-size: 33px;
+		font-weight: 400;
+	}
+
+	h3 {
+		margin: 1.25em 0 .6em;
+    	font-size: 1.4em;
+    	line-height: 1.5;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+	.nav-tab {
+		padding-right: 15px;
+		padding-left: 15px;
+		font-size: 17px;
+	}
+
+	.about-text {
+		margin: 1em 0 1em 0;
+		min-height: 60px;
+		color: #555d66;
+	}
+
+	.about-text p {
+		font-size: 16px;
+		line-height: 1.6;
+	}
+	
+	[class$="-col"] {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.three-col {
+		.col {
+			align-self: flex-start;
+    		min-width: 31%;
+			max-width: 31%;
+			
+			@include breakpoint(medium) {
+				min-width: 48% !important;
+				max-width: 48% !important;
+				margin-bottom: 30px;
+			}
+
+			@include breakpoint(small) {
+				min-width: 100% !important;
+				max-width: 100% !important;
+			}
+	
+		}
+	}
+}
+
+.ts-dash-box {
+	position: relative;
+	margin: 16px 0;
+	margin-bottom: 35px;
+	padding: 25px;
+	border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	background: #fff;
+	font-size: 13px;
+	line-height: 2.1em;
+	overflow: hidden;
+
+	&.activate-box {
+		border-color: #008ec2;
+	}
+
+	.button-hero {
+		margin-top: 8px;
+	}
+
+	.content {
+		position: relative;
+	}
+
+	.bg {
+		position: absolute;
+		z-index: 0;
+		right: 220px;
+		top: -15px;
+		font-size: 270px;
+		color: #006799;
+		opacity: 0.05;
+	}
+
+	h3 {
+		margin-top: 0;
+	}
+
+	ol {
+		font-size: 14px;
+	}
+
+	li {
+		margin-bottom: 3px;
+	}
+
+	p {
+		max-width: initial;
+		line-height: 1.6;
+	}
+}
+
+.ts-support-info {
+
+	hr {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.dashicons {
+		vertical-align: middle;
+		margin-bottom: 6px;
+		margin-right: 12px;
+		margin-left: -4px;
+		color: #0084b9;
+		font-size: 24px;
+	}
+
+	.button {
+		margin-top: 10px;
+	}
+
+	.col p {
+		font-size: 14px;
+	}
+}
+
+.ts-dash-plugins h3 {
+	margin-top: 45px;
+}

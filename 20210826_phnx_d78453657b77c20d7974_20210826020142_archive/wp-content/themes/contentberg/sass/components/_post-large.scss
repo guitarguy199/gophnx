@@ -1,0 +1,321 @@
+/**
+ * Large post style
+ */
+ 
+.large-post {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 65px;
+
+	@include breakpoint(x-small) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.sticky {
+		background: #fdfdfd;
+		padding: 40px 30px;
+		box-shadow: 0 2px 6px -2px rgba(#000, 0.12);
+	}
+	
+	.featured img,
+	.gallery-slider {
+		display: block;
+		margin-bottom: 46px;
+		width: 100%;
+		
+		@include breakpoint(x-small) {
+			margin-bottom: 35px;
+		}
+	}
+
+	.gallery-slider {
+		box-shadow: $image-shadow;
+	}
+
+	.featured,
+	.post-thumb {
+		margin-left: -20px;
+		margin-right: -20px;
+
+		@include breakpoint(x-small) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	
+	.post-meta-c {
+		margin-bottom: 28px;
+	}
+
+	.post-meta-b {
+		.post-title-alt {
+			margin: 18px 0;
+		}
+	}
+	
+	.post-meta {
+		margin-bottom: 21px;
+	}
+
+	.post-title-alt {
+		max-width: 88%;
+	
+		@include breakpoint(small) {
+			font-size: 24px;
+		}
+	
+		@include breakpoint(x-small) {
+			font-size: 20px;
+		}
+	}
+	
+	.featured-vid {
+		margin-bottom: 46px;
+
+		iframe {
+			max-width: 100%;
+		}
+	}
+
+	.post-content > p:last-of-type + .read-more {
+		margin-top: -6px;
+	}
+
+	.likes-count .number {
+		float: right;
+		visibility: hidden;
+		width: 0;
+		opacity: 0;
+		margin: 0;
+		margin-top: 1px;
+		white-space: nowrap;
+		transition: 0.25s ease-in-out;
+		transition-property: margin, visibility, opacity;
+	}
+
+	.likes-count:after {
+		display: none;
+	}
+	
+	.likes-count:hover .number {
+		visibility: visible;
+		width: auto;
+		margin-left: 5px;
+		opacity: 1;
+	}
+}
+
+
+/* Large Post footer meta */
+
+.post-footer {
+	margin-top: 50px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+	@include breakpoint(small) {
+		margin-top: 25px;
+	}
+	
+	.col {	
+		border: 1px solid #ebebeb;
+		border-right-color: transparent;
+		text-align: center;
+		line-height: 41px;
+		box-sizing: border-box;
+		flex: 1;
+		
+		@include breakpoint(medium) {
+			float: left;
+			width: 33.33%;
+			flex: 0 0 auto;
+		}
+		
+		@include breakpoint(small) {
+			width: 50%;
+		}
+		
+		@include breakpoint(tiny) {
+			width: 100%;
+			border: 0;
+		}
+		
+		&:only-child {
+			width: 100%;
+			text-align: center;
+		}
+		
+		&:last-child {
+			border-right-color: #ebebeb;
+		}
+	}
+	
+	.author {
+		font-size: 12px;
+		color: #b4b4b4;
+		
+		@include breakpoint(small) {
+			display: none;
+		}
+	}
+	
+	.author a {
+		color: $post-text-color;
+	}
+	
+	.read-more {
+		font-family: $title-font;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 12px;
+		letter-spacing: 0.07em;
+	}
+	
+	.read-more-link {
+		margin-left: 2px;
+		color: #454545;
+	}
+	
+	.read-more-link:hover {
+		opacity: 0.7;
+	}
+}
+
+.post-footer .social-share {
+	display: inline-block;
+	line-height: 43px;
+	height: 43px;
+	font-family: $title-font;
+}
+
+// For sticky posts
+.sticky.large-post {
+	.post-title-alt:after {
+		border-bottom-width: 4px;
+	}
+}
+
+/**
+ * Large Style B
+ */ 
+.large-post-b {
+
+	// Title above needs bottom padding removed as featured has padding too
+	.post-meta-a {
+		.post-title-alt {
+			margin-bottom: 0;
+		}
+	}
+
+	.featured {
+		margin-top: 28px;
+	}
+	
+	.post-footer {
+		margin-top: 44px;
+	
+		.col {
+			border-right: 0;
+			border-left: 0;
+			
+			@include breakpoint(medium) {
+				width: 50%;
+			}
+			
+			@include breakpoint(tiny) {
+				width: 50%;
+			}
+		}
+		
+		.author {
+			font-size: 11px;
+			text-align: left;
+			
+			@include breakpoint(medium) {
+				display: block;
+			}
+		}
+		
+		.author span {
+			margin-right: 2px;
+			font-style: italic;
+		}
+		
+		.author a {
+			color: $main-color;
+			font-family: $title-font;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		
+		
+		.social-icons {
+			text-align: right;
+		}
+		
+		.number {
+			float: none;
+			margin-left: 5px;
+			visibility: visible;
+			width: auto;
+			opacity: 1;			
+		}
+	}
+	
+	.likes-count {
+		@include breakpoint(x-small) {
+			display: none;
+		}
+	}
+	
+	.likes-count:after {
+		display: inline-block;
+	}
+	
+}
+
+/**
+ * Large Style C
+ */
+.large-post-c {
+
+	.featured .wp-post-image {
+		margin-bottom: 0;
+	}
+
+	.meta-title {
+		margin: 0 42px;
+		padding: 25px 40px;
+		padding-bottom: 0;
+		background: #fff;
+		position: relative;
+		margin-top: -48px;
+
+		@include breakpoint(x-small) {
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	.post-meta {
+		margin-bottom: 0;
+	}
+
+	.post-title-alt {
+		font-size: 24px;
+
+		@include breakpoint(x-small) { 
+			font-size: 20px;
+		}
+	}
+}

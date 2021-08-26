@@ -1,0 +1,1065 @@
+/**
+ * Header Top Bar
+ */
+
+.top-bar {
+	min-height: 48px;
+	
+	.actions {
+		float: right;
+	}
+}
+
+.top-bar-content {
+	position: relative;
+	background: #fff;
+	border-bottom: 1px solid #efefef;
+	box-shadow: 0 0 4px 0 #eee;
+	
+	height: 48px;
+	font-family: $title-font;
+	line-height: 48px;
+	
+	box-sizing: border-box;	
+}
+
+/* Social Icons - if used */
+.top-bar .social-icons {
+	float: left;
+	
+	@include breakpoint(medium) {
+		display: none;
+	}
+	
+	li {
+		margin-right: 2px;
+	}
+
+	li:last-child { 
+		margin-right: 0; 
+	}
+
+	.social-icons .icon {
+		display: inline-block;
+		padding: 0 5px;
+		color: #aaa;
+		text-align: center;
+		font-size: 13px;
+	}
+	
+	a {
+		display: inline-block;
+		padding: 0 6px;
+		line-height: inherit;
+	}
+	
+	a:hover {
+		color: $main-color;
+	}
+}
+
+/* Posts Ticker */
+.posts-ticker {
+	float: left;
+	font-size: 13px;
+	letter-spacing: 0em;
+	
+	@include breakpoint(small) {
+		display: none;
+	}
+	
+	.heading {
+		margin-right: 14px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+	
+	ul { 
+		display: inline-block; 
+	}
+
+	li {
+		display: none; 
+		color: #656565;
+	}
+
+	li:first-child { 
+		display: block; 
+	}
+
+	a {
+		display: inline-flex;
+		padding-right: 10px;
+		max-width: 450px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		line-height: 1.3;
+	}
+	
+	em {
+		font-style: normal;
+	}
+}
+
+
+/* Top bar search */
+.search-action {
+	float: left;
+	
+	.search-submit {
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		
+		color: #444;
+		font-size: 13px;
+	}
+	
+	.search-field {
+		padding: 0;
+		margin-left: 8px;
+		border: 0;
+		width: 60px;
+		background: inherit;
+		color: #b4b4b4;
+		text-transform: uppercase;
+		font-family: $title-font;
+		font-size: 13px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		transition: width 0.3s ease-in; 
+		-webkit-font-smoothing: antialiased;
+		
+		&:focus {
+			width: 150px;
+		}
+	}
+}
+
+/* WooCommerce Cart Icon */
+
+.cart-action {
+	position: relative; 
+	float: right;
+	margin-left: 5px;
+	padding-left: 14px;
+	border-left: 1px solid #ebebeb;
+	
+	.cart-link {
+		display: block;
+		padding-right: 10px;
+		font-size: 13px;
+		line-height: inherit;
+	}
+	
+	.fa {
+		display: block;
+		line-height: inherit;
+		transform: translateY(2px);
+	}
+	
+	.cart-link .counter {
+		position: absolute;
+		top: 50%;
+		top: calc(50% - 13px);
+		left: 0;
+		margin-left: 22px;
+		padding-top: 3px;
+		width: 14px;
+		height: 14px;
+		line-height: 1;
+		border-radius: 50%;
+		box-sizing: border-box;
+				
+		background: $main-color;
+		color: #fff;
+		
+		text-align: center;
+		font-size: 12px;
+		font-size: 9px;
+		font-weight: 400;
+	}	
+}
+
+// Dark top bar
+.top-bar.dark {
+
+	.top-bar-content {
+		background: #161616;
+		color: #ebebeb;
+		border-color: #161616;
+		box-shadow: none;
+	}
+	
+	.cart-action {
+		border-color: rgba(#fff, 0.2);
+		
+		a {
+			color: #ebebeb;
+		}
+	}
+	
+	.search-action {
+		.search-field {
+			background: transparent;
+		}
+	}
+			
+	.search-submit {
+		color: #ebebeb;
+	}
+	
+ 	.social-icons a {
+		color: #b4b4b4;
+		
+		&:hover {
+			color: #ebebeb;
+		}
+	}
+	
+	.posts-ticker a {
+		color: #b4b4b4;
+		
+		&:hover {
+			color: #ebebeb;
+		}
+	}
+}
+
+// Top bar variation
+.top-bar-b {
+	.social-icons {
+		float: right;
+	}
+	
+	.actions {
+		margin-left: 18px;
+	}
+}
+
+// Sticky top bar
+.sticky-bar {
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+	z-index: 1000 !important;
+}
+
+.admin-bar .sticky-bar {
+	top: 32px;
+	
+	
+	@include breakpoint(600px) {
+		top: 0;
+	}
+	
+	@include breakpoint(782px) {
+		top: 46px;
+	}
+}
+
+
+/* Main Header */
+
+.main-head {
+	border-bottom: 1px solid #ebebeb;
+	
+	.inner {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.parallax {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		z-index: -1;
+	}
+}
+
+.main-head .title {
+	font-family: $title-font;
+	font-weight: 400;
+	letter-spacing: -0.01em;
+	text-rendering: optimizeLegibility;
+	padding: 70px 0;
+	text-align: center;
+	
+	@include breakpoint(small) {
+		padding: 60px 0;
+		
+		.mobile-logo + .logo-image {
+			display: none;
+		}
+	}
+	
+	.logo-image {
+		display: inline-block;
+		
+		// Bottom margin required because inline-block is needed for a firefox 2x centering bug
+		margin-bottom: -7px;
+	}
+	
+	a { 
+		text-decoration: none;
+		color: #2e2e2e;
+		font-size: 70px;
+		display: inline-block;
+		line-height: 1;
+		vertical-align: middle;
+		
+		// Hide on mobile
+		@include breakpoint(small) {
+			font-size: 55px;
+		}
+	}
+}
+
+.mobile-logo {
+	display: none;
+	
+	// Show on mobile
+	@include breakpoint(small) {
+		display: block;	
+	}
+}
+
+// Header with alternate search style
+.search-alt {
+	.top-bar .search-field {
+		width: 0;
+		opacity: 0;
+		transition: all 0.5s ease;
+		
+		&.active {
+			width: 100px;
+			opacity: 1;
+		}
+	}
+	
+	.top-bar .search-submit {
+		margin-top: -1px;
+		display: block;
+		float: left;
+		line-height: inherit;
+		outline: none;
+		//font-size: 12px;
+	}
+	
+	// Dark topbar
+	.dark {
+		.search-submit {
+			color: #969696;
+		}
+	
+		.social-icons a { 
+			color: #fff;
+		}
+	}
+}
+
+/* Header: With Ad */
+
+.main-head.logo-left {
+
+	.logo-wrap {
+		display: flex;
+		padding: 45px 0;
+		
+		@include breakpoint(small) {
+			padding: 0;
+			padding-top: 45px;
+			padding-bottom: 45px;
+		}
+		
+		// From medium to large, padding-left and right is overwritten by padding above
+		@include breakpoint(large, medium) {
+			padding: 45px 35px;
+			
+			.title {
+				max-width: calc(100% - 810px);
+			} 
+		}
+	}
+	
+	.title {
+		// Prevent overrides from logo padding settings in customizer
+		padding: 0 !important;
+		align-self: center;
+
+		a {
+			font-size: 40px;
+		}
+		
+		.logo-image {
+			margin-bottom: 0;	
+		}
+
+		.text-logo {
+			font-size: 45px;
+			font-weight: 700;
+		}
+	}
+	
+	.a-right {
+		margin-left: auto;
+		width: 728px;
+		
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		
+		@include breakpoint(medium) {
+			margin-top: 50px;
+			text-align: center;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+
+/* Header: Navigation Below */
+
+.main-head.nav-below {
+	border: 0;
+	
+	@include breakpoint(medium) {
+		border-bottom: 1px solid #ebebeb;
+	}
+	
+	.title {
+		padding: 65px 0;
+	}
+	
+	.top-bar {
+		min-height: 44px;
+		
+		.social-icons {
+			max-height: 44px;
+		}
+	}
+	
+	.top-bar-content {
+		height: 44px;
+		line-height: 44px;
+	}
+}
+
+/**
+ * Header adjustments with other elements
+ */
+
+// Remove separator
+.has-slider {
+	.main-head:not(.compact):not(.simple) {
+		border-bottom: 0;
+	}
+}
+
+.main-wrap .simple-boxed.no-separator {
+	border-bottom: 0;
+	box-shadow: none;
+}
+
+// Simple boxed that's borderless need less margin on main
+.main-head.simple-boxed.no-separator + .main {
+	margin-top: 30px;
+
+	@include breakpoint(small) {
+		margin-top: 5px;
+	}
+}
+
+.has-slider-bold,
+.has-slider-large,
+.layout-creative {
+	.main-head.compact,
+	.main-head.simple {
+		border-bottom: 0;
+		box-shadow: none;
+	}
+}
+
+// Navigation below header slider adjustments
+// Shared with header style 7 too
+//
+// Also for normal headers that have a background
+.head-nav-below:not(.no-separator),
+.main-head.has-bg {
+	
+	+ .carousel-slider,
+	+ .fashion-slider {
+		margin-top: 55px;
+	}
+	
+	+ .main-slider {
+		margin-top: 2px;
+	}
+	
+	+ .grid-slider,
+	+ .grid-b-slider {
+		margin-top: 38px;
+	}
+}
+
+.head-nav-below.no-separator {
+	@include breakpoint(false, small) {
+		+ .carousel-slider,
+		+ .fashion-slider,
+		+ .grid-slider,
+		+ .grid-b-slider  {
+			margin-top: 20px;
+		}
+	}
+}
+
+// Top margins aren't needed on mobile as nav goes away
+.main-head:not(.top-below):not(.simple):not(.has-bg) {
+	@include breakpoint(medium) {
+		+ .common-slider {
+			margin-top: 0;
+		}
+	}
+}
+
+/* Header: Navigation Below - B */
+.nav-below-b {
+	
+	.social-icons {
+		@include breakpoint(medium) {
+			display: block;
+		}
+	}
+	
+	.navigation {
+		position: relative;
+		z-index: 999;
+		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.05);
+	}
+}
+
+// Don't overlay shadow on slider
+.has-slider .nav-below-b .navigation {
+	position: static;
+}
+
+
+/* Header: Full Top Bar */
+
+.main-head.full-top {
+	position: relative;
+	
+	.navigation {
+		float: none;
+	}
+	
+	.social-icons {
+		position: absolute;
+		left: 30px;
+		z-index: 2; // Fix nav overlaying this
+	}
+	
+	.actions {
+		position: absolute;
+		right: 30px;
+		top: 0;
+		z-index: 2;
+	}
+	
+	// From medium to large (iPad)
+	@include breakpoint(large, medium) {
+		.menu > li > a {
+			padding: 0 12px;
+			font-size: 11px;
+		}
+		
+		.social-icons {
+			left: 10px;
+		}
+		
+		.actions {
+			right: 10px;
+		}
+	}
+}
+
+/* Header 6: Default with social */
+
+.main-head.alt {
+	
+	.top-bar-content > .wrap {
+		display: flex;
+	}
+	
+	.social-icons {
+		order: 2;
+		max-height: 48px;
+		// Neat trick to push it to right
+		margin-left: auto;
+		
+		@include breakpoint(medium) {
+			display: block;
+			
+			// Display max 7
+			li:nth-child(n+8) {
+				display: none;
+			}
+		}
+		
+		li {
+			font-size: 12px;
+		}
+		
+		 a:hover {
+			opacity: 0.7;
+		}
+	}
+	
+	.actions {
+		order: 3;
+		margin-left: 18px;
+	}
+}
+
+/* Header 7: Topbar Below Logo */
+.main-head.top-below {
+	.top-bar {
+		min-height: 51px;
+	}
+	
+	.top-bar-content {
+		height: 51px;
+		line-height: 51px;
+	}
+
+	.social-icons a {
+		font-size: 13px;
+	}
+}
+
+/* Header 8: Compact */
+.main-head.compact {
+
+	.top-bar {
+		min-height: 40px;
+	}
+	
+	.top-bar-content {
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.posts-ticker {
+		letter-spacing: 0.075em;
+		
+		.heading {
+			display: inline-block;
+			margin-right: 16px;
+			padding: 0 6px;
+			background: $main-color;
+			color: #fff;
+			font-size: 11px;
+			font-weight: 500;
+			line-height: 19px;
+			
+			//-webkit-font-smoothing: antialiased;
+		}
+		
+		a {
+			color: #ccc;
+			text-transform: none;
+			letter-spacing: 0;
+		}
+	}
+	
+	.social-icons {
+		@include breakpoint(medium) {
+			display: block;
+		}
+	
+		li {
+			margin-right: 0;
+			font-size: 12px;
+			float: left;
+		}
+		
+		a {
+			color: #fff;
+		}
+	}
+	
+	.inner {
+		line-height: 90px;
+		overflow: visible;   // not initial because of IE11
+		background: #fff;
+	}
+	
+	.inner > .wrap {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	.title {
+		padding: 0;
+		min-width: 210px;
+		padding-right: 50px;
+		box-sizing: border-box;
+		
+		@include breakpoint(medium) {
+			margin: 0 auto;
+			padding: 25px 0;
+			line-height: 1;
+		}
+		
+		a {
+			font-size: 48px;
+			line-height: inherit;
+		}
+		
+		.logo-image {
+			display: block;
+			margin-bottom: 0;
+			max-height: 90px;
+			transition: all 0.25s ease-in-out;
+			
+			@include breakpoint(large, medium) {
+				max-width: 225px;
+			}
+		}
+	}
+	
+	.navigation-wrap {
+		flex-grow: 1;
+	}
+	
+	// Arrow color change for menu - tho, only for non-hover state 
+	.menu > li:not(:hover) a:after {
+		color: #111;
+	}
+	
+	.actions {
+		display: none;
+		
+		@include breakpoint(medium) {
+			display: block;
+		}
+	}
+	
+	// .inner.sticky-bar
+	.inner.sticky-bar {
+		line-height: 55px;
+		border-bottom: 1px solid #efefef;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+		
+		animation: 0.55s fade-in-up-lg ease-out;
+		animation-fill-mode: both;
+		
+		.logo-image {
+			max-height: 55px;
+		}
+	}
+}
+
+/* Header 9: Simple */
+.main-head.simple {
+	box-shadow: 0 2px 9px -1px rgba(#000, 0.04);
+	border-bottom-color: #efefef;
+	
+	.inner {
+		line-height: 96px;
+		min-height: 96px;
+		overflow: initial;
+		background: #fff;
+	}
+	
+	.left-contain {
+		position: absolute;
+		display: flex;
+		position: absolute;
+		left: 38px;
+		height: 100%;
+		z-index: 2; // Fix nav overlaying this
+		
+		
+		@include breakpoint(small) {
+			left: 15px;
+		}
+	}
+		
+	.navigation {
+		float: none;
+		text-align: center;
+	
+		// From 1200px+ make mega menu fixed with - relative to .wrap	
+		@include breakpoint(null, x-large) {
+			position: relative;
+		}
+	}
+	
+	.actions {
+		position: absolute;
+		display: flex;
+		right: 38px;
+		top: 0;
+		z-index: 2;
+		
+		@include breakpoint(small) {
+			right: 15px;
+		}
+		
+		a {
+			transition-property: opacity, color;
+		}
+	}
+	
+	.cart-action {
+		border-left: 0;
+		
+		.fa {
+			transform: none;
+			font-size: 16px;
+		}
+		
+		.counter {
+			margin-top: -5px;
+			padding-top: 0;
+			width: 17px;
+			height: 17px;
+			line-height: 17px;
+			font-size: 10px;
+			font-weight: 600;
+		}
+	}
+	
+	.social-icons {
+		display: flex;
+		margin-right: 22px;
+		
+		a:not(:hover) {
+			color: #525252;
+		}
+
+		.fa {
+			font-size: 16px;
+			
+			@include breakpoint(large, medium) {
+				font-size: 13px;
+			}
+			
+			@include breakpoint(x-small) {
+				font-size: 13px; 
+			}
+		}
+		
+		@include breakpoint(tiny) {
+			display: none;
+		}
+		
+		@include breakpoint(x-small) {
+			li:nth-child(n+3) {
+				display: none;
+			}
+			
+			li:nth-child(2) {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	.search-link {
+		margin-top: -2px;
+		font-size: 15px;
+		color: #555;
+		
+		&:before {
+			display: inline-block;
+			content: "";
+			padding-right: 22px;
+			height: 16px;
+			border-left: 1px solid #ddd;
+			vertical-align: middle;
+		}
+		
+		&:first-child:before {
+			display: none;
+		}
+
+		.fa {
+			font-size: 17px;
+			margin-top: -2px;
+		}
+	}
+	
+	// From medium to large (iPad)
+	@include breakpoint(large, medium) {
+		.menu > li > a {
+			padding: 0 10px;
+			font-size: 14px;
+		}
+	}
+	
+	.mobile-nav {
+		display: none;
+		margin-left: 4px;
+		margin-right: 21px;
+		font-size: 18px;
+	
+		@include breakpoint(medium) {
+			display: block;
+		}
+	}
+
+	.title {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		box-sizing: border-box;
+		
+		@include breakpoint(medium) {
+			margin: 0 auto;
+			max-width: 40vw;
+			min-width: initial;
+		}
+		
+		a {
+			font-size: 30px;
+			display: block;
+			font-weight: bold;
+			letter-spacing: 0;
+		}
+		
+		.logo-image {
+			display: block;
+			margin-bottom: 0;
+			max-height: 90px;
+			transition: all 0.25s ease-in-out;
+			
+			@include breakpoint(large, medium) {
+				max-width: 225px;
+			}
+		}
+	}
+	
+	// .inner.sticky-bar
+	.inner.sticky-bar {
+		line-height: 55px;
+		min-height: 55px;
+		border-bottom: 1px solid #efefef;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+		
+		animation: 0.55s fade-in-up-lg ease-out;
+		animation-fill-mode: both;
+		
+		.logo-image {
+			max-height: 45px;
+		}
+	}
+}
+
+/* Header 10: Simple Boxed (extension of simple) */
+.main-head.simple-boxed {
+	border-top: 3px solid #111;
+
+	.inner {
+		line-height: 106px;
+		min-height: 106px;
+	}
+
+	.wrap-head {
+		position: relative;
+		display: flex;
+		flex-shrink: 0;	
+		min-height: inherit;
+
+		@include breakpoint(large) {
+			max-width: 100%;
+		}
+	}
+
+	.navigation-wrap {
+		flex-shrink: 0;
+	}
+
+	.left-contain {
+		position: static;
+		display: flex;
+		flex-shrink: 0;
+		height: auto;
+		margin-right: 30px;
+	}
+
+	.title a {
+		text-align: left;
+	}
+
+	.actions {
+		display: flex;
+		position: relative;
+		right: auto;
+		top: auto;
+		margin-left: auto;
+		padding-left: 20px;
+		align-items: center;
+	}
+
+	.search-link {
+		display: flex;
+	}
+
+	@include breakpoint(null, x-large) {
+		.navigation {
+			position: static;
+		}
+	}
+
+	.inner:not(.sticky-bar) {
+
+		.navigation {
+			margin-top: 18px;
+			margin-bottom: 18px;
+			line-height: (106 - 18 * 2) * 1px;
+		}
+
+		.menu > li > .sub-menu {
+			margin-top: -20px;
+		}
+	}
+
+	.navigation .menu {
+		justify-content: left;
+		text-align: left;
+		flex-wrap: nowrap;
+
+		> li {
+			display: flex;
+			flex: 0 0 auto;
+			align-items: center;
+		}
+	}
+}
+
+/* Ad Below Header */
+.the-wrap.head {
+	padding: 14px 0;
+	margin-bottom: 20px;
+	background: #f6f6f6;
+	border-bottom: 1px solid #efefef;
+	
+	> div,
+	> iframe,
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	} 
+}

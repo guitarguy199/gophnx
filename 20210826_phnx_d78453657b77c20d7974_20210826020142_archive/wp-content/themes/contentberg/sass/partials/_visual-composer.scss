@@ -1,0 +1,34 @@
+/**
+ * Visual Composer changes
+ */
+
+.page-content .block.last-block,
+.page-content .blocks .last-block,
+.home-widgets .blocks .last-block {
+	margin-bottom: 0;
+}
+
+.home-widgets > .widget:not(.ts-block-widget) {
+	margin-bottom: 60px;
+}
+
+.home-widgets > :last-child .sidebar {
+	margin-bottom: -55px;
+}
+
+.vc_column_container > .vc_column-inner {
+	padding: 0 !important;
+}
+
+// To prevent a flash of sidebar width change while JS loads
+.wpb_wrapper > .sidebar {
+	padding-left: 30px;
+}
+
+.vc_btn-content {
+	box-sizing: border-box;
+}
+
+.the-post > .blocks:last-child > .wpb_column .block:last-child {
+    margin-bottom: 0;
+}

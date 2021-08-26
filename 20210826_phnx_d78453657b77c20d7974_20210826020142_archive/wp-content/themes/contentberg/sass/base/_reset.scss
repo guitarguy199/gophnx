@@ -1,0 +1,102 @@
+/**
+ * 1. =Resets & Core Elements
+ * ----------------------------------------------------------------------------
+ */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video, 
+button, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, 
+q {
+	quotes: none;
+}
+
+blockquote:before, 
+blockquote:after, 
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Be compatible with "input" defaults */
+button, 
+input[type="submit"] { 
+	box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	cursor: pointer; 
+} 
+
+button::-moz-focus-inner, 
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/* Normalize webkit search */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+/* Fix IE scrollbar */
+textarea { 
+	overflow: auto; 
+}
+
+a img { 
+	border: 0;
+}
+
+/* Responsive images */
+img { 
+	max-width: 100%;
+	height: auto;
+}
+
+/* Reset placeholder color */
+
+::-webkit-input-placeholder { 
+	color: inherit; 
+}
+
+::-moz-placeholder {
+	color: inherit;
+	opacity: 1;
+}
+
+:-ms-input-placeholder { 
+	color: inherit; 
+} 

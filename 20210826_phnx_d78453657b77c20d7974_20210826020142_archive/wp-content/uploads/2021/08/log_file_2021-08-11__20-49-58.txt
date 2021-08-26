@@ -1,0 +1,109 @@
+
+---Downloaded files---
+The import files for: Chic Lite Demo were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://tangentsyste.ms
+Data file = /home4/tangeste/public_html/wp-content/uploads/rara-demo-pack/chic-lite-demo-content/content/chiclite.xml
+Widget file = /home4/tangeste/public_html/wp-content/uploads/rara-demo-pack/chic-lite-demo-content/content/chiclite.wie
+Customizer file = /home4/tangeste/public_html/wp-content/uploads/rara-demo-pack/chic-lite-demo-content/content/chiclite.dat
+
+------
+Completed AJAX call number: 1
+[WARNING] Failed to import rara_portfolio_categories Design
+[WARNING] Failed to import rara_portfolio_categories Fashion
+[WARNING] Failed to import rara_portfolio_categories Style
+[WARNING] Failed to import rara_portfolio_categories Trend
+
+
+------
+Completed AJAX call number: 2
+[WARNING] Failed to import rara_portfolio_categories Design
+[WARNING] Failed to import rara_portfolio_categories Fashion
+[WARNING] Failed to import rara_portfolio_categories Style
+[WARNING] Failed to import rara_portfolio_categories Trend
+
+
+------
+Completed AJAX call number: 3
+[WARNING] Failed to import rara_portfolio_categories Design
+[WARNING] Failed to import rara_portfolio_categories Fashion
+[WARNING] Failed to import rara_portfolio_categories Style
+[WARNING] Failed to import rara_portfolio_categories Trend
+
+
+------
+Completed AJAX call number: 4
+[WARNING] Failed to import rara_portfolio_categories Design
+[WARNING] Failed to import rara_portfolio_categories Fashion
+[WARNING] Failed to import rara_portfolio_categories Style
+[WARNING] Failed to import rara_portfolio_categories Trend
+
+
+---Importing content---
+[WARNING] Failed to import rara_portfolio_categories Design
+[WARNING] Failed to import rara_portfolio_categories Fashion
+[WARNING] Failed to import rara_portfolio_categories Style
+[WARNING] Failed to import rara_portfolio_categories Trend
+[WARNING] Failed to import "Textile designers": Invalid post type rara-portfolio
+[WARNING] Failed to import "Personal Stylist": Invalid post type rara-portfolio
+[WARNING] Failed to import "Retail Buyer": Invalid post type rara-portfolio
+[WARNING] Failed to import "Our Newsletter": Invalid post type subscribe-form
+[WARNING] Failed to import "": Invalid post type subscribe-form
+[WARNING] Failed to import "Stay Informed!": Invalid post type subscribe-form
+[WARNING] Failed to import "Contact": Invalid post type wpcf7_contact_form
+[WARNING] Failed to import "Fashion Illustrator": Invalid post type rara-portfolio
+[WARNING] Failed to import "Fashion magazines": Invalid post type rara-portfolio
+[WARNING] Failed to import "Business Knowledge": Invalid post type rara-portfolio
+[WARNING] Failed to import "Fashion Designer": Invalid post type rara-portfolio
+[WARNING] Failed to import "Popular style": Invalid post type rara-portfolio
+[WARNING] Failed to import "Art Director": Invalid post type rara-portfolio
+[WARNING] Failed to import "": Invalid post type subscribe-form
+[WARNING] Failed to import "Never Miss Out On The Latest Fashion Trend Again!": Invalid post type subscribe-form
+[WARNING] Could not find the post parent for "photo-of-woman-sitting-near-magazines-3062608(1) (2)" (post #160)
+[WARNING] Could not find the post parent for "woman-sitting-on-stool-3283884(1) (3)" (post #497)
+[WARNING] Could not find the post parent for "naku-mayo-0h0cPHK4Mf0-unsplash(12)(1)" (post #162)
+[WARNING] Could not find the post parent for "bath-bathtub-beautiful-2701793 (1) (1)" (post #498)
+[WARNING] Could not find the post parent for "alex-iby-aGEHFoBujY0-unsplash (2)" (post #167)
+[WARNING] Could not find the post parent for "two-women-in-white-hijab-veils-1078741 (2)" (post #168)
+[WARNING] Could not find the post parent for "s-o-c-i-a-l-c-u-t-aXJdmnxauwY-unsplash (1)" (post #171)
+
+Max execution time after content import = 300
+
+---Importing widgets---
+Sidebar : 
+
+raratheme_author_bio - About Me - Site does not support widget
+blossomthemes_email_newsletter_widget - EMAIL NEWSLETTER - Site does not support widget
+raratheme_custom_categories - CATEGORIES - Site does not support widget
+raratheme_popular_post - Popular Posts - Site does not support widget
+raratheme_recent_post - Recent Posts - Site does not support widget
+btif_instagram_widget - Instagram - Site does not support widget
+
+Featured Area Section : 
+
+raratheme_image_text_widget - No Title - Site does not support widget
+
+Footer One : 
+
+rtc_contact_social_links - CONTACT INFORMATION - Site does not support widget
+
+Footer Two : 
+
+raratheme_popular_post - Popular Posts - Site does not support widget
+
+Footer Three : 
+
+raratheme_recent_post - Recent Posts - Site does not support widget
+
+Footer Four : 
+
+blossomthemes_email_newsletter_widget - EMAIL NEWSLETTER - Site does not support widget
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---rrdi/after_import---
+

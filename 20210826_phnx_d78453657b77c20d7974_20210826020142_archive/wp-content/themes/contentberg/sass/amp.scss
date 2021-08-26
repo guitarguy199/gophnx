@@ -1,0 +1,111 @@
+/**
+ * AMP Specific changes
+ */
+$is-amp: true;
+
+// Base
+@import 'style';
+
+
+// .amp for specificity, otherwise not necessary here
+.amp {
+
+	// Commment form
+	amp-state + .inline-field {
+		margin-left: 0;
+	}
+}
+
+.search-modal {
+	&-wrap {
+		background: rgba(#fff, .98);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+	}
+
+	// Specificity 
+	.search-modal-wrap {
+		display: flex;
+	}
+
+	&-box {
+		@include breakpoint(small) {
+			box-sizing: border-box;
+		}
+	}
+}
+
+.chevron {
+	outline: 0;
+}
+
+// Header logo sizing issues, fix for when a mobile logo isn't uploaded
+.main-head.simple {
+	.logo-image {
+		img {
+			object-fit: contain;
+			object-position: 0 50%;
+		}
+	}
+}
+
+
+@include breakpoint(x-small) {
+
+	// Images are within a container, so max-width should be 100% rather than initial
+	figure.alignleft amp-img,
+	figure.alignright amp-img,
+	a amp-img.alignleft,
+	a amp-img.alignright {
+		max-width: 100%;
+	}
+}
+
+.single-creative  {
+	.featured .wp-post-image > * {
+		object-fit: cover;
+	}
+}
+
+.post-share-float {
+	.service {
+		// Sabberworm has problem parsing the complicated CSS var
+		box-shadow: -1px -1px 2px 0px rgba(0,0,0,.05), 1px 3px 5px -1px rgba(#000, 0.18);
+	}
+
+	// Not available on larger
+	@include breakpoint(false, small) {
+		position: static;
+		float: left;
+
+		&.is-hidden {
+			opacity: 1;
+		}
+	}
+}
+
+// Just in case someone uses a smaller image
+.wp-block-image.alignfull amp-img {
+	margin: 0 auto;
+}
+
+.post-content amp-img[width][height] {
+	margin-left: auto;
+	margin-right: auto;
+
+	// In case sizes are wrong
+	object-fit: cover;
+
+	// Never exceed the container
+	max-width: 100%;
+}
+
+@include breakpoint(small) {
+	amp-img.wp-post-img,
+	.related-posts .image-link amp-img {
+		max-width: 100%;
+	}
+}

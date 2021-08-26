@@ -1,0 +1,147 @@
+/**
+ * Widget: Slider
+ */
+.widget-slider {
+
+	.item {
+		position: relative;
+		opacity: 0;
+		transition: opacity 0.2s ease-in;
+	}
+
+	// Undo hover effects
+	.post-title a:hover {
+		text-shadow: none;
+		box-shadow: none;
+	}
+	
+	// Prevent a flash in Chrome on first slide.
+	// DO NOT add both slick-track and slick-list - causes blurriness in Safari
+	.slick-track {
+		-webkit-perspective: 2000;
+	}
+	
+	.slides {
+		max-height: 400px;
+	}
+
+	.slick-initialized {
+		
+		&.slides {
+			max-height: none;
+		}
+		
+		.item {
+			opacity: 1;
+		}
+	}
+	
+	.wp-post-image {
+		display: block;
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		
+		// For polyfill
+		font-family: 'object-fit: cover;';
+	}
+	
+	.content {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		padding: 20px;
+		box-sizing: border-box;
+		
+		background: rgba(#000, 0.5);
+		text-align: center;
+		transform: translate3d(0, 0, 0);
+	}
+	
+	.post-meta {
+		margin: 0;
+	}
+	
+	.post-cat {
+		display: block;
+		margin-bottom: 18px;
+		
+		> a {
+			color: #fafafa !important;
+		}
+	}
+	
+	.post-cat > span {
+		display: none;
+	} 
+	
+	.post-title {
+		margin-bottom: 18px;
+		font-size: 20px;
+		line-height: 1.25;
+		
+		a {
+			color: #fff;
+			
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+	
+	.post-date {
+		color: #fafafa;
+		font-weight: 400;
+	}
+	
+	.slick-arrow {
+		display: none;
+		position: absolute;
+		z-index: 100;
+		top: 50%;
+		left: 10px;
+		margin-top: -19px;
+		height: 34px;
+		width: 34px;
+		border-radius: 50%;
+		
+		background: rgba(#fff, 0.5);
+		color: #000;
+		font-size: 19px;
+		line-height: 34px;
+		text-align: center;
+		box-sizing: border-box;
+		
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s ease-in;
+		
+		i {
+			line-height: inherit;
+		}
+		
+		&:hover {
+			background: #fff;
+			color: #161616;
+		}
+		
+		@include breakpoint(small) {
+			display: none !important;
+		}
+	}
+	
+	.next-arrow {
+		left: auto;
+		right: 10px;
+		padding-left: 2px;
+	}
+	
+	.prev-arrow {
+		padding-right: 2px;
+	}
+	
+	.slides:hover .slick-arrow {
+		opacity: 1;
+		visibility: visible;
+	}
+}

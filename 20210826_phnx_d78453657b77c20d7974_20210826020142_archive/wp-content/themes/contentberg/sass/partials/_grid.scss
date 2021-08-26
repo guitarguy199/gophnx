@@ -1,0 +1,60 @@
+//
+// Global Grid
+// Also see _global.scss to get an idea of global wrappers affecting the grid
+//
+ 
+.ts-row {
+	min-height: 1px;
+	
+	margin-right: -15px;
+    margin-left: -15px;
+
+	box-sizing: border-box;
+}
+
+.column, .ts-row [class*="col-"] {
+	padding-left: 15px;
+	padding-right: 15px;
+  
+	float: left;
+	min-height: 1px;
+  
+	box-sizing: border-box;
+}
+
+.col-12, .column { width: 100%; }
+.col-11 { width: 91.66666666666667%; }
+.col-10 { width: 83.33333333333334%; }
+.col-9, .column.three-fourth { width: 75%; }
+.col-8, .column.two-third { width: 66.66666666666667%; }
+.col-7 { width: 58.333333333333336%; }
+
+.col-6, .column.half { width: 50%; }
+
+.col-5 { width: 41.66666666666667%; }
+.col-4, .column.one-third { width: 33.333333333333336%; }
+.col-3, .column.one-fourth { width: 25%; }
+.col-2 { width: 16.666666666666668%; }
+.col-1 { width: 8.333333333333334%; }
+
+.column.one-fifth { width: 20%; }
+.column.two-fifth { width: 40%; }
+.column.three-fifth { width: 60%; }
+.column.four-fifth { width: 80%; }
+
+.column.right { text-align: right; }
+.column.left { text-align: left; }
+.column.center { text-align: center; }
+
+
+// Adjust on and below medium screens
+@include breakpoint(medium) {
+	
+	/* All columns full-width */
+	.ts-row .column, 
+	.column, 
+	.ts-row [class*="col-"] {
+		float: none;
+		width: 100%;
+	}
+} 

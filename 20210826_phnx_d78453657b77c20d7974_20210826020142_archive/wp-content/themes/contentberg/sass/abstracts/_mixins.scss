@@ -1,0 +1,51 @@
+//
+// Global generic mixins
+//
+@mixin text {
+	font-family: $text-font;
+	line-height: 1.6875;
+	color: $post-text-color;
+	
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	
+	@include breakpoint(x-small) {
+		font-size: 14px;
+	}
+}
+
+@mixin button {
+	-webkit-appearance: none;
+	background: #000;
+	color: #fff;
+	padding: 16px 20px;
+	border: 0;
+	
+	font-family: $title-font;;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1;
+	height: auto;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+@mixin button-hover {
+	transition: all .25s ease-in-out;
+	
+	&:hover {
+		box-shadow: 0 5px 10px rgba(#000, 0.1), 0 3px 6px rgba(#000, 0.07);
+		transform: translateY(-1px);
+	}
+}
+
+// Image hover effects
+@mixin wp-post-image {
+	will-change: opacity;
+	// Prefer cubic-bezier(0.45, 0.68, 0.54, 0.99)
+	transition: opacity 0.3s ease-in;
+	
+	&:hover {
+		opacity: 0.84;
+	}
+}

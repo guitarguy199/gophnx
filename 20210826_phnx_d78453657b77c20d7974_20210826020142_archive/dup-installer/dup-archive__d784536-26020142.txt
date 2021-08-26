@@ -1,0 +1,1462 @@
+{
+    "created": "2021-08-26 02:01:42",
+    "version_dup": "4.0.4",
+    "version_wp": "5.8",
+    "version_db": "5.6.41",
+    "version_php": "7.4.22",
+    "version_os": "Linux",
+    "dbInfo": {
+        "buildMode": "PHPCHUNKING",
+        "charSetList": [
+            "utf8mb4",
+            "utf8"
+        ],
+        "collationList": [
+            "utf8_general_ci",
+            "utf8mb4_unicode_520_ci"
+        ],
+        "isTablesUpperCase": 0,
+        "isNameUpperCase": 0,
+        "name": "tangeste_wp634",
+        "tablesBaseCount": 54,
+        "tablesFinalCount": 54,
+        "muFilteredTableCount": 0,
+        "tablesRowCount": 3427,
+        "tablesSizeOnDisk": 9240576,
+        "tablesList": {
+            "wp5a_actionscheduler_actions": {
+                "inaccurateRows": 49,
+                "insertedRows": 49,
+                "size": 147456
+            },
+            "wp5a_actionscheduler_claims": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_actionscheduler_groups": {
+                "inaccurateRows": 2,
+                "insertedRows": 3,
+                "size": 32768
+            },
+            "wp5a_actionscheduler_logs": {
+                "inaccurateRows": 114,
+                "insertedRows": 135,
+                "size": 49152
+            },
+            "wp5a_commentmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_comments": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 98304
+            },
+            "wp5a_duplicator_pro_entities": {
+                "inaccurateRows": 5,
+                "insertedRows": 5,
+                "size": 32768
+            },
+            "wp5a_duplicator_pro_packages": {
+                "inaccurateRows": 0,
+                "insertedRows": 1,
+                "size": 32768
+            },
+            "wp5a_evf_entries": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_evf_entrymeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_evf_sessions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_gf_draft_submissions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_gf_entry": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_gf_entry_meta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 65536
+            },
+            "wp5a_gf_entry_notes": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_gf_form": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp5a_gf_form_meta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp5a_gf_form_revisions": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_gf_form_view": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_links": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_options": {
+                "inaccurateRows": 560,
+                "insertedRows": 575,
+                "size": 3244032
+            },
+            "wp5a_pmpro_discount_codes": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 65536
+            },
+            "wp5a_pmpro_discount_codes_levels": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_pmpro_discount_codes_uses": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_pmpro_membership_levelmeta": {
+                "inaccurateRows": 9,
+                "insertedRows": 9,
+                "size": 49152
+            },
+            "wp5a_pmpro_membership_levels": {
+                "inaccurateRows": 9,
+                "insertedRows": 9,
+                "size": 65536
+            },
+            "wp5a_pmpro_membership_ordermeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_pmpro_membership_orders": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 229376
+            },
+            "wp5a_pmpro_memberships_categories": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_pmpro_memberships_pages": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_pmpro_memberships_users": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 114688
+            },
+            "wp5a_postmeta": {
+                "inaccurateRows": 1410,
+                "insertedRows": 1771,
+                "size": 1769472
+            },
+            "wp5a_posts": {
+                "inaccurateRows": 399,
+                "insertedRows": 437,
+                "size": 1589248
+            },
+            "wp5a_tcm_email_hash": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp5a_tcm_logs": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 32768
+            },
+            "wp5a_td_fields": {
+                "inaccurateRows": 16,
+                "insertedRows": 16,
+                "size": 16384
+            },
+            "wp5a_td_groups": {
+                "inaccurateRows": 3,
+                "insertedRows": 3,
+                "size": 16384
+            },
+            "wp5a_term_relationships": {
+                "inaccurateRows": 124,
+                "insertedRows": 134,
+                "size": 32768
+            },
+            "wp5a_term_taxonomy": {
+                "inaccurateRows": 17,
+                "insertedRows": 17,
+                "size": 49152
+            },
+            "wp5a_termmeta": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 49152
+            },
+            "wp5a_terms": {
+                "inaccurateRows": 16,
+                "insertedRows": 17,
+                "size": 49152
+            },
+            "wp5a_tml_security_failed_attempts": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp5a_tml_security_lockouts": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp5a_um_metadata": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 65536
+            },
+            "wp5a_usermeta": {
+                "inaccurateRows": 29,
+                "insertedRows": 40,
+                "size": 49152
+            },
+            "wp5a_users": {
+                "inaccurateRows": 0,
+                "insertedRows": 1,
+                "size": 65536
+            },
+            "wp5a_wpforms_tasks_meta": {
+                "inaccurateRows": 8,
+                "insertedRows": 15,
+                "size": 16384
+            },
+            "wp5a_wpmailsmtp_debug_events": {
+                "inaccurateRows": 0,
+                "insertedRows": 0,
+                "size": 16384
+            },
+            "wp5a_wpmailsmtp_tasks_meta": {
+                "inaccurateRows": 2,
+                "insertedRows": 7,
+                "size": 16384
+            },
+            "wp5a_yoast_indexable": {
+                "inaccurateRows": 185,
+                "insertedRows": 190,
+                "size": 196608
+            },
+            "wp5a_yoast_indexable_hierarchy": {
+                "inaccurateRows": 188,
+                "insertedRows": 189,
+                "size": 65536
+            },
+            "wp5a_yoast_migrations": {
+                "inaccurateRows": 21,
+                "insertedRows": 21,
+                "size": 32768
+            },
+            "wp5a_yoast_primary_term": {
+                "inaccurateRows": 9,
+                "insertedRows": 9,
+                "size": 49152
+            },
+            "wp5a_yoast_seo_links": {
+                "inaccurateRows": 252,
+                "insertedRows": 252,
+                "size": 98304
+            }
+        },
+        "varLowerCaseTables": "0",
+        "dbEngine": "Percona",
+        "version": "5.6.41",
+        "versionComment": "Percona Server (GPL), Release 84.1, Revision b308619",
+        "viewCount": 0,
+        "procCount": 0,
+        "funcCount": 0,
+        "triggerList": []
+    },
+    "opts_delete": "[\"duplicator_pro_ui_view_state\",\"duplicator_pro_package_active\",\"duplicator_pro_settings\"]",
+    "blogname": "PHNX",
+    "wproot": "\/home4\/tangeste\/public_html",
+    "wplogin_url": "https:\/\/tangentsyste.ms\/login\/",
+    "relative_content_dir": "wp-content",
+    "relative_plugins_dir": "wp-content\/plugins",
+    "relative_theme_dirs": [
+        "wp-content\/themes"
+    ],
+    "exportOnlyDB": 0,
+    "secure_on": false,
+    "secure_pass": "",
+    "skipscan": 0,
+    "dbhost": null,
+    "dbname": null,
+    "dbuser": null,
+    "dbpass": null,
+    "cache_wp": null,
+    "cache_path": null,
+    "cpnl_dbname": null,
+    "cpnl_host": null,
+    "cpnl_user": null,
+    "cpnl_pass": null,
+    "cpnl_enable": null,
+    "cpnl_connect": null,
+    "cpnl_dbaction": null,
+    "cpnl_dbhost": null,
+    "cpnl_dbuser": null,
+    "wp_tableprefix": "wp5a_",
+    "mu_mode": 0,
+    "mu_generation": 0,
+    "subsites": [],
+    "main_site_id": 1,
+    "mu_is_filtered": false,
+    "license_limit": 15,
+    "brand": {
+        "logo": "<i class=\"fa fa-bolt fa-sm\"><\/i> Duplicator Pro",
+        "enabled": false,
+        "style": []
+    },
+    "wp_content_dir_base_name": "",
+    "packInfo": {
+        "packageId": 1,
+        "packageName": "20210826_phnx",
+        "packageHash": "d784536-26020142",
+        "secondaryHash": "fd9ca2d-26020142"
+    },
+    "fileInfo": {
+        "dirCount": 3267,
+        "fileCount": 19382,
+        "size": 214376439
+    },
+    "wpInfo": {
+        "version": "5.8",
+        "is_multisite": false,
+        "network_id": 1,
+        "targetRoot": "\/home4\/tangeste\/public_html",
+        "targetPaths": [
+            "\/home4\/tangeste\/public_html"
+        ],
+        "adminUsers": [
+            {
+                "id": "1",
+                "user_login": "admin"
+            }
+        ],
+        "configs": {
+            "defines": {
+                "ABSPATH": {
+                    "value": "\/home4\/tangeste\/public_html\/",
+                    "inWpConfig": true
+                },
+                "DB_CHARSET": {
+                    "value": "utf8",
+                    "inWpConfig": true
+                },
+                "DB_COLLATE": {
+                    "value": "",
+                    "inWpConfig": true
+                },
+                "AUTH_KEY": {
+                    "value": "yk6e0jeh3tqvldxcqmek9k01fbqtgcazobdyu5j7o3dccrbgza9eoedmvymewvtv",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_KEY": {
+                    "value": "lc7bithqdieejpujfz3mtok9qazvsyv1albo6fvhjksxcglhy7hw9wspc32hgved",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_KEY": {
+                    "value": "3inb7y9ixizydbhsegtgyll13ofpiewocquh4xxyyhj47rurrpqxmxs3oepz1f1c",
+                    "inWpConfig": true
+                },
+                "NONCE_KEY": {
+                    "value": "ifrtjckgv4b0puxcvxcl1monm8tdr1iyfb1ucypcxvjzooots2lljvnzb0dyeppu",
+                    "inWpConfig": true
+                },
+                "AUTH_SALT": {
+                    "value": "y2ivnb1qzjbfupbexsvfekxcvinxmm1oj6tix7wzw3vfopj6e5ozvzxv7xrlm0ob",
+                    "inWpConfig": true
+                },
+                "SECURE_AUTH_SALT": {
+                    "value": "5p4i8ylxdwbb3tarcynkz8y5guu3oudckakdjyi0jbps0pmrofs7qmi7efmmgts8",
+                    "inWpConfig": true
+                },
+                "LOGGED_IN_SALT": {
+                    "value": "yqginymmtuaw8ji8suugjxyyaauwahjjqnxalwx5lesjkru52vok7usdlbfiu0ia",
+                    "inWpConfig": true
+                },
+                "NONCE_SALT": {
+                    "value": "t91iqq68v1gvqluxlrqnbmrkwj0qhffx0dz6noo9dv2tq2sqnhpvq8zmmbbukabx",
+                    "inWpConfig": true
+                },
+                "WP_CONTENT_DIR": {
+                    "value": "\/home4\/tangeste\/public_html\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_CONTENT_URL": {
+                    "value": "https:\/\/tangentsyste.ms\/wp-content",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_DIR": {
+                    "value": "\/home4\/tangeste\/public_html\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "WP_PLUGIN_URL": {
+                    "value": "https:\/\/tangentsyste.ms\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "PLUGINDIR": {
+                    "value": "wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "AUTOSAVE_INTERVAL": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "WP_POST_REVISIONS": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "COOKIE_DOMAIN": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "MULTISITE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG": {
+                    "value": false,
+                    "inWpConfig": true
+                },
+                "SCRIPT_DEBUG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_LOG": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_DEBUG_DISPLAY": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "WP_MEMORY_LIMIT": {
+                    "value": "40M",
+                    "inWpConfig": false
+                },
+                "WP_MAX_MEMORY_LIMIT": {
+                    "value": "256M",
+                    "inWpConfig": false
+                },
+                "WP_CACHE": {
+                    "value": false,
+                    "inWpConfig": false
+                },
+                "WP_LANG_DIR": {
+                    "value": "\/home4\/tangeste\/public_html\/wp-content\/languages",
+                    "inWpConfig": false
+                },
+                "WP_CRON_LOCK_TIMEOUT": {
+                    "value": 60,
+                    "inWpConfig": false
+                },
+                "COOKIEPATH": {
+                    "value": "\/",
+                    "inWpConfig": false
+                },
+                "SITECOOKIEPATH": {
+                    "value": "\/",
+                    "inWpConfig": false
+                },
+                "ADMIN_COOKIE_PATH": {
+                    "value": "\/wp-admin",
+                    "inWpConfig": false
+                },
+                "PLUGINS_COOKIE_PATH": {
+                    "value": "\/wp-content\/plugins",
+                    "inWpConfig": false
+                },
+                "TEMPLATEPATH": {
+                    "value": "\/home4\/tangeste\/public_html\/wp-content\/themes\/contentberg",
+                    "inWpConfig": false
+                },
+                "STYLESHEETPATH": {
+                    "value": "\/home4\/tangeste\/public_html\/wp-content\/themes\/contentberg",
+                    "inWpConfig": false
+                },
+                "EMPTY_TRASH_DAYS": {
+                    "value": 30,
+                    "inWpConfig": false
+                },
+                "FORCE_SSL_ADMIN": {
+                    "value": true,
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_DIR": {
+                    "value": "\/home4\/tangeste\/public_html\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "WPMU_PLUGIN_URL": {
+                    "value": "https:\/\/tangentsyste.ms\/wp-content\/mu-plugins",
+                    "inWpConfig": false
+                },
+                "MUPLUGINDIR": {
+                    "value": "wp-content\/mu-plugins",
+                    "inWpConfig": false
+                }
+            },
+            "realValues": {
+                "siteUrl": "https:\/\/tangentsyste.ms",
+                "homeUrl": "https:\/\/tangentsyste.ms",
+                "contentUrl": "https:\/\/tangentsyste.ms\/wp-content",
+                "uploadBaseUrl": "https:\/\/tangentsyste.ms\/wp-content\/uploads",
+                "pluginsUrl": "https:\/\/tangentsyste.ms\/wp-content\/plugins",
+                "mupluginsUrl": "https:\/\/tangentsyste.ms\/wp-content\/mu-plugins",
+                "themesUrl": "https:\/\/tangentsyste.ms\/wp-content\/themes",
+                "originalPaths": {
+                    "home": "\/home4\/tangeste\/public_html",
+                    "abs": "\/home4\/tangeste\/public_html",
+                    "wpconfig": "\/home4\/tangeste\/public_html",
+                    "wpcontent": "\/home4\/tangeste\/public_html\/wp-content",
+                    "uploads": "\/home4\/tangeste\/public_html\/wp-content\/uploads",
+                    "plugins": "\/home4\/tangeste\/public_html\/wp-content\/plugins",
+                    "muplugins": "\/home4\/tangeste\/public_html\/wp-content\/mu-plugins",
+                    "themes": "\/home4\/tangeste\/public_html\/wp-content\/themes"
+                },
+                "archivePaths": {
+                    "home": "\/home4\/tangeste\/public_html",
+                    "abs": "\/home4\/tangeste\/public_html",
+                    "wpconfig": "\/home4\/tangeste\/public_html",
+                    "wpcontent": "\/home4\/tangeste\/public_html\/wp-content",
+                    "uploads": "\/home4\/tangeste\/public_html\/wp-content\/uploads",
+                    "plugins": "\/home4\/tangeste\/public_html\/wp-content\/plugins",
+                    "muplugins": "\/home4\/tangeste\/public_html\/wp-content\/mu-plugins",
+                    "themes": "\/home4\/tangeste\/public_html\/wp-content\/themes"
+                }
+            }
+        },
+        "plugins": {
+            "akismet\/akismet.php": {
+                "slug": "akismet\/akismet.php",
+                "name": "Akismet Anti-Spam",
+                "version": "4.1.11",
+                "pluginURI": "https:\/\/akismet.com\/",
+                "author": "Automattic",
+                "authorURI": "https:\/\/automattic.com\/wordpress-plugins\/",
+                "description": "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam<\/strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.",
+                "title": "Akismet Anti-Spam",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "automatic-youtube-gallery\/automatic-youtube-gallery.php": {
+                "slug": "automatic-youtube-gallery\/automatic-youtube-gallery.php",
+                "name": "Automatic YouTube Gallery",
+                "version": "1.6.3",
+                "pluginURI": "https:\/\/plugins360.com\/automatic-youtube-gallery\/",
+                "author": "Team Plugins360",
+                "authorURI": "https:\/\/plugins360.com",
+                "description": "Create responsive, modern & dynamic video galleries by simply adding a YouTube USERNAME, CHANNEL, PLAYLIST, SEARCH TERM or a custom list of YouTube URLs.",
+                "title": "Automatic YouTube Gallery",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "contact-form-7\/wp-contact-form-7.php": {
+                "slug": "contact-form-7\/wp-contact-form-7.php",
+                "name": "Contact Form 7",
+                "version": "5.4.2",
+                "pluginURI": "https:\/\/contactform7.com\/",
+                "author": "Takayuki Miyoshi",
+                "authorURI": "https:\/\/ideasilo.wordpress.com\/",
+                "description": "Just another contact form plugin. Simple but flexible.",
+                "title": "Contact Form 7",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "contentberg-core\/contentberg-core.php": {
+                "slug": "contentberg-core\/contentberg-core.php",
+                "name": "ContentBerg Core",
+                "version": "1.1.2",
+                "pluginURI": "",
+                "author": "ThemeSphere",
+                "authorURI": "http:\/\/theme-sphere.com",
+                "description": "Elements and core functionality for ContentBerg Theme.",
+                "title": "ContentBerg Core",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "creative-mail-by-constant-contact\/creative-mail-plugin.php": {
+                "slug": "creative-mail-by-constant-contact\/creative-mail-plugin.php",
+                "name": "Creative Mail by Constant Contact",
+                "version": "1.4.4",
+                "pluginURI": "https:\/\/wordpress.org\/plugins\/creative-mail-by-constant-contact\/",
+                "author": "Constant Contact",
+                "authorURI": "https:\/\/www.constantcontact.com",
+                "description": "Free email marketing designed specifically for WordPress, Jetpack and WooCommerce. Send newsletters, promotions, updates and transactional e-commerce emails. Simple and easy, powered by Constant Contact\u2019s rock solid reliability.",
+                "title": "Creative Mail by Constant Contact",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "duplicator-pro\/duplicator-pro.php": {
+                "slug": "duplicator-pro\/duplicator-pro.php",
+                "name": "Duplicator Pro",
+                "version": "4.0.4",
+                "pluginURI": "http:\/\/snapcreek.com\/",
+                "author": "Snap Creek",
+                "authorURI": "http:\/\/snapcreek.com",
+                "description": "Create, schedule and transfer a copy of your WordPress files and database. Duplicate and move a site from one location to another quickly.",
+                "title": "Duplicator Pro",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "dynamic-featured-image\/dynamic-featured-image.php": {
+                "slug": "dynamic-featured-image\/dynamic-featured-image.php",
+                "name": "Dynamic Featured Image",
+                "version": "3.7.0",
+                "pluginURI": "http:\/\/wordpress.org\/plugins\/dynamic-featured-image\/",
+                "author": "Ankit Pokhrel",
+                "authorURI": "https:\/\/ankitpokhrel.com",
+                "description": "Dynamically adds multiple featured image or post thumbnail functionality to your posts, pages and custom post types.",
+                "title": "Dynamic Featured Image",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "everest-forms\/everest-forms.php": {
+                "slug": "everest-forms\/everest-forms.php",
+                "name": "Everest Forms",
+                "version": "1.7.6",
+                "pluginURI": "https:\/\/wpeverest.com\/wordpress-plugins\/everest-forms\/",
+                "author": "WPEverest",
+                "authorURI": "https:\/\/wpeverest.com",
+                "description": "Drag and Drop contact form builder to easily create simple to complex forms for any purpose. Lightweight, Beautiful design, responsive and more.",
+                "title": "Everest Forms",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "google-analytics-dashboard-for-wp\/gadwp.php": {
+                "slug": "google-analytics-dashboard-for-wp\/gadwp.php",
+                "name": "Google Analytics Dashboard for WP (GADWP)",
+                "version": "6.8.0",
+                "pluginURI": "https:\/\/exactmetrics.com",
+                "author": "ExactMetrics",
+                "authorURI": "https:\/\/exactmetrics.com",
+                "description": "Displays Google Analytics Reports and Real-Time Statistics in your Dashboard. Automatically inserts the tracking code in every page of your website.",
+                "title": "Google Analytics Dashboard for WP (GADWP)",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "gravityforms\/gravityforms.php": {
+                "slug": "gravityforms\/gravityforms.php",
+                "name": "Gravity Forms",
+                "version": "2.5.9.2",
+                "pluginURI": "https:\/\/gravityforms.com",
+                "author": "Gravity Forms",
+                "authorURI": "https:\/\/gravityforms.com",
+                "description": "Easily create web forms and manage form entries within the WordPress admin.",
+                "title": "Gravity Forms",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "gravityformscli\/cli.php": {
+                "slug": "gravityformscli\/cli.php",
+                "name": "Gravity Forms CLI",
+                "version": "1.4",
+                "pluginURI": "https:\/\/gravityforms.com",
+                "author": "Rocketgenius",
+                "authorURI": "https:\/\/gravityforms.com",
+                "description": "Manage Gravity Forms with the WP CLI.",
+                "title": "Gravity Forms CLI",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "hello.php": {
+                "slug": "hello.php",
+                "name": "Hello Dolly",
+                "version": "1.7.2",
+                "pluginURI": "http:\/\/wordpress.org\/plugins\/hello-dolly\/",
+                "author": "Matt Mullenweg",
+                "authorURI": "http:\/\/ma.tt\/",
+                "description": "This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from <cite>Hello, Dolly<\/cite> in the upper right of your admin screen on every page.",
+                "title": "Hello Dolly",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "if-menu\/if-menu.php": {
+                "slug": "if-menu\/if-menu.php",
+                "name": "If Menu - Visibility control for menu items",
+                "version": "0.16.2",
+                "pluginURI": "https:\/\/layered.market\/plugins\/if-menu",
+                "author": "Layered",
+                "authorURI": "https:\/\/layered.market",
+                "description": "Display tailored menu items to each visitor with visibility rules",
+                "title": "If Menu - Visibility control for menu items",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "jetpack\/jetpack.php": {
+                "slug": "jetpack\/jetpack.php",
+                "name": "Jetpack",
+                "version": "10.0",
+                "pluginURI": "https:\/\/jetpack.com",
+                "author": "Automattic",
+                "authorURI": "https:\/\/jetpack.com",
+                "description": "Security, performance, and marketing tools made by WordPress experts. Jetpack keeps your site protected so you can focus on more important things.",
+                "title": "Jetpack",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "json-api-user\/json-api-user.php": {
+                "slug": "json-api-user\/json-api-user.php",
+                "name": "JSON API User",
+                "version": "3.8.0",
+                "pluginURI": "http:\/\/www.parorrey.com\/solutions\/json-api-user\/",
+                "author": "Ali Qureshi",
+                "authorURI": "http:\/\/www.parorrey.com\/",
+                "description": "Extends the JSON API for RESTful user registration, authentication, password reset, Facebook Login, user meta and BuddyPress Profile related functions. A Pro version is also available.",
+                "title": "JSON API User",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "mojo-marketplace-wp-plugin\/mojo-marketplace.php": {
+                "slug": "mojo-marketplace-wp-plugin\/mojo-marketplace.php",
+                "name": "MOJO Marketplace",
+                "version": "1.5.8",
+                "pluginURI": "",
+                "author": "Mike Hansen",
+                "authorURI": "http:\/\/mikehansen.me?utm_campaign=plugin&utm_source=mojo_wp_plugin",
+                "description": "This plugin adds shortcodes, widgets, and themes to your WordPress site.",
+                "title": "MOJO Marketplace",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "optinmonster\/optin-monster-wp-api.php": {
+                "slug": "optinmonster\/optin-monster-wp-api.php",
+                "name": "OptinMonster",
+                "version": "2.6.0",
+                "pluginURI": "https:\/\/optinmonster.com",
+                "author": "OptinMonster Team",
+                "authorURI": "https:\/\/optinmonster.com",
+                "description": "OptinMonster is the best WordPress popup plugin that helps you grow your email list and sales with email popups, exit intent popups, floating bars and more!",
+                "title": "OptinMonster",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "paid-memberships-pro\/paid-memberships-pro.php": {
+                "slug": "paid-memberships-pro\/paid-memberships-pro.php",
+                "name": "Paid Memberships Pro",
+                "version": "2.6.1",
+                "pluginURI": "https:\/\/www.paidmembershipspro.com",
+                "author": "Stranger Studios",
+                "authorURI": "https:\/\/www.strangerstudios.com",
+                "description": "The most complete member management and membership subscriptions plugin for WordPress.",
+                "title": "Paid Memberships Pro",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "pmpro-add-paypal-express\/pmpro-add-paypal-express.php": {
+                "slug": "pmpro-add-paypal-express\/pmpro-add-paypal-express.php",
+                "name": "Paid Memberships Pro - Add PayPal Express Add On",
+                "version": ".6",
+                "pluginURI": "https:\/\/www.paidmembershipspro.com\/add-ons\/pmpro-add-paypal-express-option-checkout\/",
+                "author": "Paid Memberships Pro",
+                "authorURI": "https:\/\/www.paidmembershipspro.com",
+                "description": "Add PayPal Express as a Second Option at Checkout",
+                "title": "Paid Memberships Pro - Add PayPal Express Add On",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "pmpro-advanced-levels-shortcode\/pmpro-advanced-levels-shortcode.php": {
+                "slug": "pmpro-advanced-levels-shortcode\/pmpro-advanced-levels-shortcode.php",
+                "name": "Paid Memberships Pro - Advanced Levels Page Shortcode Add On",
+                "version": ".2.4",
+                "pluginURI": "http:\/\/www.paidmembershipspro.com\/wp\/pmpro-advanced-levels\/",
+                "author": "Stranger Studios",
+                "authorURI": "http:\/\/www.strangerstudios.com",
+                "description": "An enhanced shortcode for customizing the display of your Membership Levels Page for Paid Memberships Pro",
+                "title": "Paid Memberships Pro - Advanced Levels Page Shortcode Add On",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "pmpro-toolkit\/pmpro-toolkit.php": {
+                "slug": "pmpro-toolkit\/pmpro-toolkit.php",
+                "name": "Paid Memberships Pro - Developer's Toolkit Add On",
+                "version": "0.6",
+                "pluginURI": "https:\/\/www.paidmembershipspro.com\/add-ons\/pmpro-toolkit\/",
+                "author": "Paid Memberships Pro",
+                "authorURI": "https:\/\/www.paidmembershipspro.com",
+                "description": "Various tools to test and debug Paid Memberships Pro enabled websites.",
+                "title": "Paid Memberships Pro - Developer's Toolkit Add On",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "pmpro-gift-levels\/pmpro-gift-levels.php": {
+                "slug": "pmpro-gift-levels\/pmpro-gift-levels.php",
+                "name": "Paid Memberships Pro - Gift Levels Add On",
+                "version": "0.4",
+                "pluginURI": "http:\/\/www.paidmembershipspro.com\/add-ons\/pmpro-gift-levels\/",
+                "author": "Stranger Studios",
+                "authorURI": "http:\/\/www.strangerstudios.com",
+                "description": "Some levels will generate discount codes to give to others to use for gift memberships.",
+                "title": "Paid Memberships Pro - Gift Levels Add On",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "pmpro-member-homepages\/pmpro-member-homepages.php": {
+                "slug": "pmpro-member-homepages\/pmpro-member-homepages.php",
+                "name": "Paid Memberships Pro - Member Homepages Add On",
+                "version": "0.3",
+                "pluginURI": "https:\/\/www.paidmembershipspro.com\/add-ons\/member-homepages\/",
+                "author": "Paid Memberships Pro",
+                "authorURI": "https:\/\/www.paidmembershipspro.com",
+                "description": "Redirect members to a unique homepage or landing page based on their level.",
+                "title": "Paid Memberships Pro - Member Homepages Add On",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "pmpro-reason-for-cancelling\/pmpro-reason-for-cancelling.php": {
+                "slug": "pmpro-reason-for-cancelling\/pmpro-reason-for-cancelling.php",
+                "name": "Paid Memberships Pro - Reason For Cancelling Add On",
+                "version": "0.2",
+                "pluginURI": "https:\/\/www.paidmembershipspro.com\/add-ons\/pmpro-reason-cancelling\/",
+                "author": "Paid Memberships Pro",
+                "authorURI": "https:\/\/www.paidmembershipspro.com",
+                "description": "Adds a field to specify a reason for cancelling to the cancel page.",
+                "title": "Paid Memberships Pro - Reason For Cancelling Add On",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wp-retina-2x\/wp-retina-2x.php": {
+                "slug": "wp-retina-2x\/wp-retina-2x.php",
+                "name": "Perfect Images (Retina, Thumbnails, Replace)",
+                "version": "6.1.4",
+                "pluginURI": "https:\/\/meowapps.com",
+                "author": "Jordy Meow",
+                "authorURI": "https:\/\/meowapps.com",
+                "description": "Retina, Replace Images, Regenerate Thumbnails, Image Sizes Management, Image Threshold and more.",
+                "title": "Perfect Images (Retina, Thumbnails, Replace)",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "post-tags-and-categories-for-pages\/post-tag.php": {
+                "slug": "post-tags-and-categories-for-pages\/post-tag.php",
+                "name": "Post Tags and Categories for Pages",
+                "version": "1.4.1",
+                "pluginURI": "http:\/\/wpthemetutorial.com\/plugins\/post-tags-and-categories-for-pages\/",
+                "author": "curtismchale",
+                "authorURI": "http:\/\/wpthemetutotial.com\/about\/",
+                "description": "Simply adds the stock Categories and Post Tags to your Pages.",
+                "title": "Post Tags and Categories for Pages",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "profile-builder\/index.php": {
+                "slug": "profile-builder\/index.php",
+                "name": "Profile Builder",
+                "version": "3.5.3",
+                "pluginURI": "https:\/\/www.cozmoslabs.com\/wordpress-profile-builder\/",
+                "author": "Cozmoslabs",
+                "authorURI": "https:\/\/www.cozmoslabs.com\/",
+                "description": "Login, registration and edit profile shortcodes for the front-end. Also you can choose what fields should be displayed or add new (custom) ones both in the front-end and in the dashboard.",
+                "title": "Profile Builder",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "rara-one-click-demo-import\/rara-one-click-demo-import.php": {
+                "slug": "rara-one-click-demo-import\/rara-one-click-demo-import.php",
+                "name": "RARA One Click Demo Import",
+                "version": "1.2.9",
+                "pluginURI": "https:\/\/wordpress.org\/plugins\/rara-one-click-demo-import\/",
+                "author": "raratheme",
+                "authorURI": "https:\/\/www.rarathemes.com",
+                "description": "Import demo content, widgets and settings of themes made by RaraTheme with just one click.",
+                "title": "RARA One Click Demo Import",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "regenerate-thumbnails\/regenerate-thumbnails.php": {
+                "slug": "regenerate-thumbnails\/regenerate-thumbnails.php",
+                "name": "Regenerate Thumbnails",
+                "version": "3.1.5",
+                "pluginURI": "https:\/\/alex.blog\/wordpress-plugins\/regenerate-thumbnails\/",
+                "author": "Alex Mills (Viper007Bond)",
+                "authorURI": "https:\/\/alex.blog\/",
+                "description": "Regenerate the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme.",
+                "title": "Regenerate Thumbnails",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "resmushit-image-optimizer\/resmushit.php": {
+                "slug": "resmushit-image-optimizer\/resmushit.php",
+                "name": "reSmush.it Image Optimizer",
+                "version": "0.4.1",
+                "pluginURI": "https:\/\/wordpress.org\/plugins\/resmushit-image-optimizer\/",
+                "author": "reSmush.it",
+                "authorURI": "https:\/\/resmush.it",
+                "description": "Image Optimization API. Provides image size optimization",
+                "title": "reSmush.it Image Optimizer",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "google-site-kit\/google-site-kit.php": {
+                "slug": "google-site-kit\/google-site-kit.php",
+                "name": "Site Kit by Google",
+                "version": "1.39.0",
+                "pluginURI": "https:\/\/sitekit.withgoogle.com",
+                "author": "Google",
+                "authorURI": "https:\/\/opensource.google.com",
+                "description": "Site Kit is a one-stop solution for WordPress users to use everything Google has to offer to make them successful on the web.",
+                "title": "Site Kit by Google",
+                "networkActive": false,
+                "active": false,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "sphere-core\/sphere-core.php": {
+                "slug": "sphere-core\/sphere-core.php",
+                "name": "Sphere Core",
+                "version": "1.2.2",
+                "pluginURI": "https:\/\/theme-sphere.com",
+                "author": "ThemeSphere",
+                "authorURI": "https:\/\/theme-sphere.com",
+                "description": "Core plugin for ThemeSphere themes.",
+                "title": "Sphere Core",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "themegrill-demo-importer\/themegrill-demo-importer.php": {
+                "slug": "themegrill-demo-importer\/themegrill-demo-importer.php",
+                "name": "ThemeGrill Demo Importer",
+                "version": "1.7.2",
+                "pluginURI": "https:\/\/themegrill.com\/demo-importer\/",
+                "author": "ThemeGrill",
+                "authorURI": "https:\/\/themegrill.com",
+                "description": "Import ThemeGrill official themes demo content, widgets and theme settings with just one click.",
+                "title": "ThemeGrill Demo Importer",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "theme-my-login\/theme-my-login.php": {
+                "slug": "theme-my-login\/theme-my-login.php",
+                "name": "Theme My Login",
+                "version": "7.1.3",
+                "pluginURI": "https:\/\/thememylogin.com",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Creates an alternate login, registration and password recovery experience within your theme.",
+                "title": "Theme My Login",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "tml-moderation\/tml-moderation.php": {
+                "slug": "tml-moderation\/tml-moderation.php",
+                "name": "Theme My Login Moderation",
+                "version": "1.1.1",
+                "pluginURI": "https:\/\/thememylogin.com\/extensions\/moderation",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Adds user moderation support to Theme My Login.",
+                "title": "Theme My Login Moderation",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "tml-notifications\/tml-notifications.php": {
+                "slug": "tml-notifications\/tml-notifications.php",
+                "name": "Theme My Login Notifications",
+                "version": "1.1.5",
+                "pluginURI": "https:\/\/thememylogin.com\/extensions\/notifications",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Adds custom notification support to Theme My Login.",
+                "title": "Theme My Login Notifications",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "tml-profiles\/tml-profiles.php": {
+                "slug": "tml-profiles\/tml-profiles.php",
+                "name": "Theme My Login Profiles",
+                "version": "1.0.7",
+                "pluginURI": "https:\/\/thememylogin.com\/extensions\/profiles",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Adds profile support to Theme My Login.",
+                "title": "Theme My Login Profiles",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "tml-recaptcha\/tml-recaptcha.php": {
+                "slug": "tml-recaptcha\/tml-recaptcha.php",
+                "name": "Theme My Login reCAPTCHA",
+                "version": "1.1",
+                "pluginURI": "https:\/\/thememylogin.com\/extensions\/recaptcha",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Adds reCAPTCHA support to Theme My Login.",
+                "title": "Theme My Login reCAPTCHA",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "tml-redirection\/tml-redirection.php": {
+                "slug": "tml-redirection\/tml-redirection.php",
+                "name": "Theme My Login Redirection",
+                "version": "1.1",
+                "pluginURI": "https:\/\/thememylogin.com\/extensions\/redirection",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Adds redirection support to Theme My Login.",
+                "title": "Theme My Login Redirection",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "tml-security\/tml-security.php": {
+                "slug": "tml-security\/tml-security.php",
+                "name": "Theme My Login Security",
+                "version": "1.1.4",
+                "pluginURI": "https:\/\/thememylogin.com\/extensions\/security",
+                "author": "Theme My Login",
+                "authorURI": "https:\/\/thememylogin.com",
+                "description": "Adds security features to Theme My Login.",
+                "title": "Theme My Login Security",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "thrive-comments\/thrive-comments.php": {
+                "slug": "thrive-comments\/thrive-comments.php",
+                "name": "Thrive Comments",
+                "version": "1.8.2",
+                "pluginURI": "https:\/\/thrivethemes.com",
+                "author": "<a href=\"https:\/\/thrivethemes.com\">Thrive Themes<\/a>",
+                "authorURI": "",
+                "description": "Thrive Comments",
+                "title": "Thrive Comments",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "thrive-product-manager\/thrive-product-manager.php": {
+                "slug": "thrive-product-manager\/thrive-product-manager.php",
+                "name": "Thrive Product Manager",
+                "version": "1.2.7",
+                "pluginURI": "http:\/\/thrivethemes.com",
+                "author": "Thrive Themes",
+                "authorURI": "http:\/\/thrivethemes.com",
+                "description": "Connect this site with Thrive Themes account to install and activate Thrive product.",
+                "title": "Thrive Product Manager",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "js_composer\/js_composer.php": {
+                "slug": "js_composer\/js_composer.php",
+                "name": "WPBakery Page Builder",
+                "version": "6.7.0",
+                "pluginURI": "http:\/\/wpbakery.com",
+                "author": "Michael M - WPBakery.com",
+                "authorURI": "http:\/\/wpbakery.com",
+                "description": "Drag and drop page builder for WordPress. Take full control over your WordPress site, build any layout you can imagine \u2013 no programming knowledge required.",
+                "title": "WPBakery Page Builder",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wpforms-lite\/wpforms.php": {
+                "slug": "wpforms-lite\/wpforms.php",
+                "name": "WPForms Lite",
+                "version": "1.6.8.1",
+                "pluginURI": "https:\/\/wpforms.com",
+                "author": "WPForms",
+                "authorURI": "https:\/\/wpforms.com",
+                "description": "Beginner friendly WordPress contact form plugin. Use our Drag & Drop form builder to create your WordPress forms.",
+                "title": "WPForms Lite",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wp-mail-smtp\/wp_mail_smtp.php": {
+                "slug": "wp-mail-smtp\/wp_mail_smtp.php",
+                "name": "WP Mail SMTP",
+                "version": "3.0.3",
+                "pluginURI": "https:\/\/wpmailsmtp.com\/",
+                "author": "WPForms",
+                "authorURI": "https:\/\/wpforms.com\/",
+                "description": "Reconfigures the <code>wp_mail()<\/code> function to use Gmail\/Mailgun\/SendGrid\/SMTP instead of the default <code>mail()<\/code> and creates an options page to manage the settings.",
+                "title": "WP Mail SMTP",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "wordpress-seo\/wp-seo.php": {
+                "slug": "wordpress-seo\/wp-seo.php",
+                "name": "Yoast SEO",
+                "version": "17.0",
+                "pluginURI": "https:\/\/yoa.st\/1uj",
+                "author": "Team Yoast",
+                "authorURI": "https:\/\/yoa.st\/1uk",
+                "description": "The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.",
+                "title": "Yoast SEO",
+                "networkActive": false,
+                "active": true,
+                "mustUse": false,
+                "dropIns": false
+            },
+            "endurance-page-cache.php": {
+                "slug": "endurance-page-cache.php",
+                "name": "Endurance Page Cache",
+                "version": "2.0.8",
+                "pluginURI": "",
+                "author": "Mike Hansen",
+                "authorURI": "https:\/\/www.mikehansen.me\/",
+                "description": "This cache plugin is primarily for cache purging of the additional layers of cache that may be available on your hosting account.",
+                "title": "Endurance Page Cache",
+                "networkActive": false,
+                "active": false,
+                "mustUse": true,
+                "dropIns": false
+            }
+        },
+        "themes": {
+            "chic-lite": {
+                "slug": "chic-lite",
+                "themeName": "Chic Lite",
+                "version": "1.0.4",
+                "themeURI": "https:\/\/rarathemes.com\/wordpress-themes\/chic-lite\/",
+                "parentTheme": false,
+                "template": "chic-lite",
+                "stylesheet": "chic-lite",
+                "description": "Chic Lite is a feature-rich feminine blog theme for professional bloggers. The theme is mobile friendly, SEO optimized, Schema friendly, and loads faster to help you rank your website higher on search engines. If you want to share your expert fashion tips, travel expertise, your favorite food recipes, or create a lifestyle, beauty and makeup, coaching, or any other niche blog, Chic Lite is for you.  You can easily choose from unlimited colors and 900+ Google fonts to change your website look and feel with a single click. This theme comes with a gorgeous newsletter section that can help you generate more leads and Instagram section to flaunt your Instagram posts. Chic Lite is translation ready, WooCommerce and RTL compatible. Check demo at https:\/\/rarathemes.com\/theme-demo\/?theme=chic-lite, read the documentation at https:\/\/docs.rarathemes.com\/docs\/chic-lite\/, and get support at https:\/\/rarathemes.com\/support-ticket\/.",
+                "author": "Rara Theme",
+                "authorURI": "https:\/\/rarathemes.com\/",
+                "tags": [
+                    "blog",
+                    "one-column",
+                    "two-columns",
+                    "right-sidebar",
+                    "left-sidebar",
+                    "footer-widgets",
+                    "custom-background",
+                    "custom-header",
+                    "custom-menu",
+                    "custom-logo",
+                    "featured-images",
+                    "threaded-comments",
+                    "full-width-template",
+                    "rtl-language-support",
+                    "translation-ready",
+                    "theme-options",
+                    "e-commerce"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": false
+            },
+            "colormag": {
+                "slug": "colormag",
+                "themeName": "ColorMag",
+                "version": "2.0.9",
+                "themeURI": "https:\/\/themegrill.com\/themes\/colormag\/",
+                "parentTheme": false,
+                "template": "colormag",
+                "stylesheet": "colormag",
+                "description": "ColorMag is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. Get free support at https:\/\/themegrill.com\/contact\/ and check the demo at https:\/\/themegrilldemos.com\/colormag\/",
+                "author": "ThemeGrill",
+                "authorURI": "https:\/\/themegrill.com",
+                "tags": [
+                    "one-column",
+                    "two-columns",
+                    "right-sidebar",
+                    "left-sidebar",
+                    "flexible-header",
+                    "custom-header",
+                    "custom-background",
+                    "custom-menu",
+                    "custom-colors",
+                    "sticky-post",
+                    "threaded-comments",
+                    "translation-ready",
+                    "featured-images",
+                    "theme-options",
+                    "post-formats",
+                    "footer-widgets",
+                    "blog",
+                    "e-commerce",
+                    "news",
+                    "rtl-language-support"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": false
+            },
+            "contentberg": {
+                "slug": "contentberg",
+                "themeName": "ContentBerg",
+                "version": "2.0.0",
+                "themeURI": "https:\/\/contentberg.theme-sphere.com",
+                "parentTheme": false,
+                "template": "contentberg",
+                "stylesheet": "contentberg",
+                "description": "A readable blog theme with content focus. Designed by ThemeSphere.",
+                "author": "ThemeSphere",
+                "authorURI": "http:\/\/theme-sphere.com",
+                "tags": [],
+                "isAllowed": true,
+                "isActive": true,
+                "defaultTheme": false
+            },
+            "sinatra": {
+                "slug": "sinatra",
+                "themeName": "Sinatra",
+                "version": "1.2.1",
+                "themeURI": "",
+                "parentTheme": false,
+                "template": "sinatra",
+                "stylesheet": "sinatra",
+                "description": "Sinatra is a lightweight and highly customizable multi-purpose theme that makes it easy for anyone to create their perfect website. You can use it for any type of website from blogs, businesses, online shops, creatives, hotels, restaurants, startups and more. With Sinatra you get the perfect blend of performance, modern design and powerful, yet simple to use options. Works perfectly with the new block editor (Gutenberg) and your favorite plugins such as: WooCommerce, JetPack, page builders, SEO plugins and others. It comes with microdata integration, unlimited colors, multiple layouts, pre-built demo websites and so much more. It's also translatable and built with best SEO practices. Try Sinatra theme today on https:\/\/try.sinatrawp.com",
+                "author": "Sinatra Team",
+                "authorURI": "",
+                "tags": [
+                    "two-columns",
+                    "right-sidebar",
+                    "left-sidebar",
+                    "footer-widgets",
+                    "blog",
+                    "news",
+                    "custom-background",
+                    "custom-menu",
+                    "post-formats",
+                    "sticky-post",
+                    "editor-style",
+                    "threaded-comments",
+                    "translation-ready",
+                    "custom-colors",
+                    "featured-images",
+                    "full-width-template",
+                    "microformats",
+                    "theme-options",
+                    "e-commerce"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": false
+            },
+            "twentynineteen": {
+                "slug": "twentynineteen",
+                "themeName": "Twenty Nineteen",
+                "version": "2.1",
+                "themeURI": "https:\/\/wordpress.org\/themes\/twentynineteen\/",
+                "parentTheme": false,
+                "template": "twentynineteen",
+                "stylesheet": "twentynineteen",
+                "description": "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you\u2019re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.",
+                "author": "the WordPress team",
+                "authorURI": "https:\/\/wordpress.org\/",
+                "tags": [
+                    "one-column",
+                    "flexible-header",
+                    "accessibility-ready",
+                    "custom-colors",
+                    "custom-menu",
+                    "custom-logo",
+                    "editor-style",
+                    "featured-images",
+                    "footer-widgets",
+                    "rtl-language-support",
+                    "sticky-post",
+                    "threaded-comments",
+                    "translation-ready",
+                    "block-patterns"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": false
+            },
+            "twentytwenty": {
+                "slug": "twentytwenty",
+                "themeName": "Twenty Twenty",
+                "version": "1.8",
+                "themeURI": "https:\/\/wordpress.org\/themes\/twentytwenty\/",
+                "parentTheme": false,
+                "template": "twentytwenty",
+                "stylesheet": "twentytwenty",
+                "description": "Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.",
+                "author": "the WordPress team",
+                "authorURI": "https:\/\/wordpress.org\/",
+                "tags": [
+                    "blog",
+                    "one-column",
+                    "custom-background",
+                    "custom-colors",
+                    "custom-logo",
+                    "custom-menu",
+                    "editor-style",
+                    "featured-images",
+                    "footer-widgets",
+                    "full-width-template",
+                    "rtl-language-support",
+                    "sticky-post",
+                    "theme-options",
+                    "threaded-comments",
+                    "translation-ready",
+                    "block-patterns",
+                    "block-styles",
+                    "wide-blocks",
+                    "accessibility-ready"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": false
+            },
+            "twentytwentyone": {
+                "slug": "twentytwentyone",
+                "themeName": "Twenty Twenty-One",
+                "version": "1.4",
+                "themeURI": "https:\/\/wordpress.org\/themes\/twentytwentyone\/",
+                "parentTheme": false,
+                "template": "twentytwentyone",
+                "stylesheet": "twentytwentyone",
+                "description": "Twenty Twenty-One is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme\u2019s soft colors and eye-catching \u2014 yet timeless \u2014 design will let your work shine. Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.",
+                "author": "the WordPress team",
+                "authorURI": "https:\/\/wordpress.org\/",
+                "tags": [
+                    "one-column",
+                    "accessibility-ready",
+                    "custom-colors",
+                    "custom-menu",
+                    "custom-logo",
+                    "editor-style",
+                    "featured-images",
+                    "footer-widgets",
+                    "block-patterns",
+                    "rtl-language-support",
+                    "sticky-post",
+                    "threaded-comments",
+                    "translation-ready"
+                ],
+                "isAllowed": true,
+                "isActive": false,
+                "defaultTheme": true
+            }
+        }
+    },
+    "installer_base_name": "installer.php",
+    "installer_backup_name": "20210826_phnx_d78453657b77c20d7974_20210826020142_installer-backup.php",
+    "package_name": "20210826_phnx_d78453657b77c20d7974_20210826020142_archive.zip",
+    "package_hash": "d784536-26020142",
+    "package_notes": "",
+    "mu_siteadmins": [
+        "admin"
+    ],
+    "overwriteInstallerParams": {
+        "cpnl-dbaction": {
+            "value": "create"
+        }
+    }
+}

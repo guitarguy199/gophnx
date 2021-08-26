@@ -1,0 +1,61 @@
+/**
+ * Subscribe box for home
+ */
+
+.subscribe-box {
+	margin-top: 50px;
+	padding: 20px 25px;
+	background: #f7f7f7;
+	
+	@include breakpoint(large) {
+		text-align: center;
+	}
+	
+	.text {
+		float: left;
+		margin-top: 0.6em;
+		padding-left: 0;
+		font-size: 15px;
+		
+		@include breakpoint(large) {
+			float: none;
+			display: block;
+			padding: 0;
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+	}
+	
+	.fields {
+		float: right;
+		margin-bottom: -15px;
+		
+		@include breakpoint(large) {
+			float: none;
+		}
+	}
+	
+	.input {
+		margin-right: 20px;
+		margin-bottom: 15px;
+		width: 235px;
+		max-width: calc(50vw - 100px);
+		
+		@include breakpoint(x-small) {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: initial;
+		}
+	}
+	
+	.button {
+		width: 200px;
+		box-sizing: border-box;
+		vertical-align: top;
+
+		@include breakpoint(large) {
+			margin-bottom: 20px;
+		}
+	}
+}

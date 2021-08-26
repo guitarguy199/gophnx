@@ -1,0 +1,466 @@
+{
+    "RPT": {
+        "ScanTime": "6.897 sec.",
+        "ScanFile": "20210826_phnx_d78453657b77c20d7974_20210826020142_scan.json",
+        "ScanCreated": "2021-08-26 02:01:51",
+        "ScanPath": "\/home4\/tangeste\/public_html\/wp-content\/backups-dup-pro\/tmp\/20210826_phnx_d78453657b77c20d7974_20210826020142_scan.json"
+    },
+    "ARC": {
+        "Size": "382.63MB",
+        "DirCount": "3,267",
+        "FileCount": "19,382",
+        "FullCount": "22,649",
+        "USize": 401213526,
+        "UDirCount": 3267,
+        "UFileCount": 19382,
+        "UFullCount": 22649,
+        "WarnFileCount": 0,
+        "WarnDirCount": 0,
+        "UnreadableDirCount": 0,
+        "UnreadableFileCount": 0,
+        "FilterDirsAll": [
+            "\/home4\/tangeste\/public_html\/.opcache",
+            "\/home4\/tangeste\/public_html\/.tmb",
+            "\/home4\/tangeste\/public_html\/wp-content\/ai1wm-backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/backups-dup-lite",
+            "\/home4\/tangeste\/public_html\/wp-content\/backups-dup-pro",
+            "\/home4\/tangeste\/public_html\/wp-content\/backups-dup-pro",
+            "\/home4\/tangeste\/public_html\/wp-content\/backupwordpress",
+            "\/home4\/tangeste\/public_html\/wp-content\/bps-backup",
+            "\/home4\/tangeste\/public_html\/wp-content\/cache",
+            "\/home4\/tangeste\/public_html\/wp-content\/content\/cache",
+            "\/home4\/tangeste\/public_html\/wp-content\/contents\/cache",
+            "\/home4\/tangeste\/public_html\/wp-content\/infinitewp\/backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/managewp\/backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/old-cache",
+            "\/home4\/tangeste\/public_html\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+            "\/home4\/tangeste\/public_html\/wp-content\/plugins\/really-simple-captcha\/tmp",
+            "\/home4\/tangeste\/public_html\/wp-content\/plugins\/wordfence\/tmp",
+            "\/home4\/tangeste\/public_html\/wp-content\/updraft",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/aiowps_backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/backup-guard",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/backupbuddy_backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/backupbuddy_temp",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/ithemes-security\/backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/mainwp\/backup",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/pb_backupbuddy",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/snapshots",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/sucuri",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/wp-clone",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/wp_all_backup",
+            "\/home4\/tangeste\/public_html\/wp-content\/uploads\/wpbackitup_backups",
+            "\/home4\/tangeste\/public_html\/wp-content\/wfcache",
+            "\/home4\/tangeste\/public_html\/wp-content\/wishlist-backup",
+            "\/home4\/tangeste\/public_html\/wp-snapshots"
+        ],
+        "FilterFilesAll": [
+            ".DS_Store",
+            "\/home4\/tangeste\/public_html\/.htaccess",
+            "\/home4\/tangeste\/public_html\/.user.ini",
+            "\/home4\/tangeste\/public_html\/php.ini",
+            "\/home4\/tangeste\/public_html\/web.config",
+            "\/home4\/tangeste\/public_html\/wp-config.php",
+            "dbcache",
+            "debug_log",
+            "error_log",
+            "objectcache",
+            "pgcache",
+            "ws_ftp.log"
+        ],
+        "FilterExtsAll": [],
+        "FilteredCoreDirs": [],
+        "FilteredSites": [],
+        "Status": {
+            "Size": "Good",
+            "Names": "Good",
+            "Big": "Warn",
+            "AddonSites": "Good",
+            "UnreadableItems": "Good",
+            "showCreateFuncStatus": "Good",
+            "showCreateFunc": true,
+            "HasImportableSites": false,
+            "HasNotImportableSites": false,
+            "CanbeMigratePackage": true,
+            "HasFilteredCoreFolders": false,
+            "HasFilteredSiteTables": false,
+            "HasFilteredSites": false,
+            "Network": "Good",
+            "IsDBOnly": 0,
+            "PackageIsNotImportable": false
+        },
+        "RecursiveLinks": [],
+        "UnreadableItems": [],
+        "Subsites": []
+    },
+    "SRV": {
+        "Brand": {
+            "LogoAttachmentExists": false,
+            "LogoCount": 0,
+            "LogoFinded": 0,
+            "LogoImageExists": true,
+            "LogoImages": [],
+            "Name": "Default",
+            "Notes": "The default content used when a brand is not defined"
+        },
+        "HOST": [],
+        "PHP": {
+            "websrv": true,
+            "openbase": true,
+            "maxtime": true,
+            "openssl": true,
+            "mysqli": true,
+            "allowurlfopen": true,
+            "curlavailable": true,
+            "arch64bit": true,
+            "minMemory": true,
+            "version": true,
+            "ALL": "Good"
+        },
+        "WP": {
+            "version": true,
+            "core": true,
+            "ismu": false,
+            "ismuplus": false,
+            "ALL": "Good"
+        }
+    },
+    "DB": {
+        "Status": {
+            "Success": true,
+            "Size": "Good",
+            "Rows": "Good",
+            "Triggers": "Good"
+        },
+        "Size": "8.81MB",
+        "Rows": "3,427",
+        "TableCount": 54,
+        "TableList": {
+            "wp5a_actionscheduler_actions": {
+                "Case": 0,
+                "Rows": "49",
+                "Size": "144KB",
+                "USize": 147456
+            },
+            "wp5a_actionscheduler_claims": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_actionscheduler_groups": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_actionscheduler_logs": {
+                "Case": 0,
+                "Rows": "114",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_commentmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_comments": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "96KB",
+                "USize": 98304
+            },
+            "wp5a_duplicator_pro_entities": {
+                "Case": 0,
+                "Rows": "5",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_duplicator_pro_packages": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_evf_entries": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_evf_entrymeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_evf_sessions": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_gf_draft_submissions": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_gf_entry": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_gf_entry_meta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp5a_gf_entry_notes": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_gf_form": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_gf_form_meta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_gf_form_revisions": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_gf_form_view": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_links": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_options": {
+                "Case": 0,
+                "Rows": "560",
+                "Size": "3.09MB",
+                "USize": 3244032
+            },
+            "wp5a_pmpro_discount_codes": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp5a_pmpro_discount_codes_levels": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_pmpro_discount_codes_uses": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_pmpro_membership_levelmeta": {
+                "Case": 0,
+                "Rows": "9",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_pmpro_membership_levels": {
+                "Case": 0,
+                "Rows": "9",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp5a_pmpro_membership_ordermeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_pmpro_membership_orders": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "224KB",
+                "USize": 229376
+            },
+            "wp5a_pmpro_memberships_categories": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_pmpro_memberships_pages": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_pmpro_memberships_users": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "112KB",
+                "USize": 114688
+            },
+            "wp5a_postmeta": {
+                "Case": 0,
+                "Rows": "1,410",
+                "Size": "1.69MB",
+                "USize": 1769472
+            },
+            "wp5a_posts": {
+                "Case": 0,
+                "Rows": "399",
+                "Size": "1.52MB",
+                "USize": 1589248
+            },
+            "wp5a_tcm_email_hash": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_tcm_logs": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_td_fields": {
+                "Case": 0,
+                "Rows": "16",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_td_groups": {
+                "Case": 0,
+                "Rows": "3",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_term_relationships": {
+                "Case": 0,
+                "Rows": "124",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_term_taxonomy": {
+                "Case": 0,
+                "Rows": "17",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_termmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_terms": {
+                "Case": 0,
+                "Rows": "16",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_tml_security_failed_attempts": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_tml_security_lockouts": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_um_metadata": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp5a_usermeta": {
+                "Case": 0,
+                "Rows": "29",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_users": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp5a_wpforms_tasks_meta": {
+                "Case": 0,
+                "Rows": "8",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_wpmailsmtp_debug_events": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_wpmailsmtp_tasks_meta": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp5a_yoast_indexable": {
+                "Case": 0,
+                "Rows": "185",
+                "Size": "192KB",
+                "USize": 196608
+            },
+            "wp5a_yoast_indexable_hierarchy": {
+                "Case": 0,
+                "Rows": "188",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp5a_yoast_migrations": {
+                "Case": 0,
+                "Rows": "21",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp5a_yoast_primary_term": {
+                "Case": 0,
+                "Rows": "9",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp5a_yoast_seo_links": {
+                "Case": 0,
+                "Rows": "252",
+                "Size": "96KB",
+                "USize": 98304
+            }
+        },
+        "FilteredTables": []
+    },
+    "Status": 1
+}

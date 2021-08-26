@@ -1,0 +1,1351 @@
+# Copyright (C) 2021 ContentBerg Core
+# This file is distributed under the same license as the ContentBerg Core package.
+msgid ""
+msgstr ""
+"Project-Id-Version: ContentBerg Core 1.1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/contentberg-core\n"
+"POT-Creation-Date: 2021-07-21 18:32:33+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: contentberg-core.php:128
+msgctxt "Admin: Meta"
+msgid "Post Options"
+msgstr ""
+
+#: contentberg-core.php:136
+msgctxt "Admin: Meta"
+msgid "Page Options"
+msgstr ""
+
+#: contentberg-core.php:317
+msgctxt "Admin"
+msgid "Mega Menu"
+msgstr ""
+
+#: contentberg-core.php:322 inc/blocks.php:92 inc/blocks.php:284
+#: metaboxes/options/page.php:36 widgets/base/block.php:249
+msgctxt "Admin"
+msgid "Disabled"
+msgstr ""
+
+#: contentberg-core.php:323 inc/blocks.php:285 metaboxes/options/page.php:37
+msgctxt "Admin"
+msgid "Enabled"
+msgstr ""
+
+#: contentberg-core.php:339
+msgctxt "Admin"
+msgid "Facebook URL"
+msgstr ""
+
+#: contentberg-core.php:340
+msgctxt "Admin"
+msgid "Twitter URL"
+msgstr ""
+
+#: contentberg-core.php:341
+msgctxt "Admin"
+msgid "Google+ URL"
+msgstr ""
+
+#: contentberg-core.php:342
+msgctxt "Admin"
+msgid "Instagram URL"
+msgstr ""
+
+#: contentberg-core.php:343
+msgctxt "Admin"
+msgid "Pinterest URL"
+msgstr ""
+
+#: contentberg-core.php:344
+msgctxt "Admin"
+msgid "BlogLovin URL"
+msgstr ""
+
+#: contentberg-core.php:345
+msgctxt "Admin"
+msgid "Dribble URL"
+msgstr ""
+
+#: contentberg-core.php:346
+msgctxt "Admin"
+msgid "LinkedIn URL"
+msgstr ""
+
+#: contentberg-core.php:347
+msgctxt "Admin"
+msgid "Tumblr URL"
+msgstr ""
+
+#: inc/block.php:498
+msgid "All"
+msgstr ""
+
+#: inc/blocks.php:23
+msgctxt "Admin"
+msgid "-- None / Not Limited --"
+msgstr ""
+
+#: inc/blocks.php:43
+msgctxt "Admin"
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/blocks.php:51
+msgctxt "Admin"
+msgid "Sort By"
+msgstr ""
+
+#: inc/blocks.php:53
+msgctxt "Admin"
+msgid "Published Date"
+msgstr ""
+
+#: inc/blocks.php:54
+msgctxt "Admin"
+msgid "Modified Date"
+msgstr ""
+
+#: inc/blocks.php:55
+msgctxt "Admin"
+msgid "Random"
+msgstr ""
+
+#: inc/blocks.php:56
+msgctxt "Admin"
+msgid "Comment Count"
+msgstr ""
+
+#: inc/blocks.php:57
+msgctxt "Admin"
+msgid "Alphabetical"
+msgstr ""
+
+#: inc/blocks.php:58 widgets/widget-posts.php:251 widgets/widget-slider.php:157
+msgctxt "Admin"
+msgid "Most Liked"
+msgstr ""
+
+#: inc/blocks.php:66
+msgctxt "Admin"
+msgid "Sort Order"
+msgstr ""
+
+#: inc/blocks.php:68
+msgctxt "Admin"
+msgid "Descending - Higher to lower (Latest First)"
+msgstr ""
+
+#: inc/blocks.php:69
+msgctxt "Admin"
+msgid "Ascending - Lower to Higher (Oldest First)"
+msgstr ""
+
+#: inc/blocks.php:77
+msgctxt "Admin"
+msgid "Heading  (Optional)"
+msgstr ""
+
+#: inc/blocks.php:78
+msgctxt "Admin"
+msgid "By default, the main selected category's name is used as the title."
+msgstr ""
+
+#: inc/blocks.php:86
+msgctxt "Admin"
+msgid "Heading Type"
+msgstr ""
+
+#: inc/blocks.php:87
+msgctxt "Admin"
+msgid ""
+"Use Small Headings for 1/3 columns. Default headings are good for full-width "
+"and half column blocks."
+msgstr ""
+
+#: inc/blocks.php:89
+msgctxt "Admin"
+msgid "Magazine Block - Simple"
+msgstr ""
+
+#: inc/blocks.php:90
+msgctxt "Admin"
+msgid "Magazine Block"
+msgstr ""
+
+#: inc/blocks.php:91
+msgctxt "Admin"
+msgid "Blog Style"
+msgstr ""
+
+#: inc/blocks.php:99
+msgctxt "Admin"
+msgid "View All Text (Optional)"
+msgstr ""
+
+#: inc/blocks.php:100
+msgctxt "Admin"
+msgid "If not empty, this text will show with heading link."
+msgstr ""
+
+#: inc/blocks.php:107
+msgctxt "Admin"
+msgid "Heading Link (Optional)"
+msgstr ""
+
+#: inc/blocks.php:108
+msgctxt "Admin"
+msgid "By default, the main selected category's link is used."
+msgstr ""
+
+#: inc/blocks.php:115
+msgctxt "Admin"
+msgid "Advanced: Offset"
+msgstr ""
+
+#: inc/blocks.php:116
+msgctxt "Admin"
+msgid "An offset can be used to skip first X posts from the results."
+msgstr ""
+
+#: inc/blocks.php:123
+msgctxt "Admin"
+msgid "From Category"
+msgstr ""
+
+#: inc/blocks.php:124
+msgid "Posts will be limited to this category"
+msgstr ""
+
+#: inc/blocks.php:128 inc/blocks.php:137 inc/blocks.php:146 inc/blocks.php:161
+#: inc/blocks.php:170
+msgctxt "Admin"
+msgid "Refine Posts"
+msgstr ""
+
+#: inc/blocks.php:133
+msgctxt "Admin"
+msgid "From Multiple Categories"
+msgstr ""
+
+#: inc/blocks.php:134
+msgctxt "Admin"
+msgid ""
+"If you need posts from more categories. Enter cat slugs separated by commas. "
+"Example: beauty,world-news"
+msgstr ""
+
+#: inc/blocks.php:142
+msgctxt "Admin"
+msgid "Posts From Tags"
+msgstr ""
+
+#: inc/blocks.php:143
+msgctxt "Admin"
+msgid ""
+"A single or multiple tags. Enter tag slugs separated by commas. Example: "
+"food,sports"
+msgstr ""
+
+#: inc/blocks.php:152
+msgctxt "Admin"
+msgid "Post Format"
+msgstr ""
+
+#: inc/blocks.php:155
+msgctxt "Admin"
+msgid "All"
+msgstr ""
+
+#: inc/blocks.php:156
+msgctxt "Admin"
+msgid "Video"
+msgstr ""
+
+#: inc/blocks.php:157
+msgctxt "Admin"
+msgid "Gallery"
+msgstr ""
+
+#: inc/blocks.php:158
+msgctxt "Admin"
+msgid "Image"
+msgstr ""
+
+#: inc/blocks.php:166
+msgctxt "Admin"
+msgid "Advanced: Post Types"
+msgstr ""
+
+#: inc/blocks.php:167
+msgctxt "Admin"
+msgid "Use this feature if Custom Post Types are needed."
+msgstr ""
+
+#: inc/blocks.php:178
+msgctxt "Admin"
+msgid "Load More (AJAX)"
+msgstr ""
+
+#: inc/blocks.php:179
+msgctxt "Admin"
+msgid "Page Numbers (AJAX)"
+msgstr ""
+
+#: inc/blocks.php:180
+msgctxt "Admin"
+msgid "Older / Newer (Only if one or last block)"
+msgstr ""
+
+#: inc/blocks.php:187
+msgctxt "Admin"
+msgid "Highlights Block"
+msgstr ""
+
+#: inc/blocks.php:189
+msgctxt "Admin"
+msgid "Run-down of news from a category."
+msgstr ""
+
+#: inc/blocks.php:192 inc/blocks.php:207 inc/blocks.php:313 inc/blocks.php:355
+#: inc/blocks.php:368
+msgctxt "Admin"
+msgid "Home Blocks"
+msgstr ""
+
+#: inc/blocks.php:202
+msgctxt "Admin"
+msgid "News Grid Block"
+msgstr ""
+
+#: inc/blocks.php:204
+msgctxt "Admin"
+msgid "News in a compact grid."
+msgstr ""
+
+#: inc/blocks.php:219
+msgctxt "Admin"
+msgid "Default (Category Loop from Customizer)"
+msgstr ""
+
+#: inc/blocks.php:220
+msgctxt "Admin"
+msgid "Classic Large Posts"
+msgstr ""
+
+#: inc/blocks.php:221
+msgctxt "Admin"
+msgid "One Large Post + Grid"
+msgstr ""
+
+#: inc/blocks.php:222
+msgctxt "Admin"
+msgid "One Large Post + List"
+msgstr ""
+
+#: inc/blocks.php:223
+msgctxt "Admin"
+msgid "One Overlay Post + Grid"
+msgstr ""
+
+#: inc/blocks.php:224
+msgctxt "Admin"
+msgid "One Overlay Post + List"
+msgstr ""
+
+#: inc/blocks.php:226
+msgctxt "Admin"
+msgid "Mixed: Large Post + 2 Grid "
+msgstr ""
+
+#: inc/blocks.php:227
+msgctxt "Admin"
+msgid "Mixed: Large Post + 2 List "
+msgstr ""
+
+#: inc/blocks.php:229
+msgctxt "Admin"
+msgid "Mixed: Overlay Post + 2 Grid "
+msgstr ""
+
+#: inc/blocks.php:230
+msgctxt "Admin"
+msgid "Mixed: Overlay Post + 2 List "
+msgstr ""
+
+#: inc/blocks.php:232
+msgctxt "Admin"
+msgid "List Posts"
+msgstr ""
+
+#: inc/blocks.php:233
+msgctxt "Admin"
+msgid "Grid Posts"
+msgstr ""
+
+#: inc/blocks.php:234
+msgctxt "Admin"
+msgid "Grid Posts (3 Columns)"
+msgstr ""
+
+#: inc/blocks.php:242
+msgctxt "Admin"
+msgid "Listing Type"
+msgstr ""
+
+#: inc/blocks.php:250
+msgctxt "Admin"
+msgid "Show Excerpts?"
+msgstr ""
+
+#: inc/blocks.php:253 inc/blocks.php:271 inc/visual-composer.php:231
+#: inc/visual-composer.php:241 lib/admin/option-renderer.php:174
+#: metaboxes/options/page.php:24 metaboxes/options/post.php:41
+msgctxt "Admin"
+msgid "Yes"
+msgstr ""
+
+#: inc/blocks.php:267
+msgctxt "Admin"
+msgid "Show Posts Footer?"
+msgstr ""
+
+#: inc/blocks.php:268
+msgctxt "bunyad"
+msgid ""
+"Enable to show Social icons or Read More depending on grid post style chosen "
+"in customizer."
+msgstr ""
+
+#: inc/blocks.php:282
+msgctxt "Admin"
+msgid "Pagination"
+msgstr ""
+
+#: inc/blocks.php:292
+msgctxt "Admin"
+msgid "Pagination Type"
+msgstr ""
+
+#: inc/blocks.php:307
+msgctxt "Admin"
+msgid "Posts (%s Layouts)"
+msgstr ""
+
+#: inc/blocks.php:308
+msgctxt "Admin"
+msgid "For blog/category style listings. Multiple listing styles."
+msgstr ""
+
+#: inc/blocks.php:334
+msgctxt "Admin"
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/blocks.php:335
+msgctxt "Admin"
+msgid "Leave empty for default."
+msgstr ""
+
+#: inc/blocks.php:364
+msgctxt "Admin"
+msgid "Advertisement Block"
+msgstr ""
+
+#: inc/blocks.php:365
+msgctxt "Admin"
+msgid "Advertisement code block."
+msgstr ""
+
+#: inc/blocks.php:373
+msgctxt "Admin"
+msgid "Ad Code"
+msgstr ""
+
+#: inc/blocks.php:374
+msgctxt "Admin"
+msgid "Enter your ad code here."
+msgstr ""
+
+#: inc/editor.php:68
+msgctxt "Admin"
+msgid "Modern Quote"
+msgstr ""
+
+#: inc/editor.php:75
+msgctxt "Admin"
+msgid "Separator: Dots"
+msgstr ""
+
+#: inc/editor.php:82
+msgctxt "Admin"
+msgid "Citation (for quote)"
+msgstr ""
+
+#: inc/editor.php:87
+msgctxt "Admin"
+msgid "More Styles"
+msgstr ""
+
+#: inc/social-share.php:28
+msgid "Share on Facebook"
+msgstr ""
+
+#: inc/social-share.php:34
+msgid "Share on Twitter"
+msgstr ""
+
+#: inc/social-share.php:40 widgets/widget-social-follow.php:127
+msgid "Pinterest"
+msgstr ""
+
+#: inc/social-share.php:47
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/social-share.php:53
+msgid "Tumblr"
+msgstr ""
+
+#: inc/social-share.php:59
+msgid "VKontakte"
+msgstr ""
+
+#: inc/social-share.php:65
+msgid "Email"
+msgstr ""
+
+#: inc/visual-composer.php:228
+msgctxt "Admin"
+msgid "Is Sidebar?"
+msgstr ""
+
+#: inc/visual-composer.php:238
+msgctxt "Admin"
+msgid "Sticky Sidebar?"
+msgstr ""
+
+#: inc/visual-composer.php:249
+msgctxt "Admin"
+msgid "Use fonts and style same as Single/Post?"
+msgstr ""
+
+#: inc/visual-composer.php:252
+msgctxt "Admin"
+msgid "Yes, Use Single/Post styles."
+msgstr ""
+
+#: lib/admin/option-renderer.php:174 metaboxes/options/page.php:25
+#: metaboxes/options/post.php:42
+msgctxt "Admin"
+msgid "No"
+msgstr ""
+
+#: lib/admin/option-renderer.php:261
+msgctxt "Admin"
+msgid "Upload"
+msgstr ""
+
+#: lib/admin/option-renderer.php:298
+msgctxt "Admin"
+msgid "Repeat Horizontal and Vertical - Pattern"
+msgstr ""
+
+#: lib/admin/option-renderer.php:299
+msgctxt "Admin"
+msgid "Fully Cover Background - Photo"
+msgstr ""
+
+#: lib/admin/option-renderer.php:300
+msgctxt "Admin"
+msgid "Repeat Horizontal"
+msgstr ""
+
+#: lib/admin/option-renderer.php:301
+msgctxt "Admin"
+msgid "Repeat Vertical"
+msgstr ""
+
+#: lib/admin/option-renderer.php:302
+msgctxt "Admin"
+msgid "No Repeat"
+msgstr ""
+
+#: lib/admin/option-renderer.php:307 lib/admin/option-renderer.php:403
+msgctxt "Admin"
+msgid "Remove"
+msgstr ""
+
+#: lib/admin/option-renderer.php:354
+msgctxt "Admin"
+msgid "Add More"
+msgstr ""
+
+#: lib/posts.php:400
+msgctxt "pagination"
+msgid "Next"
+msgstr ""
+
+#: lib/posts.php:401
+msgctxt "pagination"
+msgid "Previous"
+msgstr ""
+
+#: lib/posts.php:530 widgets/widget-about.php:60
+msgid "Read More"
+msgstr ""
+
+#: metaboxes/options/page.php:7
+msgctxt "Admin"
+msgid "Layout Type"
+msgstr ""
+
+#: metaboxes/options/page.php:9 metaboxes/options/post.php:9
+msgctxt "Admin"
+msgid ""
+"Default uses the site-wide general layout setting set in Appearance > "
+"Customize."
+msgstr ""
+
+#: metaboxes/options/page.php:12 metaboxes/options/page.php:23
+#: metaboxes/options/post.php:12 metaboxes/options/post.php:24
+#: metaboxes/options/post.php:40
+msgctxt "Admin"
+msgid "Default"
+msgstr ""
+
+#: metaboxes/options/page.php:13 metaboxes/options/post.php:13
+msgctxt "Admin"
+msgid "Right Sidebar"
+msgstr ""
+
+#: metaboxes/options/page.php:14 metaboxes/options/post.php:14
+msgctxt "Admin"
+msgid "Full Width"
+msgstr ""
+
+#: metaboxes/options/page.php:19
+msgctxt "Admin"
+msgid "Show Page Title?"
+msgstr ""
+
+#: metaboxes/options/page.php:31
+msgctxt "Admin"
+msgid "Featured Grid/Slider"
+msgstr ""
+
+#: metaboxes/options/page.php:33
+msgctxt "Admin"
+msgid ""
+"For home-page, can also be set from use Appearance > Customize > Homepage > "
+"Home Slider."
+msgstr ""
+
+#: metaboxes/options/page.php:43
+msgctxt "Admin"
+msgid "Featured Style"
+msgstr ""
+
+#: metaboxes/options/page.php:47
+msgctxt "Admin"
+msgid "Stylish (3 images)"
+msgstr ""
+
+#: metaboxes/options/page.php:48
+msgctxt "Admin"
+msgid "Fashion (Single Image)"
+msgstr ""
+
+#: metaboxes/options/page.php:49
+msgctxt "Admin"
+msgid "Tall Grid (1 Large + 2 small)"
+msgstr ""
+
+#: metaboxes/options/page.php:50
+msgctxt "Admin"
+msgid "Classic Slider (3 Images)"
+msgstr ""
+
+#: metaboxes/options/page.php:51
+msgctxt "Admin"
+msgid "Carousel (3 Small Posts)"
+msgstr ""
+
+#: metaboxes/options/page.php:52
+msgctxt "Admin"
+msgid "Bold Full Width"
+msgstr ""
+
+#: metaboxes/options/page.php:58
+msgctxt "Admin"
+msgid "Slider Post Count"
+msgstr ""
+
+#: metaboxes/options/page.php:61
+msgctxt "Admin"
+msgid "Total number of posts for slider."
+msgstr ""
+
+#: metaboxes/options/page.php:66
+msgctxt "Admin"
+msgid "Slider Posts Tag"
+msgstr ""
+
+#: metaboxes/options/page.php:68
+msgctxt "Admin"
+msgid ""
+"Posts with this tag will be shown in the slider. Leaving it empty will show "
+"latest posts."
+msgstr ""
+
+#: metaboxes/options/page.php:75
+msgctxt "Admin"
+msgid "Slider Post IDs"
+msgstr ""
+
+#: metaboxes/options/page.php:77
+msgctxt "Admin"
+msgid ""
+"Advance Usage: Enter post ids separated by comma you wish to show in the "
+"slider, in order you wish to show them in. Example: 11, 105, 2"
+msgstr ""
+
+#: metaboxes/options/post.php:7
+msgctxt "Admin"
+msgid "Layout Style"
+msgstr ""
+
+#: metaboxes/options/post.php:19
+msgctxt "Admin"
+msgid "Post Style"
+msgstr ""
+
+#: metaboxes/options/post.php:21
+msgctxt "Admin"
+msgid "Default uses the global settings set in Appearance > Customize"
+msgstr ""
+
+#: metaboxes/options/post.php:25
+msgctxt "Admin"
+msgid "Creative - Large Style"
+msgstr ""
+
+#: metaboxes/options/post.php:26
+msgctxt "Admin"
+msgid "Cover - Overlay Style "
+msgstr ""
+
+#: metaboxes/options/post.php:27
+msgctxt "Admin"
+msgid "Dynamic (Affects Full Width Layout Only)"
+msgstr ""
+
+#: metaboxes/options/post.php:28
+msgctxt "Admin"
+msgid "Classic"
+msgstr ""
+
+#: metaboxes/options/post.php:29
+msgctxt "Admin"
+msgid "Magazine/News Style"
+msgstr ""
+
+#: metaboxes/options/post.php:35
+msgctxt "Admin"
+msgid "Spacious Style?"
+msgstr ""
+
+#: metaboxes/options/post.php:37
+msgctxt "Admin"
+msgid ""
+"Enable to add extra left/right spacing to text to create a dynamic spacious "
+"feel. Especially great when used with Full Width."
+msgstr ""
+
+#: metaboxes/options/post.php:48
+msgctxt "Admin"
+msgid "Sub Title"
+msgstr ""
+
+#: metaboxes/options/post.php:52
+msgctxt "Admin"
+msgid "Optional Sub-title/text thats displayed below main post title."
+msgstr ""
+
+#: metaboxes/options/post.php:56
+msgctxt "Admin"
+msgid "Primary Category"
+msgstr ""
+
+#: metaboxes/options/post.php:60
+msgctxt "Admin"
+msgid "-- Auto Detect--"
+msgstr ""
+
+#: metaboxes/options/post.php:65
+msgctxt "Admin"
+msgid ""
+"When you have multiple categories for a post, auto detection chooses one in "
+"alphabetical order. This setting is used for selecting the correct category "
+"in post meta."
+msgstr ""
+
+#: metaboxes/options/post.php:69
+msgctxt "Admin"
+msgid "Disable Featured?"
+msgstr ""
+
+#: metaboxes/options/post.php:70
+msgctxt "Admin"
+msgid ""
+"Do not show featured Image, Video, or Gallery at the top for this post, on "
+"post page."
+msgstr ""
+
+#: metaboxes/options/post.php:77
+msgctxt "Admin"
+msgid "Featured Video/Audio Link"
+msgstr ""
+
+#: metaboxes/options/post.php:82
+msgctxt "Admin"
+msgid ""
+"When using Video or Audio post format, enter a link of the video or audio "
+"from a service like YouTube, Vimeo, SoundCloud. "
+msgstr ""
+
+#: widgets/base/block.php:27
+msgctxt "Admin"
+msgid "ContentBerg Home - %s"
+msgstr ""
+
+#: widgets/base/block.php:241
+msgid "General"
+msgstr ""
+
+#: widgets/base/block.php:262
+msgid "Sidebar"
+msgstr ""
+
+#: widgets/base/block.php:265
+msgid "Show A Sidebar"
+msgstr ""
+
+#: widgets/base/block.php:269
+msgid ""
+"You can show a sidebar next to the block. Do not enable this if your "
+"homepage is already using a sidebar."
+msgstr ""
+
+#: widgets/base/block.php:273
+msgid "Sticky Sidebar?"
+msgstr ""
+
+#: widgets/base/block.php:281
+msgid "Sidebar Extra Class"
+msgstr ""
+
+#: widgets/base/block.php:341
+msgctxt "Admin"
+msgid "Widget Area Default"
+msgstr ""
+
+#: widgets/widget-about.php:16
+msgctxt "Admin"
+msgid "ContentBerg - About Widget"
+msgstr ""
+
+#: widgets/widget-about.php:17
+msgctxt "Admin"
+msgid "\"About\" widget suitable for sidebar."
+msgstr ""
+
+#: widgets/widget-about.php:46
+msgid "About Me"
+msgstr ""
+
+#: widgets/widget-about.php:162 widgets/widget-social.php:123
+msgctxt "Admin"
+msgid "Facebook"
+msgstr ""
+
+#: widgets/widget-about.php:163 widgets/widget-social.php:124
+msgctxt "Admin"
+msgid "Twitter"
+msgstr ""
+
+#: widgets/widget-about.php:164 widgets/widget-social.php:125
+msgctxt "Admin"
+msgid "Google Plus"
+msgstr ""
+
+#: widgets/widget-about.php:165 widgets/widget-social.php:126
+msgctxt "Admin"
+msgid "Instagram"
+msgstr ""
+
+#: widgets/widget-about.php:166 widgets/widget-social.php:127
+msgctxt "Admin"
+msgid "Pinterest"
+msgstr ""
+
+#: widgets/widget-about.php:167 widgets/widget-social.php:128
+msgctxt "Admin"
+msgid "Vimeo"
+msgstr ""
+
+#: widgets/widget-about.php:168 widgets/widget-social.php:129
+msgctxt "Admin"
+msgid "Tumblr"
+msgstr ""
+
+#: widgets/widget-about.php:169 widgets/widget-social.php:130
+msgctxt "Admin"
+msgid "RSS"
+msgstr ""
+
+#: widgets/widget-about.php:170 widgets/widget-social.php:131
+msgctxt "Admin"
+msgid "BlogLovin"
+msgstr ""
+
+#: widgets/widget-about.php:171 widgets/widget-social.php:132
+msgctxt "Admin"
+msgid "Youtube"
+msgstr ""
+
+#: widgets/widget-about.php:172 widgets/widget-social.php:133
+msgctxt "Admin"
+msgid "Dribbble"
+msgstr ""
+
+#: widgets/widget-about.php:173 widgets/widget-social.php:134
+msgctxt "Admin"
+msgid "LinkedIn"
+msgstr ""
+
+#: widgets/widget-about.php:174 widgets/widget-social.php:135
+msgctxt "Admin"
+msgid "Flickr"
+msgstr ""
+
+#: widgets/widget-about.php:175 widgets/widget-social.php:136
+msgctxt "Admin"
+msgid "SoundCloud"
+msgstr ""
+
+#: widgets/widget-about.php:176 widgets/widget-social.php:137
+msgctxt "Admin"
+msgid "Last.fm"
+msgstr ""
+
+#: widgets/widget-about.php:177 widgets/widget-social.php:138
+msgctxt "Admin"
+msgid "VKontakte"
+msgstr ""
+
+#: widgets/widget-about.php:178 widgets/widget-social.php:139
+msgctxt "Admin"
+msgid "Steam"
+msgstr ""
+
+#: widgets/widget-about.php:186 widgets/widget-posts.php:240
+#: widgets/widget-slider.php:146 widgets/widget-social.php:145
+#: widgets/widget-subscribe.php:112 widgets/widget-twitter.php:256
+msgctxt "Admin"
+msgid "Title:"
+msgstr ""
+
+#: widgets/widget-about.php:193
+msgctxt "Admin"
+msgid "About:"
+msgstr ""
+
+#: widgets/widget-about.php:199
+msgctxt "Admin"
+msgid "Image URL: (optional)"
+msgstr ""
+
+#: widgets/widget-about.php:202
+msgctxt "Admin"
+msgid "You can add an image above title. Recommended size: 370px."
+msgstr ""
+
+#: widgets/widget-about.php:209
+msgctxt "Admin"
+msgid "Rounded / Circular Image?"
+msgstr ""
+
+#: widgets/widget-about.php:213
+msgctxt "Admin"
+msgid "Read More Link: (optional)"
+msgstr ""
+
+#: widgets/widget-about.php:219
+msgctxt "Admin"
+msgid "Social Icons: (optional)"
+msgstr ""
+
+#: widgets/widget-about.php:232 widgets/widget-cta.php:168
+#: widgets/widget-social.php:164
+msgctxt "Admin"
+msgid "Note:"
+msgstr ""
+
+#: widgets/widget-about.php:233 widgets/widget-social.php:165
+msgctxt "Admin"
+msgid "Configure URLs from Customize > General Settings > Social Media Links."
+msgstr ""
+
+#: widgets/widget-about.php:238
+msgctxt "Admin"
+msgid "Text Below (optional):"
+msgstr ""
+
+#: widgets/widget-ads.php:16
+msgctxt "Admin"
+msgid "ContentBerg - Advertisement"
+msgstr ""
+
+#: widgets/widget-ads.php:17
+msgctxt "Admin"
+msgid "Add advertisement code to your sidebar."
+msgstr ""
+
+#: widgets/widget-ads.php:88
+msgctxt "Admin"
+msgid "Ad Code:"
+msgstr ""
+
+#: widgets/widget-ads.php:94 widgets/widget-cta.php:128
+msgctxt "Admin"
+msgid "Title: (Optional)"
+msgstr ""
+
+#: widgets/widget-cta.php:16
+msgctxt "Admin"
+msgid "ContentBerg - Call To Action Boxes"
+msgstr ""
+
+#: widgets/widget-cta.php:17
+msgctxt "Admin"
+msgid "Add an image with button overlay to promote content."
+msgstr ""
+
+#: widgets/widget-cta.php:140
+msgctxt "Admin"
+msgid "CTA Box"
+msgstr ""
+
+#: widgets/widget-cta.php:142
+msgctxt "Admin"
+msgid "Heading: (Required)"
+msgstr ""
+
+#: widgets/widget-cta.php:149
+msgctxt "Admin"
+msgid "Image URL:"
+msgstr ""
+
+#: widgets/widget-cta.php:156
+msgctxt "Admin"
+msgid "Link To:"
+msgstr ""
+
+#: widgets/widget-cta.php:169
+msgctxt "Admin"
+msgid ""
+"Save to add one more CTA box. Leaving the Heading field empty for any CTA "
+"box will remove it."
+msgstr ""
+
+#: widgets/widget-posts.php:16
+msgctxt "Admin"
+msgid "ContentBerg - Posts List"
+msgstr ""
+
+#: widgets/widget-posts.php:17
+msgctxt "Admin"
+msgid "Popular Posts/Latest Posts widget for sidebar."
+msgstr ""
+
+#: widgets/widget-posts.php:246 widgets/widget-slider.php:152
+msgctxt "Admin"
+msgid "Sorting:"
+msgstr ""
+
+#: widgets/widget-posts.php:249 widgets/widget-slider.php:155
+msgctxt "Admin"
+msgid "Latest Posts"
+msgstr ""
+
+#: widgets/widget-posts.php:250 widgets/widget-slider.php:156
+msgctxt "Admin"
+msgid "Most Commented"
+msgstr ""
+
+#: widgets/widget-posts.php:254 widgets/widget-slider.php:160
+msgctxt "Admin"
+msgid "By Views (WP-PostViews Plugin)"
+msgstr ""
+
+#: widgets/widget-posts.php:261 widgets/widget-slider.php:167
+msgctxt "Admin"
+msgid "Number of posts to show:"
+msgstr ""
+
+#: widgets/widget-posts.php:267
+msgctxt "Admin"
+msgid "Style:"
+msgstr ""
+
+#: widgets/widget-posts.php:270
+msgctxt "Admin"
+msgid "Default - Meta Above"
+msgstr ""
+
+#: widgets/widget-posts.php:271
+msgctxt "Admin"
+msgid "Default - Meta Below"
+msgstr ""
+
+#: widgets/widget-posts.php:272
+msgctxt "Admin"
+msgid "Alternate - Larger Image & Meta"
+msgstr ""
+
+#: widgets/widget-posts.php:273
+msgctxt "Admin"
+msgid "Full Width Image & Large Title"
+msgstr ""
+
+#: widgets/widget-posts.php:280 widgets/widget-slider.php:173
+msgctxt "Admin"
+msgid "From this Tag (Optional):"
+msgstr ""
+
+#: widgets/widget-posts.php:292
+msgctxt "Admin"
+msgid "Show Image"
+msgstr ""
+
+#: widgets/widget-posts.php:299
+msgctxt "Admin"
+msgid "Show Excerpt"
+msgstr ""
+
+#: widgets/widget-posts.php:306
+msgctxt "Admin"
+msgid "Show Category"
+msgstr ""
+
+#: widgets/widget-posts.php:314
+msgctxt "Admin"
+msgid "Show Date"
+msgstr ""
+
+#: widgets/widget-posts.php:321
+msgctxt "Admin"
+msgid "Limit Title to One Line"
+msgstr ""
+
+#: widgets/widget-posts.php:328
+msgctxt "Admin"
+msgid "Show Counters (for Large Style)"
+msgstr ""
+
+#: widgets/widget-slider.php:16
+msgctxt "Admin"
+msgid "ContentBerg - Posts Slider"
+msgstr ""
+
+#: widgets/widget-slider.php:17
+msgctxt "Admin"
+msgid "Show a posts slider."
+msgstr ""
+
+#: widgets/widget-slider.php:180
+msgctxt "Admin"
+msgid "Limit to Category (Optional):"
+msgstr ""
+
+#: widgets/widget-slider.php:182
+msgctxt "Admin"
+msgid "-- Not Limited --"
+msgstr ""
+
+#: widgets/widget-social-follow.php:15
+msgctxt "Admin"
+msgid "ContentBerg - Social Follow & Counters"
+msgstr ""
+
+#: widgets/widget-social-follow.php:16
+msgctxt "Admin"
+msgid "Show social follower buttons."
+msgstr ""
+
+#: widgets/widget-social-follow.php:111
+msgid "Facebook"
+msgstr ""
+
+#: widgets/widget-social-follow.php:119
+msgid "Twitter"
+msgstr ""
+
+#: widgets/widget-social-follow.php:135
+msgid "Instagram"
+msgstr ""
+
+#: widgets/widget-social-follow.php:143
+msgid "YouTube"
+msgstr ""
+
+#: widgets/widget-social-follow.php:151
+msgid "Vimeo"
+msgstr ""
+
+#: widgets/widget-social-follow.php:225
+msgid "Title:"
+msgstr ""
+
+#: widgets/widget-social-follow.php:231
+msgid "Social Icons:"
+msgstr ""
+
+#: widgets/widget-social-follow.php:233
+msgid "Drag and drop to re-order."
+msgstr ""
+
+#: widgets/widget-social-follow.php:253
+msgid "Configure from Customize > Social Follow."
+msgstr ""
+
+#: widgets/widget-social.php:15
+msgctxt "Admin"
+msgid "ContentBerg - Social Icons"
+msgstr ""
+
+#: widgets/widget-social.php:16
+msgctxt "Admin"
+msgid "Social icons widget."
+msgstr ""
+
+#: widgets/widget-social.php:151
+msgctxt "Admin"
+msgid "Social Icons:"
+msgstr ""
+
+#: widgets/widget-subscribe.php:16
+msgctxt "Admin"
+msgid "ContentBerg - Subscribe (MailChimp)"
+msgstr ""
+
+#: widgets/widget-subscribe.php:17
+msgctxt "Admin"
+msgid "Add a subscribe widget."
+msgstr ""
+
+#: widgets/widget-subscribe.php:50
+msgid "Your email address.."
+msgstr ""
+
+#: widgets/widget-subscribe.php:99
+msgid "Enter your email address below to subscribe to my newsletter"
+msgstr ""
+
+#: widgets/widget-subscribe.php:100
+msgid "Subscribe"
+msgstr ""
+
+#: widgets/widget-subscribe.php:118
+msgctxt "Admin"
+msgid "Message/Label:"
+msgstr ""
+
+#: widgets/widget-subscribe.php:124
+msgctxt "Admin"
+msgid "MailChimp Form Submit URL:"
+msgstr ""
+
+#: widgets/widget-subscribe.php:131
+msgctxt "Admin"
+msgid "Button Label:"
+msgstr ""
+
+#: widgets/widget-twitter.php:17
+msgctxt "Admin"
+msgid "ContentBerg - Twitter"
+msgstr ""
+
+#: widgets/widget-twitter.php:86
+msgid "Reply"
+msgstr ""
+
+#: widgets/widget-twitter.php:89
+msgid "Retweet"
+msgstr ""
+
+#: widgets/widget-twitter.php:92
+msgid "Like"
+msgstr ""
+
+#: widgets/widget-twitter.php:103
+msgid "Follow on twitter"
+msgstr ""
+
+#: widgets/widget-twitter.php:253
+msgctxt "Admin"
+msgid "Create your Twitter App"
+msgstr ""
+
+#: widgets/widget-twitter.php:262
+msgctxt "Admin"
+msgid "Username:"
+msgstr ""
+
+#: widgets/widget-twitter.php:268
+msgctxt "Admin"
+msgid "Consumer Key"
+msgstr ""
+
+#: widgets/widget-twitter.php:274
+msgctxt "Admin"
+msgid "Consumer Secret"
+msgstr ""
+
+#: widgets/widget-twitter.php:280
+msgctxt "Admin"
+msgid "Access Token"
+msgstr ""
+
+#: widgets/widget-twitter.php:286
+msgctxt "Admin"
+msgid "Access Token Secret"
+msgstr ""
+
+#: widgets/widget-twitter.php:292
+msgctxt "Admin"
+msgid "Number of Tweets:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ContentBerg Core"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Elements and core functionality for ContentBerg Theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeSphere"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://theme-sphere.com"
+msgstr ""

@@ -1,0 +1,13 @@
+[11-Aug-2021 20:21:35 UTC] WordPress database error Specified key was too long; max key length is 767 bytes for query CREATE TABLE wp5a_ce4wp_contacts (
+			contact_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+			email varchar(200) NOT NULL DEFAULT '',
+			first_name varchar(200) DEFAULT '',
+			last_name varchar(200) DEFAULT '',
+			telephone varchar(200) DEFAULT '',
+            consent varchar(200) DEFAULT '',
+			PRIMARY KEY  (contact_id),
+			UNIQUE KEY email (email)
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, CreativeMail\Managers\DatabaseManager->update_database_check, CreativeMail\Managers\DatabaseManager->create_contacts_table, dbDelta
+[11-Aug-2021 21:15:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/tangeste/public_html/wp-content/themes/contentberg/inc/admin.php on line 252
+[16-Aug-2021 21:15:18 UTC] WordPress database error Table 'tangeste_wp634.wp5a_wpmailsmtp_tasks_meta' doesn't exist for query SHOW FULL COLUMNS FROM `wp5a_wpmailsmtp_tasks_meta` made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPMailSMTP\Core->get_tasks, WPMailSMTP\Tasks\Tasks->init, WPMailSMTP\Tasks\Reports\SummaryEmailTask->init, WPMailSMTP\Tasks\Task->register, WPMailSMTP\Tasks\Meta->add, WPMailSMTP\Tasks\Meta->add_to_db
+[19-Aug-2021 22:32:41 UTC] setting sglobal

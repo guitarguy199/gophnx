@@ -1,0 +1,130 @@
+/**
+ * Grid Post
+ */
+
+.grid-post {
+	margin-bottom: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include breakpoint(x-small) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.sticky {
+		background: #fdfdfd;
+		padding: 20px;
+    	padding-bottom: 30px;
+		box-shadow: 0 2px 6px -2px rgba(#000, 0.12);
+	}
+	
+	.post-thumb {
+		margin-bottom: 35px;
+		margin-left: -20px;
+		margin-right: -20px;
+		transform: translate3d(0, 0 ,0);
+
+		@include breakpoint(x-small) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	
+	.image-link {
+		display: block;
+		position: relative;
+	}
+	
+	.image-link img {
+		display: block;
+		width: 100%;
+
+		@include breakpoint(small) {
+			max-width: initial;
+		}
+	}
+	
+	// Post meta style 2 requires extra spacing
+	.post-meta-b {
+		margin-bottom: 20px;
+	}
+	
+	&.has-post-thumbnail .post-meta-c {
+		margin-top: -8px;
+	}
+	
+	// No excerpt?
+	&.no-excerpt {
+		.post-meta-c {
+			margin-bottom: 0;
+		}
+	} 
+	
+	.post-title-alt {
+		font-size: 24px;
+
+		@include breakpoint(large) {
+			font-size: 22px;
+		}
+
+		@include breakpoint(x-small) {
+			font-size: 19px;
+		}
+	}
+	
+	.post-title:after {
+		margin-top: 10px;	
+	}
+	
+	.post-footer {
+		margin-top: 38px;
+		text-align: center;
+		line-height: 41px;
+		border-top: 1px solid #ebebeb;
+		border-bottom: 1px solid #ebebeb;
+	}
+	
+	.social-share {
+		font-size: 10px;
+		width: 100%;
+	}
+}
+
+
+/* Grid Post Stlye 2 */
+
+.grid-post-b {
+	text-align: center;
+	
+	.read-more-btn {
+		display: inline-block;
+		padding: 14px 24px;
+		background: #f6f6f6;
+		box-shadow: 0 2px 3px rgba(110, 110, 110, 0.25);
+		color: #000;
+		font-family: $title-font;
+		font-size: 11px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+		
+		&:hover {
+			background: #161616;
+			border-color: #161616;
+			color: #fff;
+		}
+	}
+	
+}
+
+//
+// 3 Columns grid
+//
+.grid-cols-3 {
+	.post-title-alt {
+		font-size: 22px;
+	}
+}

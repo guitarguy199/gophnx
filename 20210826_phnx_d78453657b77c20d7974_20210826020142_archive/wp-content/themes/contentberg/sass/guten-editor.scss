@@ -1,0 +1,265 @@
+/**
+ * Gutenberg Editor Styles
+ */
+@import 'abstracts/variables';
+@import 'abstracts/utils';
+@import 'abstracts/mixins';
+
+$guten-editor: true;
+$post-content-output: false;
+@import 'components/post-content';
+
+//
+// Staying consistent with Gutenberg transformer.
+// 
+
+// WordPress 5.5+ has to target this parent.
+.block-editor-block-list__layout {
+	@import 'base/elements';
+}
+
+.editor-styles-wrapper,
+.block-editor-block-list__layout {
+	@import 'components/galleries';
+
+	@include text;
+	@include entry-content-base;
+	@include common-post-content;
+	@include post-content;
+	@include entry-content;
+
+
+	// Stay consistent with .wrap container.
+	text-align: left;
+
+	// Can be used in .editor-block-list__block-edit - but safe to use here as well.
+	@import 'components/wp-defaults';
+
+	p {
+		font-size: inherit;
+		line-height: inherit;
+	}
+
+	ol,
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul ul,
+	ul ol,
+	ol ul,
+	ol ol {
+		margin-bottom: 0; 
+	}
+	
+	li {
+		margin-bottom: initial;
+	}
+
+	// ul:not(.wp-block-gallery) {
+	ul {
+		list-style-type: disc;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+
+	// Need to re-do li/ul for direct childs.
+	.block-library-list {
+		@include p-element-list;
+	}
+}
+
+.block-editor-block-list__layout {
+	@include p-element-list;
+
+	[data-type="core/list"] {
+		padding-left: 35px;
+	}
+
+	// Padding disables the margin collpase.
+	[data-type="core/separator"] {
+		padding: unset;
+	}
+}
+
+//
+// Inner
+//
+.block-editor-block-list__block {
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+
+		// Neeed to remove top/bottom margins - set on container instead.
+		margin: 0;
+	}
+
+	blockquote p {
+		color: inherit;
+	}
+
+	.wp-block-gallery {
+		li:before { 
+			display: none; 
+		}
+	}
+
+	.block-library-list ul {
+		list-style: none;
+	}
+
+	// Undo for common-post-content
+	// @todo remove in post-content output and specifically remove margins from some blocks only.
+	> :first-child,
+	> :last-child {
+		margin-top: initial;
+	}
+
+	// Fix galleries alignment.
+	.alignwide {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: initial;
+	}
+}
+
+.block-library-list .components-autocomplete {
+	@include entry-content;
+}
+
+.editor-rich-text__tinymce.mce-content-body {
+	line-height: inherit;
+}
+
+// A bit of specificy for visually hidden. Can create scrollbars in WP 5.5 for 
+// galleries figcaptions when that uses width: 100%.
+.components-visually-hidden:not(._):not(._) {
+	width: 1px;
+}
+
+// // Legacy: Pre-WordPress 5.4 - Needs margin when inside columns
+.wp-block-columns [data-type="core/paragraph"]:first-child > .editor-block-list__block-edit {
+	margin-top: 28px;
+}
+
+.wp-block {
+	max-width: 750px;
+}
+
+.wp-block[data-align="wide"] {
+	max-width: 1100px;
+}
+
+// Editor title should have a fixed color.
+.editor-styles-wrapper .wp-block.editor-post-title {
+	margin-bottom: 20px;
+	color: #161616;
+}
+
+//
+// Pull Quotes
+// Specifics - bugged with left align.
+//
+
+// Specifics - bugged with left align
+[data-type="core/pullquote"][data-align=left] .is-block-content,
+[data-type="core/pullquote"][data-align=right] .is-block-content,
+// Legacy: Pre-WordPress 5.4
+[data-type="core/pullquote"][data-align=left] .editor-block-list__block-edit,
+[data-type="core/pullquote"][data-align=right] .editor-block-list__block-edit {
+	max-width: 45%;
+
+	.wp-block-pullquote {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	p {
+		font-size: inherit !important;
+	}
+}
+
+[data-type="core/pullquote"][data-align=left] {
+
+	.is-block-content,
+	// Legacy: Pre-WordPress 5.4
+	.editor-block-list__block-edit {
+		margin-right: 6%;
+	}
+}
+
+[data-type="core/pullquote"][data-align=right] {
+
+	.is-block-content,
+	// Legacy: Pre-WordPress 5.4
+	.editor-block-list__block-edit {
+		margin-left: 6%;
+	}
+}
+
+// WordPress 5.6+ Pullquotes
+.wp-block-pullquote {
+	[data-align=left] &,
+	[data-align=right] & {
+		max-width: 45%;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		p {
+			font-size: inherit !important;
+		}
+	}
+	
+	[data-align=left] & {
+		margin-right: 6%;
+	}
+
+	[data-align=right] & {
+		margin-left: 6%;
+	}
+}
+
+// Title margin below
+.edit-post-visual-editor .editor-post-title__block {
+	margin-bottom: 20px;
+}
+
+//
+// Group Block
+//
+.wp-block[data-type="core/group"] > .editor-block-list__block-edit > div > .wp-block-group.has-background > .wp-block-group__inner-container > .editor-inner-blocks {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+// Remove bottom margin from the last block in the group.
+.wp-block[data-type="core/group"] {
+	.wp-block:last-child {
+		[data-block] {
+			> div,
+			[class*="wp-block-"] {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+// Most of left/right aligned blocks should match margins of .alignleft and .alignright.
+[data-type][data-align=left],
+[data-type][data-align=right] {
+
+	.is-block-content,
+	// Legacy: Pre-WordPress 5.4
+	.editor-block-list__block-edit [data-block] > * {
+		margin-top: 4px;
+		margin-bottom: 20px;
+	}
+
+	.wp-block-image {
+		margin-top: 0;
+	}
+}

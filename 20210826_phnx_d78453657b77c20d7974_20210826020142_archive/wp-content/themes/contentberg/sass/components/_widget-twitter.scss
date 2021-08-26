@@ -1,0 +1,52 @@
+/**
+ * Widget: Twitter
+ */
+.widget-twitter {
+	
+	.meta {
+		display: flex;
+		
+		a {
+			margin-right: 16px;
+			color: #bbb;
+			font-size: 13px;	
+		}
+		
+		a:hover {
+			filter: invert(1.2);
+		}
+		
+		.date {
+			margin: 0;
+			margin-left: auto;
+			font-family: $title-font;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.02em;
+		}
+		
+	}
+	
+	.tweet {
+		margin-bottom: 35px;
+		padding-bottom: 14px; 
+		border-bottom: 1px solid #ebebeb; 
+	}
+	
+	.follow {
+		display: block;
+		margin-top: -6px;
+		font-family: $title-font;
+		text-transform: uppercase;
+	}
+}
+
+.dark .widget-twitter {
+	.meta a {
+		color: #6f6f6f !important;
+	}
+	
+	.tweet {
+		border-bottom-color: rgba(#fff, 0.16);
+	}
+}

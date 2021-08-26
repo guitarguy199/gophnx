@@ -1,0 +1,121 @@
+/**
+ * Common Post Meta
+ */
+ 
+.post-meta {
+	color: #989898;
+	font-family: $title-font;
+	font-size: 12px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+
+	.post-cat > a {
+		color: $main-color;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	
+	.text-in {
+		display: none;
+		margin-right: 2px;
+		font-family: $text-font;
+		font-style: italic;
+		text-transform: none;
+	}
+
+	.heading {
+		text-transform: initial;
+	}
+
+	.post-cat > a,
+	time,
+	.comments,
+	.meta-item {
+		font-weight: 500;
+		letter-spacing: 0.1em;
+	}
+	
+	.date-link {
+		color: inherit;
+	}
+
+	.meta-sep:first-child,
+	.meta-sep:last-child {
+		display: none;
+	}
+
+	.meta-sep:before {
+		content: "-";
+		padding: 0 3px;	
+	}
+	
+	.comments {
+		
+		a {
+			color: inherit;
+			
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+	
+}
+
+// Style B
+.post-meta-b {
+	margin-bottom: 20px;
+	
+	.meta-sep {
+		padding: 0;
+	}
+	
+	.post-title-alt:after {
+		display: none;
+	}
+	
+	.post-title-alt {
+		margin: 15px 0;
+	}
+}
+
+// Style C
+.post-meta-c {
+	margin-bottom: 13px;
+	color: #aaa;
+	text-align: left;
+	font-size: 12px;
+	
+
+	.post-title-alt:after {
+		display: none;
+	}
+	
+	.post-title-alt {
+		margin: 15px 0;
+		margin-bottom: 12px;
+		line-height: 1.3;
+	}
+	
+	.cat-label {
+		position: static;
+		bottom: initial;
+	}
+	
+	.meta-sep:before {
+		padding: 0 4px;
+	}
+	
+	.post-author > a {
+		color: $main-color;
+		font-weight: 600;
+	}
+	
+	.post-author {
+		font-weight: 500;
+		letter-spacing: 0.1em;
+	}
+}

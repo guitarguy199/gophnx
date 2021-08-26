@@ -1,0 +1,349 @@
+/**
+ * Comments list
+ */
+
+.comments-area {
+	
+	.section-head .number {
+		color: $main-color;
+	}
+}
+
+.comments-area .no-comments {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #e1e1e1;
+	font-size: 16px;
+
+}
+
+.comments-list {
+	position: relative;
+	
+	@include breakpoint(small) {
+		.depth-2 .children {
+			padding-left: 0;
+		} 
+	}
+
+	> .comment,
+	> li {
+		padding: 50px 0px;
+		border-bottom: 1px solid #f2f2f2; 
+	}
+
+	.pingback {
+		padding: 30px 50px;	
+	}
+	
+	.pingback p {
+		margin: 0;
+	}
+
+	.comment-avatar {
+		float: left;
+		margin-right: 22px;
+		
+		@include breakpoint(tiny) {
+			margin-right: 15px;
+			max-width: 40px;
+		}
+	}
+	
+	.comment-avatar img {
+		border-radius: 50%;
+	}
+	
+	.comment-content {
+		overflow: hidden;
+		font-family: $title-font;
+		
+		@include breakpoint(x-small) {
+			overflow: initial;
+		}
+	}
+	
+	.comment-meta {
+		overflow: hidden;
+		vertical-align: top;
+	}
+	
+	.comment-author {
+		display: block;
+		margin-top: 4px;
+		margin-bottom: 3px;
+
+		color: #161616;
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 1;
+	}
+	
+	.bypostauthor .post-author {
+		display: inline-block;
+		padding: 6px 7px;
+		margin-top: -2px;
+		margin-left: 10px;
+		vertical-align: top;
+		border-radius: 2px;
+		background: #f7f7f7;
+		color: #999;
+
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		
+		@include breakpoint(tiny) {
+			display: none;
+		}
+		
+	}
+	
+	.comment-time,
+	.comment .edit-link,
+	.comment-reply-link {
+		color: #b4b4b4;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.comment-reply-link {
+		float: right;
+		margin-top: -22px;
+		color: $main-color;
+	}
+	
+	.comment-reply-link:before {
+		content: "\f112";
+		display: inline-block;
+		margin-right: 6px;
+		vertical-align: middle;
+		color: #b4b4b4;
+		font-family: FontAwesome;
+		font-size: 7px;
+	}
+	
+	.comment-text {
+		margin-top: 8px;
+		font-size: 16px;
+		
+		@include breakpoint(x-small) {
+			clear: both;
+			font-size: 14px;
+			padding-top: 6px;
+		}
+	}
+	
+	.comment .children {
+		margin-top: 50px;
+	}
+	
+	.comment p:last-child {
+		margin-bottom: 0;
+	}
+	
+	.children li.comment {
+		position: relative;
+		margin-top: 50px;
+		padding-top: 50px;
+		padding-left: 50px;
+		border-top: 1px solid #f2f2f2;
+		
+		@include breakpoint(tiny) {
+			padding-left: 20px;
+		}
+	}
+	
+	.children .comment:before,
+	.children .comment:after {
+		content: "";
+		position: absolute;
+		top: 50px;
+		left: 0px;
+		height: 65px;
+		width: 1px;
+		background: #f2f2f2;
+	}
+	
+	.children .comment:after {
+		top: 90px;
+		width: 18px;
+		height: 1px;
+	}
+	
+}
+
+.comments-list > .comment:last-child {
+	border: 0;
+	padding-bottom: 10px;
+}
+
+.comment-nav {
+	margin: 0 -50px;
+	padding: 35px 60px;
+	border-top: 1px solid #efefef;
+} 
+
+
+/**
+ * Comment Form
+ */
+
+.comment-respond {
+	.section-head {
+		display: block;
+	}
+}
+
+.comment-form {
+	margin: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	> * {
+		width: 100%;
+	}
+	
+	.required {
+		color: #efa4a4;	
+	}
+	
+	.fields > div {
+		padding: 0 13px;
+		margin-bottom: 25px;
+	}
+	
+	.reply-field {
+		margin-bottom: 25px;
+	}
+	
+	/* 3 fields side by side */
+	
+	.inline-field {
+		flex: 1 1 30%;
+		width: 33.3333%;
+		margin-left: 13px;
+		margin-bottom: 25px;
+		
+		font-size: 13px;
+		color: #c0c0c0;
+		
+		box-sizing: border-box;
+
+		@include breakpoint(x-small) {
+			margin-left: 0;
+			margin-bottom: 10px;
+			flex-basis: 100%;
+		}
+	}
+
+	input[type=checkbox] {
+		vertical-align: middle;
+		margin-top: -3px;
+		padding: 0;
+		border: 1px solid #e5e5e5;
+		color: $main-color;
+		width: 16px;
+		height: 16px;
+		text-align: center;
+		appearance: none;
+		box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.12);
+
+		&:checked:before {
+			content: "\2713";
+			display: inline-block;
+			color: currentColor;
+			line-height: 15px;
+			font-family: Arial, sans-serif;
+			font-size: 13px;
+			vertical-align: text-top;
+		}
+
+		+ label {
+			margin-left: 7px;
+		}
+	}
+
+	label {
+		color: #505050;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.inline-field:first-child {
+		margin-left: 0;
+	}
+
+	.inline-field input {
+		width: 100%;
+		color: inherit;
+	}
+	
+	textarea { 
+		display: block;
+		padding: 18px 14px;
+		color: #c0c0c0;
+		box-sizing: border-box;
+	}
+	
+	.inline-field input:focus,
+	textarea:focus {
+		color: #999;
+	}
+	
+	.form-submit {
+		display: block;
+		margin: 0;
+	}
+	
+	.submit {
+		display: inline-block;
+		padding: 14px 25px;
+		
+		@include button-hover;
+	}
+}
+
+/* Nested respone form */
+
+.children .comment-form {
+	margin-bottom: 0;	
+}
+
+#cancel-comment-reply-link {
+	position: relative;
+	float: right;
+	margin-top: -27px;
+	background: #fff;
+	padding-left: 22px;
+	color: #b4b4b4;
+	font-size: 0;
+}
+
+#cancel-comment-reply-link:before {
+	content: "\f00d";
+	font-family: FontAwesome;
+	font-size: 13px;
+}
+
+// Jetpack subscribe
+.comment-respond { 
+	.comment-subscription-form {
+		margin-top: -12px;
+		
+		.subscribe-label {
+			margin-left: 7px;
+		}
+	}
+}
+
+// Force checkbox for jetpack
+.comment-subscription-form {
+	input[type=checkbox] {
+		appearance: none !important;
+		width: 16px !important;
+	}
+}

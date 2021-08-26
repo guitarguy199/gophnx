@@ -1,0 +1,166 @@
+/**
+ * Posts in List Style - FLAG object
+ */
+ 
+.list-post {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ebebeb;
+	display: flex;
+	width: 100%;
+	
+	// No more a list in extra small screens
+	@include breakpoint(x-small) {
+		display: block;
+		
+		.content {
+			display: block;
+			padding-left: 0;
+			margin-top: 20px;
+		}
+		
+		.image-link {
+			display: block;
+		}
+	}
+	
+	.post-thumb {
+		display: block;
+		flex-shrink: 0;
+		max-width: 43%;
+		
+		@include breakpoint(small) {
+			max-width: 30%;
+		}
+
+		@include breakpoint(x-small) {
+			max-width: initial;
+		}
+		
+	}
+	
+	.image-link {
+		display: block;
+		position: relative;
+		
+		img {
+			display: block;
+			max-width: 100%;
+			
+			@include breakpoint(x-small) {
+				max-width: initial;
+				width: 100%;
+			}
+		}
+	}
+	
+	.content {
+		display: block;
+		width: 100%;
+		padding-left: 30px;
+		vertical-align: top;
+	}
+	
+	.post-title {
+		margin-top: 18px;
+		margin-bottom: 18px;
+		font-size: 25px;
+		line-height: 1.4;
+		max-width: 90%;
+		
+		@include breakpoint(x-small) {
+			font-size: 21px;
+		}
+	}
+	
+	.post-footer {
+		overflow: initial;
+		margin-top: 10px;
+	}
+	
+	.social-share {
+		margin-left: 2px;
+	}
+}
+
+/**
+ * List style B - alternate
+ */
+.list-post-b {
+	margin-bottom: 50px;
+	padding-bottom: 0;
+	border: 0;
+	
+	.content {
+		display: block;
+		align-self: center;
+	}
+	
+	.post-meta {
+		display: flex;
+		flex-wrap: wrap;
+		
+		.post-cat {
+			order: 1;
+		}
+		
+		.meta-sep {
+			padding: 0 4px;
+		}
+
+		.date-link {
+			order: -1;
+		}
+		
+		time {
+			letter-spacing: 0.1em;
+		}
+		
+		.post-title,
+		.post-title-alt {
+			order: 2;
+			width: 100%;
+		}
+	}
+	
+	.post-title {
+		max-width: 86%;
+		margin-top: 16px;
+		margin-bottom: 14px;
+		font-size: 24px;
+		line-height: 1.4;
+		
+		@include breakpoint(small) {
+			width: 100%;
+			font-size: 21px;
+		}
+	}
+	
+	.post-footer {
+		margin-top: 26px;
+	}
+	
+	.read-more-btn {
+		padding: 13px 23px;
+		background: #f6f6f6;
+		box-shadow: 0 2px 3px rgba(110, 110, 110, 0.25);
+		color: #000;
+		font-family: $title-font;
+		font-size: 11px;
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+		
+		&:hover {
+			background: #161616;
+			color: #fff;
+		}
+
+		@include breakpoint(small) {
+			padding: 10px 14px;
+			font-size: 10px;
+		}
+	}
+}

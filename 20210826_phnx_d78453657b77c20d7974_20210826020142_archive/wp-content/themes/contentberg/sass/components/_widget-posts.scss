@@ -1,0 +1,234 @@
+/* Widget: Posts */
+.widget-posts {
+	
+	// Post li container
+	.post {
+		margin-bottom: 25px;
+	}
+	
+	.post:last-child {
+		margin-bottom: 0;
+	}
+	
+	.image-link img {
+		float: left;
+		width: auto;
+		margin: 0;
+		margin-right: 24px;
+	}
+	
+	.posts:not(.full) img {
+
+		// Medium to large devices
+		@include breakpoint(large, medium) {
+			margin-right: 16px !important;
+			max-width: 70px;
+		} 
+	}
+	
+	.content {
+		overflow: hidden;
+	}
+	
+	.post-meta {
+		margin-bottom: 8px;
+		margin-top: -2px;     // Clear some line-height
+	}
+
+	.posts:not(.full) {
+		.meta-sep {
+			display: none;
+		}
+
+		.post-cat {
+			margin-right: 10px;
+			
+			@include breakpoint(large, medium) {
+				display: none;
+			}
+		}
+	}
+	
+	.post-title {
+		margin: 0;
+		padding: 0;
+		display: block;
+		font-family: $title-font;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 1.52;
+		-webkit-font-smoothing: antialiased;
+
+		&.limit-line {
+			text-overflow: ellipsis;
+			padding-right: 10px;
+			
+			// Medium to large devices need this not-truncated
+			@include breakpoint(large, medium) {
+				text-overflow: initial;
+				white-space: initial;
+			} 
+		}
+		
+		em {
+			font-style: normal;
+		}
+	}
+	
+	.excerpt {
+		margin-top: 10px;
+	}
+	
+	.excerpt > p {
+		margin: 0;
+		padding-right: 10px;
+		
+		color: #b4b4b4;
+		font-size: 14px;
+		line-height: 1;
+		
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	// Meta below
+	.post-title + .post-meta {
+		margin-top: 11px;
+		margin-bottom: 11px;
+	}
+	
+	.content > :last-child {
+		margin-bottom: 0;
+	}
+	
+}
+
+/* Alternate Large style */
+.widget-posts .posts.large {
+	
+	.post {
+		display: flex;
+		margin-bottom: 30px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.image-link {
+		flex: 0 0 auto;
+	}
+	
+	img {
+		width: 124px;
+		height: 103px;
+		object-fit: cover;
+		
+		// Polyfill
+		font-family: 'object-fit: cover;';
+
+		// Medium to large devices
+		@include breakpoint(large, medium) {
+			margin-right: 16px !important;
+			max-width: 90px;
+			max-height: 90px;
+		} 
+	}
+	
+	.content {
+		margin-top: -0.15em;
+		align-self: center;
+	}
+	
+	.post-title {
+		font-size: 17px;
+		font-weight: 500;
+
+		// Medium to large devices
+		@include breakpoint(large, medium) {
+			font-size: 16px;
+		}
+	}
+}
+
+.widget-posts .posts.full {
+	display: flex;
+	flex-wrap: wrap;
+	counter-reset: posts;
+	
+	@include breakpoint(medium, small) {
+		margin: 0 -15px;
+	}
+	
+	> .post {
+		@include breakpoint(medium, small) {
+			width: 50%;
+			float: left;
+			padding: 0 15px;
+			box-sizing: border-box;
+		}
+		
+		@include breakpoint(small) {
+			width: 100%;
+		}
+	}
+	
+	.counter:before {
+		counter-increment: posts;
+		content: counter(posts);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0 10px;
+		background: $main-color;
+		color: #fff;
+		font-size: 17px;
+		font-family: $title-font;
+		font-weight: 700;
+		line-height: 28px;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.post-title-alt {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.45;
+
+		@include breakpoint(large, medium) {
+			font-size: 18px;
+		}
+
+		@include breakpoint(x-small) {
+			font-size: 18px;
+		}
+
+	}
+}
+
+.widget-posts {
+	.grid-post {
+		padding-left: 0;
+		padding-right: 0;
+
+		.post-meta-b {
+			margin-bottom: 14px;
+		}
+
+		img {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.post-thumb {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.post-thumb + .meta-title {
+		margin-bottom: 20px;
+	}
+}

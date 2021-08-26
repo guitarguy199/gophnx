@@ -1,0 +1,377 @@
+/**
+ * 2. =Components & Common Classes
+ * ----------------------------------------------------------------------------
+ */
+
+// Miscellaneous Components which don't are usually a single 
+// set of rules.
+
+@mixin post-title-hover {
+	color: inherit;
+	transition: all 0.3s ease-in;
+
+	&:hover {
+		opacity: 1;
+		text-shadow: 2px 2px white, 2px -2px white, -2px 2px white, -2px -2px white;
+		box-shadow:  0 -1px 0 0 white inset, 0 -2px 0 0 var(--main-color, #000) inset;
+	}
+}
+
+/* Default text element */
+.text {
+	font-size: 15px;
+	@include text;	
+}
+
+
+/* Section heading */
+.section-head {
+	position: relative;
+	margin-top: 60px;
+	text-align: center;
+	font-family: $title-font;
+	font-size: 0;
+	line-height: 28px;
+}
+
+.section-head:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 1px;
+	background: #e1e1e1;
+}
+
+.section-head .title {
+	position: relative;
+	display: inline-block;
+	padding: 0 18px;
+	z-index: 1;
+	color: #000;
+	background: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+/* Common Post Titles */
+
+// Used by: Large, Grid, List, Widget Posts, Single
+.post-title-alt {
+	position: relative;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	font-family: $title-font;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 1.4;
+	text-transform: none;
+}
+
+.post-title {
+	font-family: $title-font;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1.4;
+	text-transform: none;
+	
+	@include breakpoint(x-small) {
+		font-size: 22px;
+	}
+}
+
+.post-title-alt,
+.post-title {
+	a { 
+		@include post-title-hover;
+	}
+}
+
+// Post title that are direct links cannot have the hover effect of above
+a.post-title {
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+/* Home Blog Blocks Common */
+.blocks .block {
+	margin-bottom: 60px;
+	
+	@include breakpoint(x-small) {
+		margin-bottom: 45px;
+	}
+}
+
+.block-heading {
+	position: relative;
+	margin-bottom: 40px;
+	font-family: $title-font;
+	text-align: center;
+	
+	// Set a fixed height for correct vertical-alignment
+	line-height: 20px;
+	font-size: 0;
+	
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -3px;
+		width: 100%;
+		height: 1px;
+		background: #ebebeb;
+	}
+
+	&:after {
+		margin-top: 0;
+	}
+	
+	.title {
+		position: relative;
+		display: inline-block;
+		padding: 0 24px;
+		z-index: 1;
+		height: 22px;
+		vertical-align: middle;
+		
+		background: #fff;
+		font-size: 20px;
+		font-weight: 600;
+		
+	}
+	
+	.title:before,
+	.title:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0.22em;
+		top: calc(50% - 7px);
+		width: 1px;
+		height: 12px;
+		background: #ebebeb;
+	}
+	
+	.title:after {
+		right: 0;
+		left: auto;
+	}
+}
+
+/* Home Blocks: Magazine Style */
+.block-head-b {
+	margin-bottom: 35px;
+	border-bottom: 1px solid #e7e7e7;
+	font-family: $title-font;
+	
+	.title {
+		display: inline-block;
+		margin-bottom: -1px;
+		padding: 0 1px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid $main-color;
+		
+		font-size: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 1.2;
+	}
+	
+	.view-all {
+		float: right;
+		margin-top: 2px;
+		padding: 0 3px;
+		color: #b6b6b6;
+		font-size: 11px;
+		text-transform: uppercase;
+		line-height: 28px;
+		
+		&:hover {
+			color: #333;
+		}
+	}
+}
+
+.block-head-c {
+	display: flex;
+	margin-bottom: 35px;
+	font-family: $title-font;
+
+	.title {
+		font-size: 27px;
+		padding-left: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+
+		@include breakpoint(small) {
+			font-size: 23px;
+		}
+
+		@include breakpoint (x-small) {
+			padding-left: 0;
+			font-size: 20px;
+		}
+	}
+
+	.view-all {
+		margin-left: auto;
+		color: #9e9e9e;
+		font-size: 14px;
+		align-self: center;
+		-webkit-font-smoothing: antialiased;
+
+		&:hover {
+			color: #333;
+		}
+	}
+}
+
+/* Image hover effect */
+
+.wp-post-image,
+.post-content img {
+	@include wp-post-image;
+	
+	@include breakpoint (small) {
+		will-change: initial;
+	}
+}
+
+.wp-post-image {
+	//box-shadow: 0 5px 10px 0px rgba(7, 10, 25, 0.2);
+	box-shadow: $image-shadow;
+	transition: all .3s ease;
+
+	&:hover {
+		opacity: 1;
+		box-shadow: $image-shadow-hover;
+		filter: brightness(1.07);
+		transform: translate(0, -2px);
+	}
+}
+
+/* Lazy Load */
+.lazyload,
+.lazyloading {
+	background: #ddd;
+	opacity: 0.15 !important;
+}
+
+.lazyloading {
+	mask-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+
+.lazyloaded {
+	opacity: 1;
+}
+
+.wpcf7 {
+	p {
+		font-size: 0.9em;
+		font-style: italic;
+		color: #999;
+	}
+	
+	.wpcf7-form-control-wrap {
+		display: block;
+		margin-top: 5px;
+	}
+	
+	.wpcf7-not-valid-tip {
+		font-size: 0.9em;
+		color: #d24c4c;
+		margin-top: 7px;	
+	}
+}
+
+/* Small Post for Blocks */
+.small-post {
+	margin-bottom: 25px;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	.image-link img {
+		float: left;
+		width: auto;
+		margin: 0;
+		margin-right: 20px;
+		
+		// Medium to large devices
+		@include breakpoint(large, medium) {
+			margin-right: 16px !important;
+			max-width: 70px;
+		} 
+	}
+	
+	.post-title {
+		margin: 0;
+		padding: 0;
+		display: block;
+		font-family: $title-font;
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	
+	.post-meta {
+		margin-top: 10px;
+		margin-bottom: 0;
+		
+		.meta-sep {
+			display: none;
+		}
+	
+		.post-cat {
+			margin-right: 10px;
+			
+			@include breakpoint(large, medium) {
+				display: none;
+			}
+		}
+	}
+
+	.content {
+		margin-top: 2px;
+		overflow: hidden;
+	}
+}
+
+// Pinterest
+.pinit-btn {
+	display: none;
+	position: absolute;
+	border-radius: 2px;
+	width: auto !important;
+	height: auto !important;
+	margin-left: 5px !important;
+	margin-top: 5px !important;
+	padding: 9px 12px !important;
+	z-index: 1;
+	background: #ff1616 !important;
+	color: #fff !important;
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+	
+	i {
+		font-size: 22px;
+	}
+	
+	.label {
+		font-weight: 600;
+		margin-left: 10px;
+		margin-right: 2px;
+	}
+	
+	&.show {
+		display: flex;
+		align-items: center;
+		animation: 0.45s fade-in ease-in-out;
+	}
+}

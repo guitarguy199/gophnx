@@ -1,0 +1,39 @@
+// Configuration varaibles for the SASS
+
+// Fonts & Typography
+$body-font: Roboto, Arial, sans-serif !default;
+
+// Title font is used more as a UI font here - so same as body-font
+$title-font: $body-font !default;
+$text-font: $body-font !default;
+
+$entry-content-font: ff-more-web-pro, "PT Serif", Georgia, serif !default;
+$quote-font: "IBM Plex Serif", ff-more-web-pro, "PT Serif", Georgia, serif !default;
+$root-font-size: 14px;
+
+// Accent color
+$main-color: #2d53fe !default;
+
+// Default content text color
+$post-text-color: #505050 !default;
+
+// Gutenberg gallery margins (combined)
+$gallery-margin: 10px !default;
+
+// Common shadow
+$image-shadow: 0 3px 12px -1px rgba(7, 10, 25, 0.2), 0 22px 27px -20px rgba(7, 10, 25, 0.2);
+$image-shadow-hover: 0 15px 45px -5px rgba(7, 10, 25, .25);
+
+// Media query breakpoints
+$mq-breakpoints: (
+	'xx-large': 1500px,
+	'x-large': 1201px,
+	'large': 1200px,
+	'medium': 940px,
+	'small': 767px,
+	'x-small': 540px,
+	'tiny': 350px,
+);
+
+// Internal: AMP compile mode
+$is-amp: false !default;

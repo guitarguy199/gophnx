@@ -1,0 +1,102 @@
+/* Widget: About */
+
+.widget-about {
+	
+	.author-image {
+		margin-bottom: 18px;
+	}
+	
+	.author-image img {
+		margin: 0 auto;
+		display: block;
+	}
+	
+	.image-circle {
+		position: relative;
+		width: 100%;
+		margin-bottom: 25px;
+		
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 100%;	
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			font-family: 'object-fit: cover;';
+			border-radius: 50%;
+		}
+	}
+	
+	.about-text {
+		padding: 0 8px;
+		text-align: center;
+		
+		// Text below
+		&.below {
+			margin-top: 32px;
+			
+		}
+	}
+	
+	.about-text p:last-child {
+		margin-bottom: 0;
+	}
+	
+	.about-footer {
+		margin-top: 16px;
+		text-align: center;
+	}
+	
+	.more {
+		padding-bottom: 3px;
+		border-bottom: 1px solid #ebebeb;
+		
+		color: $main-color;
+		font-family: $title-font;
+		font-size: 11px;	
+		font-weight: 600;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+	}
+	
+	.more:hover {
+		opacity: 0.8;
+	}
+	
+	// Social Icons
+	.social-icons {
+		margin-bottom: -5px;
+		margin-top: 30px;
+		text-align: center;
+	}
+	
+	.social-btn {
+		margin-right: 10px;
+		margin-bottom: 5px;
+		display: inline-block;
+		border: 1px solid #e4e4e4;
+		box-sizing: border-box;
+		width: 37px;
+		height: 37px;		
+		line-height: 37px;
+		font-size: 15px;
+		text-align: center;
+	}
+	
+	// For specifity in places like footer
+	.social-icons .social-btn:hover {
+		color: $main-color;
+	}
+	
+	// Google+ icon will not center horizontally
+	.fa-google-plus {
+		padding-left: 2px;
+	}
+}

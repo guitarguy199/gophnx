@@ -1,0 +1,81 @@
+/**
+ * Widget: Social Follow
+ */
+.social-follow {
+	margin: 0 -6px;
+	margin-bottom: -12px;
+
+	.service {
+		float: left;
+		width: 50%;
+		padding: 0 6px;
+		margin-bottom: 12px;
+		box-sizing: border-box;
+	}
+	
+	.service-link {
+		display: flex;
+		align-items: center;
+		padding: 0 11px;
+		background: #000;
+		font-family: $title-font;
+		letter-spacing: -0.01em;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 37px;
+		color: #fff;
+		
+		&:hover {
+			filter: brightness(110%);
+		}
+	}
+	
+	.the-icon {
+		width: 16px;
+		margin-left: 4px;
+		margin-right: 12px;
+		margin-top: 1px;
+		font-size: 18px;
+	}
+	
+	.count {
+		margin-left: 5px;
+		margin-right: 8px;
+	}
+	
+	.label {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	// Services
+
+	.facebook {
+		background: #3059b0;
+	}
+	
+	.gplus {
+		background: #e6422e;
+	}
+	
+	.twitter {
+		background: #55acef;
+	}
+	
+	.youtube {
+		background: #cd201f;	
+	}
+	
+	.vimeo {
+		background: #1ab7ea;	
+	}
+	
+	.instagram {
+		background: #f77737;	
+	}
+	
+	.pinterest {
+		background: #e52730;	
+	}
+}

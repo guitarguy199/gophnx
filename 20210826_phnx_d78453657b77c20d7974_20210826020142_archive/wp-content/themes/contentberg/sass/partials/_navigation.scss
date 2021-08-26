@@ -1,0 +1,787 @@
+//
+// Main navigation and alternate styles
+//
+
+// Note: No SASS nesting due to complexity of the WordPress menu structure
+.navigation {
+	float: left;
+	text-align: center;
+	color: #000;
+	font-family: $title-font;
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	
+	-webkit-font-smoothing: antialiased;
+	
+	@include breakpoint(medium) {
+		display: none;
+	}
+	
+}
+
+.navigation ul { 
+	list-style: none; 
+	position: relative;
+}
+
+.navigation ul li { 
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+
+/* nth level link */ 
+.navigation .menu li > a { 
+	float: left;
+	padding: 0;
+	color: inherit;
+}
+
+/* top level links */
+.navigation .menu > li > a {
+	padding: 0 20px;
+}
+
+.navigation .menu > li:first-child {
+	margin-left: -20px;
+}
+
+/* Blips for menus with children */
+.navigation .menu-item-has-children > a:after {
+	display: inline-block;
+	content: "\f107";
+	margin-left: 8px;
+	
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 0.9;
+	color: #a0a0a0;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Hover and active states */
+.navigation .menu > li:hover > a, 
+.navigation .menu > .current-menu-item > a,
+.navigation .menu > .current-menu-parent > a {
+	color: $main-color;
+}
+
+// Enable for colored blips
+//
+// .navigation li:hover > a:after, 
+// .navigation .current-menu-item > a:after,
+// .navigation .current-menu-parent > a:after,
+// .navigation .current-menu-ancestor > a:after {
+// 	color: $main-color;
+// }
+
+
+/* Nested menus */
+
+	/* 1st level */
+	.navigation .menu > li > ul,
+	.navigation .menu > li > .sub-menu { 
+		top: 100%;
+		// Account for spacing added by usage of inline-block - hence 19 instead of 21
+		margin-left: 19px;
+		margin-top: -1px;
+	}
+	
+	.navigation .menu > li > .mega-menu {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.navigation .menu li li {
+		display: block;
+	}
+	
+	/* 1st to nth level links */
+	.navigation .menu > li li a {
+		float: none;
+		text-align: left;
+		display: block;
+		text-decoration: none;
+		padding: 9px 22px;
+		border-top: 1px solid #efefef;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.08em;
+		color: #444;
+		-webkit-font-smoothing: antialiased;
+		
+		// Set to none or the animation lingers and a hover in the fading space 
+		// will re-trigger the menu
+		pointer-events: none;
+	}
+	
+	.navigation .menu > li:hover li a {
+		pointer-events: auto;
+	}
+	
+	.navigation .menu ul li,
+	.navigation .menu .sub-menu li {
+		float: none;
+		min-width: 240px;
+		max-width: 350px;
+		border-top: 0;
+		padding: 0;
+		position: relative;
+	}
+	
+	.navigation .menu > li li:first-child > a { 
+		border-top: 0;
+		box-shadow: none;
+	}
+	
+	// First 2nd-level drop
+	.navigation .sub-menu li:first-child > .sub-menu {
+		margin-top: -1px;
+	}
+	
+	.navigation .menu ul,
+	.navigation .menu .sub-menu {
+		position: absolute; 
+		overflow: visible;
+		visibility: hidden;
+		display: block; 
+		opacity: 0;
+		
+		padding: 0;
+		background: #fff;
+		border: 1px solid #ebebeb;
+		
+		transition: all .25s ease-in;
+		
+		z-index: 110;
+		line-height: 1.8666;
+	}
+
+	
+	/* Blips for nth level parents */ 
+	.navigation .menu ul .menu-item-has-children > a:after {		
+		line-height: 1;
+		content: "\f105";
+		position: absolute;
+		top: 50%;
+		margin-top: -7px;
+		right: 16px;
+		color: #a0a0a0;
+	}
+
+	/* 2nd+ level */
+	.navigation .menu ul ul { 
+		left: 100%;
+		top: 0;
+		margin-left: 0;
+	}
+	
+	.navigation li:hover > ul,
+	.navigation li:hover > .sub-menu { 
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+	}
+	
+	/* nth level hover or current active item */	
+	.navigation .menu li li:hover > a, 
+	.navigation .menu li li.current-menu-item > a {
+		color: $main-color;
+	}
+
+
+.mobile-menu-container {
+	display: none;
+}
+
+/* Mega Menu */
+.navigation .mega-menu {
+	left: 0;
+	
+	// DEBUG
+	//visibility: visible !important;
+	//opacity: 1 !important;
+	//pointer-events: initial !important;
+	
+	.sub-cats {
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+		padding: 12px 30px;
+		width: 19.5%;
+		height: 100%;
+		
+		border-right: 1px solid #ebebeb;
+	}
+	
+	.sub-cats li {
+		min-width: initial;
+		max-width: initial;
+	}
+	
+	.sub-cats a {
+		padding: 11px 0;
+	}
+	
+	.sub-cats li:last-child a {
+		border-bottom: 1px solid #ebebeb;
+	}
+	
+	// Media query - 100vw - paddings (35 + 35)
+	@include breakpoint(large) {
+		width: calc(100vw - 70px);
+	}
+}
+
+.navigation .menu .mega-menu {
+	display: table;
+	table-layout: fixed;
+}
+
+/* Mega Menu: Recent Posts */
+.mega-menu .recent-posts {
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+	padding: 25px;
+	width: 80.5%;
+	
+	.posts {
+		display: none;
+		margin: 0 -13px;
+		margin-bottom: 30px;
+	}
+	
+	.posts.active {
+		display: block;
+		animation: 0.5s fade-in-up ease-out;
+		animation-fill-mode: both;
+	}
+	
+	.post {
+		padding: 0 13px;
+		letter-spacing: 0;
+	}
+	
+	img {
+		display: block;
+		
+		// Fix for extreme sharpness caused by will-change on webkit 
+		-webkit-filter: blur(0);
+	}
+	
+	.lazyload {
+		display: none;
+	}
+	
+	.post-title {
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		color: #454545;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.4;
+		
+		em {
+			font-style: normal;
+			font-weight: inherit;
+		}
+	}
+	
+	.post-meta {
+		font-size: 11px;
+	}
+
+	.show-prev {
+		margin-right: 1px;
+	}
+	
+	.show-next,
+	.show-prev {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		border: 1px solid #ebebeb;
+		color: #b4b4b4;
+		font-size: 12px;
+		text-align: center;
+		line-height: 23px;
+		box-sizing: border-box;
+	}
+	
+	.show-next:hover,
+	.show-prev:hover {
+		border-color: #ddd;
+	}
+	
+	.fa {
+		-webkit-font-smoothing: initial;
+	}
+}
+
+.navigation li:hover > .mega-menu .lazyload {
+	display: block;
+}
+
+// Fix: Transition delay might cause mega menu to reappear
+.navigation li:not(:hover) {
+	> .mega-menu img {
+		pointer-events: none;
+	}
+}
+
+/* Navigation icons */
+.navigation .nav-icons {
+	position: relative;
+	
+	.cart-action {
+		float: right;
+	}
+	
+	.cart-link {
+		font-size: 14px;
+		color: #8a8a8a;
+		
+		.counter {
+			margin-left: 23px;
+			padding: 0 2px;
+			padding-left: 3px;
+			min-width: 15px;
+			width: auto;
+			height: 15px;
+			line-height: 15px;
+			font-size: 10px;
+		}
+	}
+	
+	.fa-shopping-cart:before {
+		content: "\f290";
+	}
+	
+	.search-link {
+		padding-right: 10px;
+	}
+	
+	.search-box {
+		display: none;
+	}
+}
+
+// Specificity woes
+.navigation .menu .nav-icons {
+
+	a {
+		font-size: 14px;
+		color: #898989;
+	}
+	
+	&:hover a {
+		color: #898989;
+	}
+}
+
+/* Sticky Nav Logo */
+.navigation .sticky-logo {
+	display: none;
+	float: left;
+	padding-right: 30px;
+	
+    img {
+		display: inline-block;
+		max-height: 44px;
+		margin-top: -2px;
+		vertical-align: middle;
+	}
+}
+
+.sticky-bar .sticky-logo {
+	display: block;
+}
+
+
+/* Search box */
+
+.search-box-overlay { 
+	position: absolute;
+	visibility: hidden;
+	top: 100%;
+	margin-top: -2px;
+	right: 0;
+	z-index: 99;
+	width: 280px;
+	padding: 12px 14px;
+	box-sizing: border-box;
+	border: 1px solid #efefef;
+	
+	line-height: 1;
+	background: #fff;
+	opacity: 0;	
+	transition: all 0.2s ease-in;
+
+
+	&.active {
+		visibility: visible;
+		opacity: 1;	
+	
+	}
+	
+	.search-field {
+		float: none;
+		width: 100%;
+		padding: 0 14px;
+		height: 38px;
+		border: 1px solid #efefef;
+		box-sizing: border-box;
+		
+		background: #fff;	
+		font-size: 13px;
+	}
+	
+	button {
+		display: none;
+	}	
+}
+
+
+/**
+ * Dark Navigation
+ */
+.navigation.dark {
+	color: #ebebeb; 
+	background: #111;
+	
+	.menu > li ul,
+	.menu > li .sub-menu {
+		background: #111;
+		border: 0;
+		border-top: 1px solid rgba(#fff, 0.12);
+	}
+	
+	.menu > li ul ul,
+	.menu > li .sub-menu ul {
+		border-left: 1px solid rgba(#fff, 0.12);
+	}
+	
+	.menu > li li a {
+		color: #b4b4b4;
+		border-color: rgba(#fff, 0.12);
+		
+		&:hover {
+			color: #fff;
+		}
+	}
+	
+	// Active link and arrow color
+	.menu > .current-menu-item > a, 
+	.menu > .current-menu-parent > a,
+	.menu > .current-menu-ancestor > a,
+	.menu li > a:after {
+		color: #ebebeb;
+	}
+	
+	// For nth-level drop down blips
+	.sub-menu li > a:after {
+		color: #aaa;
+	}
+	
+	// Hover link
+	.menu > li:hover > a {
+		color: #fff;
+	}
+	
+	.menu > li li:first-child > a {
+		border-top-color: transparent;
+	}
+	
+	// Mega Menu
+	.mega-menu {
+	
+		.sub-cats, 
+		.sub-cats li:last-child a,
+		.recent-posts .show-next,
+		.recent-posts .show-prev {
+			border-color: rgba(#fff, 0.12);
+		}
+		
+		.recent-posts .show-next,
+		.recent-posts .show-prev,
+		.recent-posts time {
+			color: #666;
+		}
+		
+		.recent-posts .post-title {
+			color: #b4b4b4;
+			
+			&:hover {
+				color: #ebebeb;
+			}
+		}
+	}
+}
+
+// Fix top bar social for dark
+.nav-below .dark {
+	.social-icons a {
+		color: #ebebeb;
+	}
+}
+
+/**
+ * Navigation: Below variation
+ */
+.navigation.below {
+	float: none;
+	margin-bottom: 0;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	box-sizing: border-box;
+	font-size: 14px;
+	
+	height: 52px;
+	line-height: 52px;
+	
+	.menu {
+		text-align: center;
+		margin-top: -1px;	
+		
+		> li > .sub-menu {
+			margin-top: -1px;
+		}
+	}
+	
+	&.light {
+		background: #fff;
+	}
+	
+	&.dark {
+		border: 0;
+	}
+}
+
+.navigation-wrap {
+	min-height: 48px;
+	
+	@include breakpoint(medium) {
+		display: none;
+	}
+}
+
+/**
+ * Navigation: Inline / Compact
+ */
+.navigation.inline {
+	width: 100%;
+	text-align: left;
+	
+	.menu {
+		position: static;
+	}
+	
+	.menu > li:first-child {
+		margin-left: 0;
+	}
+	
+	.menu > li > ul,
+	.menu > li > .sub-menu {
+		margin-left: 0;
+		margin-top: 0;
+	}
+	
+	.menu > li > a {
+		padding: 0 15px;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: 0.06em;
+		transition-property: opacity, color;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	// No highlights for children post cat/tax
+	.menu > .current-post-parent:not(:hover) > a {
+		color: inherit;
+	}
+	
+	.menu > li li a {
+		padding: 8px 21px;
+	}
+	
+	.menu > li li a, 
+	.mega-menu .sub-cats a {
+		font-size: 15px;
+		font-weight: 500;
+		letter-spacing: 0;
+		text-transform: none;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.mega-menu {
+		@include breakpoint(large) {
+			width: 100vw;
+		}
+	}
+	
+	.mega-menu .sub-cats a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	// Nav icons go right
+	.nav-icons {
+		float: right;
+		
+		a,
+		.fa {
+			font-size: 15px;
+			color: #505050;
+		}
+		
+		.search-link {
+			margin-right: -12px;
+		}
+	}
+	
+	.cart-action {
+		border-left: 0;
+	} 
+	
+	.search-box-overlay {
+		margin-top: 0;
+	}
+}
+
+/**
+ * Navigation: For Simple header (depends on: inline)
+ */
+.navigation.simple {
+	text-transform: none;
+	color: #525252;
+	
+	.menu {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+	.menu > li > a {
+		padding: 0 18px;
+		font-weight: 500;
+		font-size: 16px;
+		letter-spacing: 0;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.menu > li li a {
+		border: 0;
+		padding: 6px 30px;
+		padding-right: 40px;   // Account for chevron
+		font-weight: 500;
+		text-transform: none;
+	}
+
+	.mega-menu .sub-cats li:last-child a {
+		border: 0;
+	}
+	
+	.menu > li li a, 
+	.mega-menu .sub-cats a {
+		font-size: 16px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.menu > li li:not(:hover) a {
+		color: #555;
+	}
+
+	// Above rule affects hover for top-levels, so revert
+	.menu > li:hover > a, 
+	.menu > .current-menu-item > a,
+	.menu > .current-menu-parent > a {
+		color: $main-color;
+	}
+	
+	.menu-item-has-children > a:after {
+		margin-left: 6px;
+		font-size: 15px;
+	}
+	
+	.menu {
+		.sub-menu {
+			padding: 16px 0;
+			padding-top: 14px;
+			border: 0;
+			//box-shadow: 0px 2px 3px rgba(110, 110, 110, 0.25);
+			//box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 5px 18px -1px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.15), 0px 4px 18px -2px rgba(0, 0, 0, 0.15);
+			border-radius: 2px;
+			
+			.sub-menu {
+				margin-top: -15px;
+			}
+		}
+
+		li li > a > span {
+			box-shadow: 0 -1px 0 transparent inset;
+			transition: inherit;
+		}
+
+		ul li:hover > a > span,
+		ul li.current-menu-item > a > span,
+		.sub-cats li:hover > a > span {
+			box-shadow: 0 -7px 0 #f4f4f4 inset;
+			padding-bottom: 1px;
+		}
+
+		//
+		// Triangle
+		//
+
+		> .menu-item-has-children > a {
+			position: relative;
+		}
+
+		> .menu-item-has-children > a:before {
+			content: " ";
+			position: absolute;
+			top: calc(100% - 13px);
+			left: calc(50% - 13px);
+			z-index: 111;
+			border-style: solid;
+			border-width: 0 8px 11px 8px;
+			border-color: transparent transparent #fff transparent;
+			filter: drop-shadow(0px -2px 2px rgba(0, 0, 0, 0.06));
+			//filter: drop-shadow(0px -4px 4px rgba(0,0,0,0.05)) drop-shadow(0px -1px 0px rgba(0,0,0,0.04));
+			opacity: 0;
+			transition: opacity 0.3s ease-in;
+		}
+
+		> .menu-item-has-children:hover > a:before {
+			opacity: 1;
+		}
+	}
+
+	.sticky-bar & .menu > .menu-item-has-children > a:before {
+		// top: calc(100% - 11px); 
+	}
+
+	// .menu li li.current-menu-item > a,
+	// .menu > .current-menu-item > a,
+	// .menu > .current-menu-parent > a,
+	// .menu > .current-menu-ancestor > a,
+	// .mega-menu .sub-cats li:hover > a {
+	// 	color: $main-color;
+	// }
+	
+	.sub-menu .menu-item-has-children > a:after {
+		margin-top: 0;
+		right: 28px;
+		transform: translateY(-50%);
+		color: #999;
+	}
+}

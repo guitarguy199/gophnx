@@ -1,0 +1,104 @@
+/**
+ * Search Modal
+ */
+.search-modal {
+	-webkit-font-smoothing: antialiased;
+
+	&.mfp-bg {
+		background: #fff;
+		opacity: 0;
+		transition: 0.35s ease-in-out;
+		will-change: opacity;
+
+		&.mfp-ready {
+			opacity: 0.98;
+		}
+
+		&.mfp-removing {
+			opacity: 0;
+		}
+	}
+
+	.search-modal-wrap {
+		display: block;
+	}
+
+	&.mfp-ready.mfp-wrap {
+		opacity: 1;
+		transform: none;
+	}
+
+	&.mfp-wrap,
+	&.mfp-removing.mfp-wrap {
+		opacity: 0;
+		will-change: opacity;
+		transition: 0.4s ease-in-out;
+		transform: scale(0.95);
+	}
+
+	&.mfp-removing.mfp-wrap {
+		transition-duration: 0.2s;	
+	}
+
+	.mfp-close {
+		position: absolute;
+		z-index: 1046;
+		top: 20px;
+		right: 20px;
+		padding: 0;
+		background: transparent;
+		color: #000;
+		font-size: 60px;
+		font-family: Arial, Baskerville, monospace;
+		line-height: 44px;
+		opacity: 0.65;
+		-webkit-text-stroke: 2px #fff;
+
+		&:active {
+			top: 20px;
+		}
+	}
+
+	.admin-bar & {
+		.mfp-close {
+			top: 50px;
+		}
+	}
+
+	.search-field {
+		padding: 0;
+		padding-bottom: 12px;
+		margin-bottom: 22px;
+		border: 0;
+		border-bottom: 1px solid #e1e1e1;
+		height: auto;
+		font-size: 60px;
+		font-weight: bold;
+		line-height: 1;
+		color: #252525;
+		background: transparent;
+
+		@include breakpoint(small) {
+			font-size: 42px;
+		}
+	}
+
+	.message {
+		font-size: 18px;
+		color: #a0a0a0;
+	}
+
+	&-box {
+		padding: 0 50px;
+		margin: 0 auto;
+		max-width: 790px;
+
+		@include breakpoint(small) {
+			max-width: 100%;
+		}
+	}
+}
+
+.search-modal-wrap {
+	display: none;
+}
